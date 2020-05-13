@@ -1,0 +1,898 @@
+[
+    {
+        "combustivel": "GASOLINA C COMUM (B:3)",
+        "preco": "R$ 3,49",
+        "status": "há 6 hora(s), 9 minuto(s) e 29 segundo(s)",
+        "posto": "POSTO SENADOR",
+        "endereco": "RUA SENADOR QUINTINO 1125 OLHOS D ÁGUA 44003541, FEIRA DE SANTANA",
+        "contato": "7532433792",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,50",
+        "status": "há 3 hora(s), 7 minuto(s) e 18 segundo(s)",
+        "posto": "POSTO ELDOURADO",
+        "endereco": "RUA JOSE JOAQUIM SEABRA 410 CENTRO 44002000, FEIRA DE SANTANA",
+        "contato": "near_meROTA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,50",
+        "status": "há 3 hora(s), 15 minuto(s) e 52 segundo(s)",
+        "posto": "POSTO VILA OLIMPIA",
+        "endereco": "AVENIDA RIO DE JANEIRO 845 PEDRA DO DESCANSO 44007195, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,50",
+        "status": "há 3 hora(s), 19 minuto(s) e 17 segundo(s)",
+        "posto": "POSTO VILA OLIMPIA",
+        "endereco": "AVENIDA RIO DE JANEIRO 845 PEDRA DO DESCANSO 44007195, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,50",
+        "status": "há 3 hora(s), 7 minuto(s) e 12 segundo(s)",
+        "posto": "POSTO NOSSO GAS 1",
+        "endereco": "RODOVIA BR324, KM102-SENTIDO SALV/FEIRA S/N CIS 44096486, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM (B:6)",
+        "preco": "R$ 3,54",
+        "status": "há 5 hora(s), 52 minuto(s) e 2 segundo(s)",
+        "posto": "POSTO PARADA DO ENGENHO",
+        "endereco": "RODOVIA BR 324 KM 600 2780 CENTRO INDUSTRIAL DE ARATU 43700971, SIMÕES FILHO",
+        "contato": "0000000000",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,57",
+        "status": "há 4 hora(s), 59 minuto(s) e 30 segundo(s)",
+        "posto": "POSTO CIDADE",
+        "endereco": "RUA ITAUEIRA 444 CASEB 44042240, FEIRA DE SANTANA",
+        "contato": "7532216181",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,57",
+        "status": "há 3 hora(s), 7 minuto(s) e 12 segundo(s)",
+        "posto": "POSTO NOSSO GAS 1",
+        "endereco": "RODOVIA BR324, KM102-SENTIDO SALV/FEIRA S/N CIS 44096486, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,57",
+        "status": "há 3 hora(s), 17 minuto(s) e 23 segundo(s)",
+        "posto": "POSTO EXPOFEIRA",
+        "endereco": "RUA CENTRO INDUSTRIAL SUBAE SN CENTRO INDUSTRIAL SUBAE 44052510, FEIRA DE SANTANA",
+        "contato": "near_meROTA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM",
+        "preco": "R$ 3,57",
+        "status": "há 3 hora(s), 17 minuto(s) e 56 segundo(s)",
+        "posto": "MEGA POSTO 2",
+        "endereco": "RODOVIA BR. 116, KM.18 S/N TIQUARUCU 44140000, FEIRA DE SANTANA",
+        "contato": "7536146277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,57",
+        "status": "há 3 hora(s), 47 minuto(s) e 42 segundo(s)",
+        "posto": "POSTO EXPOFEIRA",
+        "endereco": "RUA CENTRO INDUSTRIAL SUBAE SN CENTRO INDUSTRIAL SUBAE 44052510, FEIRA DE SANTANA",
+        "contato": "near_meROTA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,57",
+        "status": "há 3 hora(s), 50 minuto(s) e 4 segundo(s)",
+        "posto": "POSTO PIRAI 3",
+        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM",
+        "preco": "R$ 3,57",
+        "status": "há 4 hora(s), 48 minuto(s) e 59 segundo(s)",
+        "posto": "POSTOS",
+        "endereco": "RODOVIA BR 324 SN DISTRITO BESSA 44245000, CONCEIÇÃO DO JACUÍPE",
+        "contato": "near_meROTA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 47 minuto(s) e 11 segundo(s)",
+        "posto": "MEGA POSTO 1",
+        "endereco": "RODOVIA BR. 324, KM.99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "7536143851",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 12 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO TOMBA",
+        "endereco": "RUA PAPA JOAO XXIII 104 TOMBA 44090652, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 15 minuto(s) e 27 segundo(s)",
+        "posto": "POSTO BAHIA",
+        "endereco": "AVENIDA TRANSNORDESTINA 2060 CAMPO LIMPO 44032411, FEIRA DE SANTANA",
+        "contato": "7532119606",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 49 minuto(s) e 29 segundo(s)",
+        "posto": "POSTO BAHIA",
+        "endereco": "AVENIDA TRANSNORDESTINA 2060 CAMPO LIMPO 44032411, FEIRA DE SANTANA",
+        "contato": "7532119606",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 5 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO GETULIO VARGAS",
+        "endereco": "AVENIDA GUTULIO VARGAS 1839 CAPUCHINHOS 44050000, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 5 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO GETULIO VARGAS",
+        "endereco": "AVENIDA GUTULIO VARGAS 1839 CAPUCHINHOS 44050000, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 7 minuto(s) e 1 segundo(s)",
+        "posto": "MORIA",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 1720 CAPUCHINHOS 44076000, FEIRA DE SANTANA",
+        "contato": "7532231717",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 7 minuto(s) e 47 segundo(s)",
+        "posto": "POSTO CONTORNO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 1951 PARQ. GETULIO VARGAS 44076822, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 12 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO TOMBA",
+        "endereco": "RUA PAPA JOAO XXIII 104 TOMBA 44090652, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 14 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO SENHOR DOS PASSOS",
+        "endereco": "AVENIDA SENHOR DOS PASSOS 1705 CENTRO 44002375, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 15 minuto(s) e 35 segundo(s)",
+        "posto": "POSTO AYRTON SENNA",
+        "endereco": "AVENIDA AYRTON SENNA DA SILVA S/N CONCEIÇÃO 44065002, FEIRA DE SANTANA",
+        "contato": "7532119606",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 15 minuto(s) e 49 segundo(s)",
+        "posto": "POSTO PIRAI",
+        "endereco": "RUA DOUTOR ANTONIO BORJA 000145 CENTRO 44010390, FEIRA DE SANTANA",
+        "contato": "7591153373",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 17 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO IGUATEMI",
+        "endereco": "AVENIDA JOAO D. CARNEIRO 3600 CORONEL JOSE PINTO 44037010, FEIRA DE SANTANA",
+        "contato": "7532215866",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 17 minuto(s) e 48 segundo(s)",
+        "posto": "POSTO SENHOR DOS PASSOS",
+        "endereco": "AVENIDA SENHOR DOS PASSOS 1705 CENTRO 44002375, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 19 minuto(s) e 12 segundo(s)",
+        "posto": "POSTO IGUATEMI",
+        "endereco": "AVENIDA JOAO D. CARNEIRO 3600 CORONEL JOSE PINTO 44037010, FEIRA DE SANTANA",
+        "contato": "near_meROTA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 30 minuto(s) e 11 segundo(s)",
+        "posto": "POSTO AYRTON SENNA",
+        "endereco": "AVENIDA AYRTON SENNA DA SILVA S/N CONCEIÇÃO 44065002, FEIRA DE SANTANA",
+        "contato": "7532119606",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 38 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO CONTORNO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 1951 PARQ. GETULIO VARGAS 44076822, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 46 minuto(s) e 3 segundo(s)",
+        "posto": "POSTO BOULEVARD",
+        "endereco": "RUA CORONEL JOSE PINTO 1140 SAO JOAO 44051400, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 3 hora(s), 56 minuto(s) e 6 segundo(s)",
+        "posto": "POSTO BRX",
+        "endereco": "AVENIDA SAMPAIO 788 CENTRO 44001472, FEIRA DE SANTANA",
+        "contato": "7530212719",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 41 minuto(s) e 8 segundo(s)",
+        "posto": "POSTO BOULEVARD",
+        "endereco": "RUA CORONEL JOSE PINTO 1140 SAO JOAO 44051400, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 41 minuto(s) e 58 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 3797 CASEB 44052064, FEIRA DE SANTANA",
+        "contato": "7591156372",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 41 minuto(s) e 58 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 3797 CASEB 44052064, FEIRA DE SANTANA",
+        "contato": "7591156372",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 49 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO MARIA QUITERIA",
+        "endereco": "AVENIDA MARIA QUITERIA 3208 QUEIMADINHA 44050368, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 49 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO MARIA QUITERIA",
+        "endereco": "AVENIDA MARIA QUITERIA 3208 QUEIMADINHA 44050368, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 51 minuto(s) e 15 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "RUA DOUTOR MACARIO CERQUEIRA 780 MUCHILA 44005000, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ORIGINAL IPIRANGA BICO",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 51 minuto(s) e 16 segundo(s)",
+        "posto": "POSTO DA NOIDE",
+        "endereco": "AVENIDA NOIDE FERREIRA DE CERQUEIRA 6791 SIM 44085052, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 51 minuto(s) e 59 segundo(s)",
+        "posto": "POSTO SHALOM",
+        "endereco": "AVENIDA MARIA QUITERIA 694 EUCALIPTO 44075970, FEIRA DE SANTANA",
+        "contato": "7532216388",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 54 minuto(s) e 49 segundo(s)",
+        "posto": "POSTO SAO JOAO",
+        "endereco": "RODOVIA BA 502, KM 02 S/N CIS 44330000, CACHOEIRA",
+        "contato": "7536164831",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,59",
+        "status": "há 4 hora(s), 56 minuto(s) e 0 segundo(s)",
+        "posto": "POSTO SAO JOAO",
+        "endereco": "RODOVIA BA 502, KM 02 S/N CIS 44330000, CACHOEIRA",
+        "contato": "7536164831",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,59",
+        "status": "há 5 hora(s), 4 minuto(s) e 50 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GETULIO VARGAS 2838 PARQ. GETULIO VARGAS 44076684, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM",
+        "preco": "R$ 3,59",
+        "status": "há 5 hora(s), 16 minuto(s) e 4 segundo(s)",
+        "posto": "POSTO SHALOM",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 1500 LAGOA GRANDE 44042260, FEIRA DE SANTANA",
+        "contato": "7536254250",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,59",
+        "status": "há 5 hora(s), 27 minuto(s) e 17 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GETULIO VARGAS 2838 PARQ. GETULIO VARGAS 44076684, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,60",
+        "status": "há 3 hora(s), 18 minuto(s) e 14 segundo(s)",
+        "posto": "POSTO FRAGA MAIA",
+        "endereco": "AVENIDA FRAGA MAIA 4230 CIDADE NOVA 44053055, FEIRA DE SANTANA",
+        "contato": "7530230398",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,60",
+        "status": "há 3 hora(s), 28 minuto(s) e 33 segundo(s)",
+        "posto": "POSTO FRAGA MAIA",
+        "endereco": "AVENIDA FRAGA MAIA 4230 CIDADE NOVA 44053055, FEIRA DE SANTANA",
+        "contato": "7530230398",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,60",
+        "status": "há 5 hora(s), 7 minuto(s) e 48 segundo(s)",
+        "posto": "POSTO CONTERRANEO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTTA 1680 QUEIMADINHA 44050024, FEIRA DE SANTANA",
+        "contato": "7536257973",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA TIPO C GRANEL BICO",
+        "preco": "R$ 3,60",
+        "status": "há 5 hora(s), 50 minuto(s) e 7 segundo(s)",
+        "posto": "POSTO VIA PARQUE EIRELI",
+        "endereco": "RUA SAO SALVADOR 1380 35º BI 44094060, FEIRA DE SANTANA",
+        "contato": "7532242024",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,62",
+        "status": "há 3 hora(s), 14 minuto(s) e 7 segundo(s)",
+        "posto": "POSTO ORION",
+        "endereco": "RUA COMENDADOR GOMES 90 TOMBA 44091238, FEIRA DE SANTANA",
+        "contato": "7532231717",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,62",
+        "status": "há 3 hora(s), 17 minuto(s) e 11 segundo(s)",
+        "posto": "POSTO GASAUTO",
+        "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA 103 TOMBA 44091002, FEIRA DE SANTANA",
+        "contato": "7599991539",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,62",
+        "status": "há 3 hora(s), 24 minuto(s) e 36 segundo(s)",
+        "posto": "POSTO ORION",
+        "endereco": "RUA COMENDADOR GOMES 90 TOMBA 44091238, FEIRA DE SANTANA",
+        "contato": "7532231717",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,62",
+        "status": "há 3 hora(s), 26 minuto(s) e 53 segundo(s)",
+        "posto": "POSTO-CIS TOMBA",
+        "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA S/N TOMBA 44091002, FEIRA DE SANTANA",
+        "contato": "7536160372",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA DT CLEAN BICO",
+        "preco": "R$ 3,62",
+        "status": "há 4 hora(s), 50 minuto(s) e 20 segundo(s)",
+        "posto": "POSTO DA NOIDE",
+        "endereco": "AVENIDA NOIDE FERREIRA DE CERQUEIRA 6791 SIM 44085052, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM",
+        "preco": "R$ 3,63",
+        "status": "há 4 hora(s), 30 minuto(s) e 48 segundo(s)",
+        "posto": "BRAX-FEIRA",
+        "endereco": "RODOVIA BR 324 KM 99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "7532216181",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 13 minuto(s) e 14 segundo(s)",
+        "posto": "POSTO MONACO",
+        "endereco": "RUA TUPINAMBAS 4000 SAO JOAO 44051224, FEIRA DE SANTANA",
+        "contato": "7530213124",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 48 minuto(s) e 19 segundo(s)",
+        "posto": "POSTO JP",
+        "endereco": "AVENIDA FRANCISCO FRAGA MAIA 5280 MANGABEIRA 44056232, FEIRA DE SANTANA",
+        "contato": "7532244450",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 5 minuto(s) e 53 segundo(s)",
+        "posto": "POSTO SAO GONCALO 1",
+        "endereco": "RODOVIA BR 324 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "7536831197",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 8 minuto(s) e 9 segundo(s)",
+        "posto": "POSTO SAO GONCALO 3",
+        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 9 minuto(s) e 10 segundo(s)",
+        "posto": "POSTO ROSEIRA",
+        "endereco": "RODOVIA BR 324 S/N LIMOEIRO DO BOM VIVER 44137000, FEIRA DE SANTANA",
+        "contato": "007536140710",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 9 minuto(s) e 10 segundo(s)",
+        "posto": "POSTO ROSEIRA",
+        "endereco": "RODOVIA BR 324 S/N LIMOEIRO DO BOM VIVER 44137000, FEIRA DE SANTANA",
+        "contato": "007536140710",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM TIPO C",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 11 minuto(s) e 50 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "RODOVIA BR 116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 20 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO TROPICAL",
+        "endereco": "ATALHO EDUARDO FROES DA MOTA 5700 CIDADE NOVA 44053005, FEIRA DE SANTANA",
+        "contato": "7532257094",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 24 minuto(s) e 16 segundo(s)",
+        "posto": "POSTO SAO GONCALO 4",
+        "endereco": "RODOVIA BR 324 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "36831628",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,64",
+        "status": "há 3 hora(s), 51 minuto(s) e 33 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "RODOVIA BR 116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,64",
+        "status": "há 4 hora(s), 57 minuto(s) e 48 segundo(s)",
+        "posto": "POSTO SAO GONCALO 9",
+        "endereco": "ESTRADA DO CALUNDU S/N LAGOA SALGADA 44083624, FEIRA DE SANTANA",
+        "contato": "7530213030",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA GRID PETROBRAS",
+        "preco": "R$ 3,65",
+        "status": "há 3 hora(s), 56 minuto(s) e 8 segundo(s)",
+        "posto": "POSTO BRX",
+        "endereco": "AVENIDA SAMPAIO 788 CENTRO 44001472, FEIRA DE SANTANA",
+        "contato": "7530212719",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM C BICO",
+        "preco": "R$ 3,67",
+        "status": "há 3 hora(s), 59 minuto(s) e 57 segundo(s)",
+        "posto": "POSTO SHANGAY",
+        "endereco": "RODOVIA BR 324 S/N CENTRO 44001970, FEIRA DE SANTANA",
+        "contato": "7536147722",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,67",
+        "status": "há 4 hora(s), 56 minuto(s) e 38 segundo(s)",
+        "posto": "POSTO PORTAL DO SERTAO",
+        "endereco": "RODOVIA BR 324 S/N CIS 44055770, FEIRA DE SANTANA",
+        "contato": "756143344",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM TIPO C BICO",
+        "preco": "R$ 3,69",
+        "status": "há 4 hora(s), 2 minuto(s) e 45 segundo(s)",
+        "posto": "SERV BEM",
+        "endereco": "RODOVIA BR 324 S/N SEDE 44230000, AMÉLIA RODRIGUES",
+        "contato": "7541411458",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,69",
+        "status": "há 5 hora(s), 52 minuto(s) e 6 segundo(s)",
+        "posto": "POSTO SAO GONCALO 9",
+        "endereco": "ESTRADA DO CALUNDU S/N LAGOA SALGADA 44083624, FEIRA DE SANTANA",
+        "contato": "7530213030",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,70",
+        "status": "há 3 hora(s), 50 minuto(s) e 38 segundo(s)",
+        "posto": "J N COMERCIO DE COMBUSTIVEIS LTDA",
+        "endereco": "AVENIDA DEPUTADO FRANCISCO JOSE PINTO DOS SANTOS 942 PEDRA DO DESCANSO 44007190, FEIRA DE SANTANA",
+        "contato": "7530302549",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,70",
+        "status": "há 4 hora(s), 3 minuto(s) e 31 segundo(s)",
+        "posto": "J N COMERCIO DE COMBUSTIVEIS LTDA",
+        "endereco": "AVENIDA DEPUTADO FRANCISCO JOSE PINTO DOS SANTOS 942 PEDRA DO DESCANSO 44007190, FEIRA DE SANTANA",
+        "contato": "7530302549",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM",
+        "preco": "R$ 3,70",
+        "status": "há 3 hora(s), 6 minuto(s) e 5 segundo(s)",
+        "posto": "POSTO NORDESTE",
+        "endereco": "PRACA DA REPUBLICA S/N CENTRO 44001784, FEIRA DE SANTANA",
+        "contato": "7530213030",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,70",
+        "status": "há 3 hora(s), 50 minuto(s) e 34 segundo(s)",
+        "posto": "POSTO JP",
+        "endereco": "AVENIDA FRANCISCO FRAGA MAIA 5280 MANGABEIRA 44056232, FEIRA DE SANTANA",
+        "contato": "7532244450",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,70",
+        "status": "há 3 hora(s), 58 minuto(s) e 11 segundo(s)",
+        "posto": "POSTO NORDESTE",
+        "endereco": "PRACA DA REPUBLICA S/N CENTRO 44001784, FEIRA DE SANTANA",
+        "contato": "7530213030",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "SHELL VPOWER GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,70",
+        "status": "há 5 hora(s), 50 minuto(s) e 11 segundo(s)",
+        "posto": "POSTO VIA PARQUE EIRELI",
+        "endereco": "RUA SAO SALVADOR 1380 35º BI 44094060, FEIRA DE SANTANA",
+        "contato": "7532242024",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM TIPO C",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 6 minuto(s) e 31 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA TRANSNORDESTINA 2.300 PARQUE IPE 44054008, FEIRA DE SANTANA",
+        "contato": "7532242436",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 6 minuto(s) e 31 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA TRANSNORDESTINA 2.300 PARQUE IPE 44054008, FEIRA DE SANTANA",
+        "contato": "7532242436",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 6 minuto(s) e 37 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 18658 JARDIM CRUZEIRO 44024066, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 7 minuto(s) e 27 segundo(s)",
+        "posto": "POSTO JOAO DURVAL",
+        "endereco": "RUA DOUTOR ARAUJO PINHO 2030 OLHOS D ÁGUA 44003456, FEIRA DE SANTANA",
+        "contato": "7132715277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM TIPO C BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 8 minuto(s) e 12 segundo(s)",
+        "posto": "POSTO SERVE BEM 2",
+        "endereco": "RUA SENADOR QUINTINO 2070 BRASILIA 44088720, FEIRA DE SANTANA",
+        "contato": "7536038797",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADTIVADA BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 8 minuto(s) e 21 segundo(s)",
+        "posto": "POSTO DA PAPA",
+        "endereco": "RUA PAPA JOAO XXIII 1990 OLHOS D ÁGUA 44003465, FEIRA DE SANTANA",
+        "contato": "7599820418",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 8 minuto(s) e 25 segundo(s)",
+        "posto": "POSTO JOMAFA",
+        "endereco": "RUA SENADOR QUINTINO 3090 TOMBA 44090001, FEIRA DE SANTANA",
+        "contato": "7530210261",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 9 minuto(s) e 43 segundo(s)",
+        "posto": "J.J.L. DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RUA LANDULFO ALVES 1141 CENTRO 44001496, FEIRA DE SANTANA",
+        "contato": "7530223440",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA C COMUM",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 10 minuto(s) e 29 segundo(s)",
+        "posto": "POSTO TRES MARIAS",
+        "endereco": "RUA BARTOLOMEU DE GUSMAO 1300 SOBRADINHO 44021205, FEIRA DE SANTANA",
+        "contato": "7532241155",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 10 minuto(s) e 32 segundo(s)",
+        "posto": "SANTA MARIA - COMERCIAL DE COMBUSTIVEIS LTDA",
+        "endereco": "RUA PRIMAVERA 362 PAMPALONA 44031090, FEIRA DE SANTANA",
+        "contato": "7532234040",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 10 minuto(s) e 43 segundo(s)",
+        "posto": "SANTA MARIA - COMERCIAL DE COMBUSTIVEIS LTDA",
+        "endereco": "RUA PRIMAVERA 362 PAMPALONA 44031090, FEIRA DE SANTANA",
+        "contato": "7532234040",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM TIPO C",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 10 minuto(s) e 59 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA AV. PRESIDENTE DUTRA 2325 BRASILIA 44088455, FEIRA DE SANTANA",
+        "contato": "7536238033",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 10 minuto(s) e 59 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA AV. PRESIDENTE DUTRA 2325 BRASILIA 44088455, FEIRA DE SANTANA",
+        "contato": "7536238033",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM TIPO C",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 13 minuto(s) e 39 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 970 TOMBA 44090156, FEIRA DE SANTANA",
+        "contato": "7521010800",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 15 minuto(s) e 7 segundo(s)",
+        "posto": "POSTO JOMAFA",
+        "endereco": "RUA SENADOR QUINTINO 3090 TOMBA 44090001, FEIRA DE SANTANA",
+        "contato": "7530210261",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 21 minuto(s) e 57 segundo(s)",
+        "posto": "POSTO CONCEICAO",
+        "endereco": "RUA CALAMAR 743 CONCEICAO 44065706, FEIRA DE SANTANA",
+        "contato": "7536263639",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM TIPO C",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 22 minuto(s) e 44 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "RUA VOLUNTARIOS DA PATRIA 402 BARAUNA 44020055, FEIRA DE SANTANA",
+        "contato": "7530225608",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 23 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO JACUIPE",
+        "endereco": "RUA ARIVALDO DE CARVALHO 000011 SOBRADINHO 44021225, FEIRA DE SANTANA",
+        "contato": "7532213201",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 23 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO JACUIPE",
+        "endereco": "RUA ARIVALDO DE CARVALHO 000011 SOBRADINHO 44021225, FEIRA DE SANTANA",
+        "contato": "7532213201",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 27 minuto(s) e 30 segundo(s)",
+        "posto": "POSTO 2001",
+        "endereco": "AVENIDA PRESIDENTE DUTRA - LADO IMPAR 128 CENTRO 44001615, FEIRA DE SANTANA",
+        "contato": "7532210143",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 28 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO DA PAPA",
+        "endereco": "RUA PAPA JOAO XXIII 1990 OLHOS D ÁGUA 44003465, FEIRA DE SANTANA",
+        "contato": "7599820418",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA COMUM BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 42 minuto(s) e 0 segundo(s)",
+        "posto": "POSTO 2001",
+        "endereco": "AVENIDA PRESIDENTE DUTRA - LADO IMPAR 128 CENTRO 44001615, FEIRA DE SANTANA",
+        "contato": "7532210143",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GASOLINA ADITIVADA BICO",
+        "preco": "R$ 3,73",
+        "status": "há 3 hora(s), 42 minuto(s) e 43 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 18658 JARDIM CRUZEIRO 44024066, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    }
+]

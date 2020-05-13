@@ -1,0 +1,842 @@
+[
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,64",
+        "status": "há 2 hora(s), 42 minuto(s) e 7 segundo(s)",
+        "posto": "POSTO ROSEIRA",
+        "endereco": "RODOVIA BR 324 S/N LIMOEIRO DO BOM VIVER 44137000, FEIRA DE SANTANA",
+        "contato": "007536140710",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM",
+        "preco": "R$ 2,64",
+        "status": "há 4 hora(s), 49 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO CIDADE",
+        "endereco": "RUA ITAUEIRA 444 CASEB 44042240, FEIRA DE SANTANA",
+        "contato": "7532216181",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,66",
+        "status": "há 2 hora(s), 38 minuto(s) e 21 segundo(s)",
+        "posto": "POSTO GETULIO VARGAS",
+        "endereco": "AVENIDA GUTULIO VARGAS 1839 CAPUCHINHOS 44050000, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,71",
+        "status": "há 3 hora(s), 10 minuto(s) e 17 segundo(s)",
+        "posto": "POSTO NOSSO GAS 1",
+        "endereco": "RODOVIA BR324, KM102-SENTIDO SALV/FEIRA S/N CIS 44096486, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM",
+        "preco": "R$ 2,71",
+        "status": "há 3 hora(s), 20 minuto(s) e 50 segundo(s)",
+        "posto": "MEGA POSTO 2",
+        "endereco": "RODOVIA BR. 116, KM.18 S/N TIQUARUCU 44140000, FEIRA DE SANTANA",
+        "contato": "7536146277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,71",
+        "status": "há 3 hora(s), 37 minuto(s) e 51 segundo(s)",
+        "posto": "POSTO PIRAI 3",
+        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,71",
+        "status": "há 3 hora(s), 39 minuto(s) e 47 segundo(s)",
+        "posto": "POSTO EXPOFEIRA",
+        "endereco": "RUA CENTRO INDUSTRIAL SUBAE SN CENTRO INDUSTRIAL SUBAE 44052510, FEIRA DE SANTANA",
+        "contato": "7536124224",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL",
+        "preco": "R$ 2,71",
+        "status": "há 3 hora(s), 47 minuto(s) e 52 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "RODOVIA BR 116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 40 minuto(s) e 24 segundo(s)",
+        "posto": "POSTO ELDOURADO",
+        "endereco": "RUA JOSE JOAQUIM SEABRA 410 CENTRO 44002000, FEIRA DE SANTANA",
+        "contato": "near_meROTA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 48 minuto(s) e 33 segundo(s)",
+        "posto": "POSTO BAHIA",
+        "endereco": "AVENIDA TRANSNORDESTINA 2060 CAMPO LIMPO 44032411, FEIRA DE SANTANA",
+        "contato": "7532119606",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 40 minuto(s) e 22 segundo(s)",
+        "posto": "POSTO JOAO DURVAL",
+        "endereco": "RUA DOUTOR ARAUJO PINHO 2030 OLHOS D ÁGUA 44003456, FEIRA DE SANTANA",
+        "contato": "7132715277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 41 minuto(s) e 16 segundo(s)",
+        "posto": "POSTO DA PAPA",
+        "endereco": "RUA PAPA JOAO XXIII 1990 OLHOS D ÁGUA 44003465, FEIRA DE SANTANA",
+        "contato": "7599820418",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 42 minuto(s) e 38 segundo(s)",
+        "posto": "J.J.L. DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RUA LANDULFO ALVES 1141 CENTRO 44001496, FEIRA DE SANTANA",
+        "contato": "7530223440",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 43 minuto(s) e 46 segundo(s)",
+        "posto": "MORIA",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 1720 CAPUCHINHOS 44076000, FEIRA DE SANTANA",
+        "contato": "7532231717",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 43 minuto(s) e 52 segundo(s)",
+        "posto": "SANTA MARIA - COMERCIAL DE COMBUSTIVEIS LTDA",
+        "endereco": "RUA PRIMAVERA 362 PAMPALONA 44031090, FEIRA DE SANTANA",
+        "contato": "7532234040",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 43 minuto(s) e 54 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA AV. PRESIDENTE DUTRA 2325 BRASILIA 44088455, FEIRA DE SANTANA",
+        "contato": "7536238033",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 44 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO KALILANDIA II",
+        "endereco": "AVENIDA PRESIDENTE DUTRA 1320 PONTO CENTRAL 44075516, FEIRA DE SANTANA",
+        "contato": "7132715277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 45 minuto(s) e 25 segundo(s)",
+        "posto": "POSTO TRES MARIAS",
+        "endereco": "RUA BARTOLOMEU DE GUSMAO 1300 SOBRADINHO 44021205, FEIRA DE SANTANA",
+        "contato": "7532241155",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 45 minuto(s) e 50 segundo(s)",
+        "posto": "POSTO TOMBA",
+        "endereco": "RUA PAPA JOAO XXIII 104 TOMBA 44090652, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 46 minuto(s) e 8 segundo(s)",
+        "posto": "POSTO VILA OLIMPIA",
+        "endereco": "AVENIDA RIO DE JANEIRO 845 PEDRA DO DESCANSO 44007195, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 48 minuto(s) e 2 segundo(s)",
+        "posto": "POSTO JOMAFA",
+        "endereco": "RUA SENADOR QUINTINO 3090 TOMBA 44090001, FEIRA DE SANTANA",
+        "contato": "7530210261",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 49 minuto(s) e 16 segundo(s)",
+        "posto": "POSTO PIRAI",
+        "endereco": "RUA DOUTOR ANTONIO BORJA 000145 CENTRO 44010390, FEIRA DE SANTANA",
+        "contato": "7591153373",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 50 minuto(s) e 47 segundo(s)",
+        "posto": "POSTO SENHOR DOS PASSOS",
+        "endereco": "AVENIDA SENHOR DOS PASSOS 1705 CENTRO 44002375, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 51 minuto(s) e 32 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 18658 JARDIM CRUZEIRO 44024066, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 53 minuto(s) e 59 segundo(s)",
+        "posto": "POSTO CONTORNO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 1951 PARQ. GETULIO VARGAS 44076822, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 55 minuto(s) e 25 segundo(s)",
+        "posto": "POSTO CONCEICAO",
+        "endereco": "RUA CALAMAR 743 CONCEICAO 44065706, FEIRA DE SANTANA",
+        "contato": "7536263639",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 56 minuto(s) e 39 segundo(s)",
+        "posto": "POSTO JACUIPE",
+        "endereco": "RUA ARIVALDO DE CARVALHO 000011 SOBRADINHO 44021225, FEIRA DE SANTANA",
+        "contato": "7532213201",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 58 minuto(s) e 38 segundo(s)",
+        "posto": "POSTO AYRTON SENNA",
+        "endereco": "AVENIDA AYRTON SENNA DA SILVA S/N CONCEIÇÃO 44065002, FEIRA DE SANTANA",
+        "contato": "7532119606",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 2 minuto(s) e 10 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 970 TOMBA 44090156, FEIRA DE SANTANA",
+        "contato": "7521010800",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 2 minuto(s) e 33 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "RUA VOLUNTARIOS DA PATRIA 402 BARAUNA 44020055, FEIRA DE SANTANA",
+        "contato": "7530225608",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 10 minuto(s) e 45 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA TRANSNORDESTINA 2.300 PARQUE IPE 44054008, FEIRA DE SANTANA",
+        "contato": "7532242436",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 15 minuto(s) e 2 segundo(s)",
+        "posto": "POSTO 2001",
+        "endereco": "AVENIDA PRESIDENTE DUTRA - LADO IMPAR 128 CENTRO 44001615, FEIRA DE SANTANA",
+        "contato": "7532210143",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 21 minuto(s) e 59 segundo(s)",
+        "posto": "LM POSTO DE COMBUSTIVEL",
+        "endereco": "RUA AMARALINA SN PAMPALONA 44031645, FEIRA DE SANTANA",
+        "contato": "7534852600",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 29 minuto(s) e 54 segundo(s)",
+        "posto": "POSTO IGUATEMI",
+        "endereco": "AVENIDA JOAO D. CARNEIRO 3600 CORONEL JOSE PINTO 44037010, FEIRA DE SANTANA",
+        "contato": "7532215866",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 1 minuto(s) e 4 segundo(s)",
+        "posto": "POSTO BOULEVARD",
+        "endereco": "RUA CORONEL JOSE PINTO 1140 SAO JOAO 44051400, FEIRA DE SANTANA",
+        "contato": "7532230391",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO BICO",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 22 minuto(s) e 12 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "RUA DOUTOR MACARIO CERQUEIRA 780 MUCHILA 44005000, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 22 minuto(s) e 12 segundo(s)",
+        "posto": "POSTOS",
+        "endereco": "RODOVIA BR 324 SN DISTRITO BESSA 44245000, CONCEIÇÃO DO JACUÍPE",
+        "contato": "near_meROTA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 22 minuto(s) e 21 segundo(s)",
+        "posto": "POSTO MARIA QUITERIA",
+        "endereco": "AVENIDA MARIA QUITERIA 3208 QUEIMADINHA 44050368, FEIRA DE SANTANA",
+        "contato": "7536124200",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 23 minuto(s) e 45 segundo(s)",
+        "posto": "POSTO SAO JOAO",
+        "endereco": "RODOVIA BA 502, KM 02 S/N CIS 44330000, CACHOEIRA",
+        "contato": "7536164831",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO BICO",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 23 minuto(s) e 59 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GETULIO VARGAS 2838 PARQ. GETULIO VARGAS 44076684, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 25 minuto(s) e 5 segundo(s)",
+        "posto": "POSTO SHALOM",
+        "endereco": "AVENIDA MARIA QUITERIA 694 EUCALIPTO 44075970, FEIRA DE SANTANA",
+        "contato": "7532216388",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 36 minuto(s) e 21 segundo(s)",
+        "posto": "POSTO MUCHILA",
+        "endereco": "RUA DOUTOR MACARIO CERQUEIRA S/N MUCHILA 44005000, FEIRA DE SANTANA",
+        "contato": "7132715277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 38 minuto(s) e 24 segundo(s)",
+        "posto": "MEGA POSTO 1",
+        "endereco": "RODOVIA BR. 324, KM.99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "7536143851",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO BICO",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 53 minuto(s) e 22 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA CANAL 147 CENTRO 44002448, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO BICO",
+        "preco": "R$ 2,73",
+        "status": "há 4 hora(s), 58 minuto(s) e 1 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 3797 CASEB 44052064, FEIRA DE SANTANA",
+        "contato": "7591156372",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 5 hora(s), 5 minuto(s) e 49 segundo(s)",
+        "posto": "TORRESCARNEIRO COMERCIO E DERIVADOS DE PETROLEO - EIRELI",
+        "endereco": "AVENIDA PRESIDENTE DUTRA 574 BRASILIA 44010020, FEIRA DE SANTANA",
+        "contato": "32219492",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO",
+        "preco": "R$ 2,73",
+        "status": "há 5 hora(s), 15 minuto(s) e 13 segundo(s)",
+        "posto": "POSTO RADIAL",
+        "endereco": "RODOVIA BR 116 SN NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM",
+        "preco": "R$ 2,73",
+        "status": "há 5 hora(s), 31 minuto(s) e 35 segundo(s)",
+        "posto": "BRAX-FEIRA",
+        "endereco": "RODOVIA BR 324 KM 99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "7532216181",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,73",
+        "status": "há 5 hora(s), 33 minuto(s) e 25 segundo(s)",
+        "posto": "TORRESCARNEIRO COMERCIO E DERIVADOS DE PETROLEO - EIRELI",
+        "endereco": "AVENIDA VISCONDE DO RIO BRANCO 825 CENTRO 44026000, FEIRA DE SANTANA",
+        "contato": "32219492",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL",
+        "preco": "R$ 2,74",
+        "status": "há 5 hora(s), 47 minuto(s) e 4 segundo(s)",
+        "posto": "POSTO NORDESTE",
+        "endereco": "PRACA DA REPUBLICA S/N CENTRO 44001784, FEIRA DE SANTANA",
+        "contato": "7530213030",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM (B:10)",
+        "preco": "R$ 2,74",
+        "status": "há 8 hora(s), 50 minuto(s) e 27 segundo(s)",
+        "posto": "POSTO SENADOR",
+        "endereco": "RUA SENADOR QUINTINO 1125 OLHOS D ÁGUA 44003541, FEIRA DE SANTANA",
+        "contato": "7532433792",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 2 hora(s), 46 minuto(s) e 20 segundo(s)",
+        "posto": "POSTO ALAMEDA",
+        "endereco": "AVENIDA GETULIO VARGAS 1751 CAPUCHINHOS 44076015, FEIRA DE SANTANA",
+        "contato": "7536256444",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 2 hora(s), 49 minuto(s) e 17 segundo(s)",
+        "posto": "POSTO CANAL",
+        "endereco": "RUA JOAO EVANGELISTA 563 CENTRO 44002865, FEIRA DE SANTANA",
+        "contato": "7532715277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 2 hora(s), 54 minuto(s) e 13 segundo(s)",
+        "posto": "J MARTINS DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RUA EDUARDO FROES DA MATA 1197 SANTA MONICA 44078015, FEIRA DE SANTANA",
+        "contato": "7536251178",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,76",
+        "status": "há 2 hora(s), 58 minuto(s) e 5 segundo(s)",
+        "posto": "POSTO ORION",
+        "endereco": "RUA COMENDADOR GOMES 90 TOMBA 44091238, FEIRA DE SANTANA",
+        "contato": "7532231717",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 2 hora(s), 59 minuto(s) e 59 segundo(s)",
+        "posto": "POSTO-CIS TOMBA",
+        "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA S/N TOMBA 44091002, FEIRA DE SANTANA",
+        "contato": "7536160372",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 14 minuto(s) e 39 segundo(s)",
+        "posto": "POSTO VISAO",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 2830 CASEB 44052004, FEIRA DE SANTANA",
+        "contato": "7132715277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 18 minuto(s) e 18 segundo(s)",
+        "posto": "POSTO SERVE BEM 2",
+        "endereco": "RUA SENADOR QUINTINO 2070 BRASILIA 44088720, FEIRA DE SANTANA",
+        "contato": "7536038797",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 19 minuto(s) e 36 segundo(s)",
+        "posto": "POSTO SAO GONCALO 1",
+        "endereco": "RODOVIA BR 324 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "7536831197",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 25 minuto(s) e 39 segundo(s)",
+        "posto": "POSTO IDEAL",
+        "endereco": "RUA VISCONDE DO RIO BRANCO 1012 QUEIMADINHA 44050002, FEIRA DE SANTANA",
+        "contato": "7532216662",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 29 minuto(s) e 14 segundo(s)",
+        "posto": "POSTO BRX",
+        "endereco": "AVENIDA SAMPAIO 788 CENTRO 44001472, FEIRA DE SANTANA",
+        "contato": "7530212719",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 30 minuto(s) e 41 segundo(s)",
+        "posto": "POSTO GASAUTO",
+        "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA 103 TOMBA 44091002, FEIRA DE SANTANA",
+        "contato": "7599991539",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 34 minuto(s) e 17 segundo(s)",
+        "posto": "POSTO SAO GONCALO 3",
+        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 34 minuto(s) e 56 segundo(s)",
+        "posto": "POSTO OASIS",
+        "endereco": "AVENIDA MARIA QUITERIA 3259 QUEIMADINHA 44038030, FEIRA DE SANTANA",
+        "contato": "7536248850",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 37 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO SAO GONCALO 4",
+        "endereco": "RODOVIA BR 324 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "36831628",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 51 minuto(s) e 49 segundo(s)",
+        "posto": "POSTO TROPICAL",
+        "endereco": "ATALHO EDUARDO FROES DA MOTA 5700 CIDADE NOVA 44053005, FEIRA DE SANTANA",
+        "contato": "7532257094",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL BICO",
+        "preco": "R$ 2,76",
+        "status": "há 4 hora(s), 33 minuto(s) e 47 segundo(s)",
+        "posto": "POSTO DA NOIDE",
+        "endereco": "AVENIDA NOIDE FERREIRA DE CERQUEIRA 6791 SIM 44085052, FEIRA DE SANTANA",
+        "contato": "7536169361",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 4 hora(s), 52 minuto(s) e 52 segundo(s)",
+        "posto": "POSTO JOSE FALCAO",
+        "endereco": "AVENIDA JOSE FALCAO DA SILVA S/N BARAÚNA 44020122, FEIRA DE SANTANA",
+        "contato": "7588276163",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,76",
+        "status": "há 5 hora(s), 4 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO SAO GONCALO 9",
+        "endereco": "ESTRADA DO CALUNDU S/N LAGOA SALGADA 44083624, FEIRA DE SANTANA",
+        "contato": "7530213030",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 5 hora(s), 53 minuto(s) e 44 segundo(s)",
+        "posto": "POSTO KALILANDIA",
+        "endereco": "RUA GERMINIANO COSTA 490 CENTRO 44001120, FEIRA DE SANTANA",
+        "contato": "7132715277",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL BICO",
+        "preco": "R$ 2,77",
+        "status": "há 2 hora(s), 51 minuto(s) e 22 segundo(s)",
+        "posto": "POSTO FRAGA MAIA",
+        "endereco": "AVENIDA FRAGA MAIA 4230 CIDADE NOVA 44053055, FEIRA DE SANTANA",
+        "contato": "7530230398",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,77",
+        "status": "há 2 hora(s), 46 minuto(s) e 21 segundo(s)",
+        "posto": "POSTO SANTA FE",
+        "endereco": "AVENIDA ANTONIO SERGIO CARNEIRO 1210 SANTO ANTONIO DOS PRAZERES 44071270, FEIRA DE SANTANA",
+        "contato": "7536226721",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL BICO",
+        "preco": "R$ 2,79",
+        "status": "há 3 hora(s), 58 minuto(s) e 36 segundo(s)",
+        "posto": "POSTO PRESIDENTE",
+        "endereco": "AVENIDA PRESIDENTE DUTRA 1199 CAPUCHINHOS 44060000, FEIRA DE SANTANA",
+        "contato": "7536038797",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM A GRANEL BICO",
+        "preco": "R$ 2,79",
+        "status": "há 4 hora(s), 32 minuto(s) e 54 segundo(s)",
+        "posto": "POSTO PORTAL DO SERTAO",
+        "endereco": "RODOVIA BR 324 S/N CIS 44055770, FEIRA DE SANTANA",
+        "contato": "756143344",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM",
+        "preco": "R$ 2,81",
+        "status": "há 6 hora(s), 34 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO PAU DE LEGUA",
+        "endereco": "RODOVIA BA 502 KM 02 HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "7536223666",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,84",
+        "status": "há 6 hora(s), 11 minuto(s) e 55 segundo(s)",
+        "posto": "POSTO JUBIABA",
+        "endereco": "AVENIDA DEPUTADO LUIS EDUARDO MAGALHAES S/N SUBAÉ 44079002, FEIRA DE SANTANA",
+        "contato": "007521023500",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,86",
+        "status": "há 3 hora(s), 36 minuto(s) e 11 segundo(s)",
+        "posto": "J N COMERCIO DE COMBUSTIVEIS LTDA",
+        "endereco": "AVENIDA DEPUTADO FRANCISCO JOSE PINTO DOS SANTOS 942 PEDRA DO DESCANSO 44007190, FEIRA DE SANTANA",
+        "contato": "7530302549",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ALCOOL ETILICO HIDRATADO BICO",
+        "preco": "R$ 2,87",
+        "status": "há 3 hora(s), 30 minuto(s) e 40 segundo(s)",
+        "posto": "POSTO CAJUEIRO",
+        "endereco": "AVENIDA PRESIDENTE DUTRA- DE 1180 AO FIM - LADO PAR 003300 CAPUCHINHOS 44052000, FEIRA DE SANTANA",
+        "contato": "7536259322",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO",
+        "preco": "R$ 2,87",
+        "status": "há 4 hora(s), 25 minuto(s) e 44 segundo(s)",
+        "posto": "POSTO PAMPALONA",
+        "endereco": "RUA PRIMAVERA 3690 PAMPALONA 44031090, FEIRA DE SANTANA",
+        "contato": "07536265535",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,89",
+        "status": "há 2 hora(s), 54 minuto(s) e 53 segundo(s)",
+        "posto": "AUTO POSTO MODELO",
+        "endereco": "RUA VISCONDE DO RIO BRANCO 18 CENTRO 44002175, FEIRA DE SANTANA",
+        "contato": "7536233366",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 2,89",
+        "status": "há 3 hora(s), 9 minuto(s) e 18 segundo(s)",
+        "posto": "BRASINHA CENTRO COMERCIO DE COMBUSTIVEIS E PECUARIA LTD",
+        "endereco": "RUA MONS MARIO PESSOA S/N CENTRO 44010440, FEIRA DE SANTANA",
+        "contato": "7536029630",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM",
+        "preco": "R$ 2,89",
+        "status": "há 3 hora(s), 17 minuto(s) e 4 segundo(s)",
+        "posto": "POSTO ARTEMIA",
+        "endereco": "AVENIDA ARTEMIA PIRES FREITAS S/N SIM 44085370, FEIRA DE SANTANA",
+        "contato": "7532250745",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL BICO",
+        "preco": "R$ 2,89",
+        "status": "há 4 hora(s), 3 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO CONTORNO",
+        "endereco": "AVENIDA EDUARDO FROS DA MOTA 6185 CIDADE NOVA 44053005, FEIRA DE SANTANA",
+        "contato": "7536038797",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMBUSTIVEL BICO",
+        "preco": "R$ 2,89",
+        "status": "há 4 hora(s), 12 minuto(s) e 55 segundo(s)",
+        "posto": "SERV BEM",
+        "endereco": "RODOVIA BR 324 S/N SEDE 44230000, AMÉLIA RODRIGUES",
+        "contato": "7541411458",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 2,89",
+        "status": "há 4 hora(s), 17 minuto(s) e 54 segundo(s)",
+        "posto": "POSTO POSITIVO",
+        "endereco": "RUA ROSENDO FIRMINO FERREIRA 63 SIM 44085122, FEIRA DE SANTANA",
+        "contato": "7536163982",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM (ALCOOL) BICO",
+        "preco": "R$ 2,90",
+        "status": "há 3 hora(s), 40 minuto(s) e 34 segundo(s)",
+        "posto": "POSTO JP",
+        "endereco": "AVENIDA FRANCISCO FRAGA MAIA 5280 MANGABEIRA 44056232, FEIRA DE SANTANA",
+        "contato": "7532244450",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO COMUM GRANEL BICO",
+        "preco": "R$ 2,90",
+        "status": "há 5 hora(s), 42 minuto(s) e 30 segundo(s)",
+        "posto": "POSTO VIA PARQUE EIRELI",
+        "endereco": "RUA SAO SALVADOR 1380 35º BI 44094060, FEIRA DE SANTANA",
+        "contato": "7532242024",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL HIDRATADO",
+        "preco": "R$ 2,97",
+        "status": "há 11 hora(s), 35 minuto(s) e 27 segundo(s)",
+        "posto": "POSTO RADIAL",
+        "endereco": "RODOVIA BR 101 S/N HUMILDES 44135000, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 3,00",
+        "status": "há 2 hora(s), 39 minuto(s) e 53 segundo(s)",
+        "posto": "POSTO PAPAGAIO",
+        "endereco": "RUA DOUTOR VICENTE DOS REIS S/N PAPAGAIO 44059330, FEIRA DE SANTANA",
+        "contato": "75999456412",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 3,00",
+        "status": "há 2 hora(s), 46 minuto(s) e 22 segundo(s)",
+        "posto": "POSTO MONACO",
+        "endereco": "RUA TUPINAMBAS 4000 SAO JOAO 44051224, FEIRA DE SANTANA",
+        "contato": "7530213124",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 3,00",
+        "status": "há 5 hora(s), 38 minuto(s) e 21 segundo(s)",
+        "posto": "POSTO CONTERRANEO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTTA 1680 QUEIMADINHA 44050024, FEIRA DE SANTANA",
+        "contato": "7536257973",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL H COMBUS BICO",
+        "preco": "R$ 3,10",
+        "status": "há 3 hora(s), 50 minuto(s) e 22 segundo(s)",
+        "posto": "POSTO SHANGAY",
+        "endereco": "RODOVIA BR 324 S/N CENTRO 44001970, FEIRA DE SANTANA",
+        "contato": "7536147722",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL",
+        "preco": "R$ 3,16",
+        "status": "há 8 hora(s), 55 minuto(s) e 10 segundo(s)",
+        "posto": "POSTO CAVUNGE",
+        "endereco": "RUA JURACY MAGALHAES 370 CAVUNGE 44685000, IPECAETÁ",
+        "contato": "75983224512",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "ETANOL COMUM BICO",
+        "preco": "R$ 3,19",
+        "status": "há 2 hora(s), 49 minuto(s) e 27 segundo(s)",
+        "posto": "LSL COMERCIO DE DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RODOVIA BR 116 KM 424 SN NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "cidade": "Feira de Santana"
+    }
+]

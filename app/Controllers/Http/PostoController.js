@@ -889,11 +889,11 @@ class PostoController {
                         endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(6)").innerText;
                     }
                     var str = nome;
-                    var result1 = str.indexOf('COMUM');
-                    var result2 = str.indexOf('ADITIVADA');
+                    var result1 = str.indexOf('COMUM')> -1;
+                    var result2 = str.indexOf('ADITIVADA') > -1;
                     if (result1) {
                         nome = "GASOLINA COMUM";
-                    } if (result2) {
+                    }else{
                         nome = "GASOLINA ADITIVADA"
                     }
                     var x = nome + "\n" + preco + "\n" + status.substr(1, status.length - 1) + "\n" + posto.substr(1, posto.length - 1) + "\n" + endereco.substr(1, endereco.length - 1) + "\n" + contato + "\n" + "null";

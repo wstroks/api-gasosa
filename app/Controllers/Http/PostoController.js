@@ -22,9 +22,10 @@ class PostoController {
      * @param {View} ctx.view
      */
     async index({ request, params, response, view }) {
-        var posto = await Posto.query().with('combustiveis').fetch();
-        
-        
+       try{
+            var posto = await Posto.query().with('combustiveis').fetch();
+
+
         // var array = [];
         // console.log(JSON.stringify(posto))
 
@@ -47,7 +48,10 @@ class PostoController {
 
 
 
-        return posto;
+          return response.status(200).json(posto);
+        } catch (err) {
+            return response.status(500).send({ error: `Erro ${err.message}` });
+        }
     }
     async diesel() {
 
@@ -227,8 +231,7 @@ class PostoController {
 
                     //console.log(JSON.stringify(agora[7]));
 
-
-
+                    let contato = null;
                     let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
 
                     let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
@@ -247,7 +250,18 @@ class PostoController {
                         posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
                         endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(6)").innerText;
                     }
-                    var x = nome + "\n" + preco + "\n" + status + "\n" + posto + "\n" + endereco + "\n" + "null" + "\n" + "null";
+                    var str = nome;
+                    var result1 = str.indexOf('1');
+                    var result2 = str.indexOf('5');
+                    /* if(result1){
+                         nome="DIESEL S10";
+                     }if(result2){
+                         nome="DIESEL S500";
+                     }if(result2==false && result1==false){
+                         nome="DIESEL S500";
+                     }*/
+                    var x = nome + "\n" + preco + "\n" + status.substr(1, status.length - 1) + "\n" + posto.substr(1, posto.length - 1) + "\n" + endereco.substr(1, endereco.length - 1) + "\n" + contato + "\n" + "null";
+
                     array1.push(x);
                     //var find = Posto.query().where('endereco', '=', endereco).first();
                     //console.log("vaai"+find);
@@ -541,9 +555,31 @@ class PostoController {
                     // console.log(p + "akii");
 
                     //console.log(JSON.stringify(agora[7]));
+                    let contato = null;
+
+                    let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
+
+                    let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
+                    let status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
 
 
-                    array1.push(p);
+                    let posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+                    let endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                    //let contato = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(7)").innerText;
+                    var test = preco.split(" ");
+                    if (test[0] == "De") {
+                        preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+                        status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+
+
+                        posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                        endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(6)").innerText;
+                    }
+
+                    var x = "ETANOL" + "\n" + preco + "\n" + status.substr(1, status.length - 1) + "\n" + posto.substr(1, posto.length - 1) + "\n" + endereco.substr(1, endereco.length - 1) + "\n" + contato + "\n" + "null";
+
+
+                    array1.push(x);
                     /*let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
                     let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
                     let status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
@@ -827,7 +863,42 @@ class PostoController {
                     //if(!document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div.btn-group > div")){
                     //url = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div.btn-group>div");
                     //console.log(url); }
-                    array1.push(p);
+                    let contato = null;
+                    if (!document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(7)")) {
+                        console.log(contato + "xxxx");
+
+                    } else {
+                        contato = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(7)").innerText;
+                    }
+                    let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
+
+                    let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
+                    let status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+
+
+                    let posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+                    let endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                    //let contato = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(7)").innerText;
+                    var test = preco.split(" ");
+                    if (test[0] == "De") {
+                        preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+                        status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+
+
+                        posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                        endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(6)").innerText;
+                    }
+                    var str = nome;
+                    var result1 = str.indexOf('COMUM');
+                    var result2 = str.indexOf('ADITIVADA');
+                    if (result1) {
+                        nome = "GASOLINA COMUM";
+                    } if (result2) {
+                        nome = "GASOLINA ADITIVADA"
+                    }
+                    var x = nome + "\n" + preco + "\n" + status.substr(1, status.length - 1) + "\n" + posto.substr(1, posto.length - 1) + "\n" + endereco.substr(1, endereco.length - 1) + "\n" + contato + "\n" + "null";
+
+                    array1.push(x);
                     //let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
                     //let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
                     //let status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
@@ -1106,6 +1177,17 @@ class PostoController {
      * @param {View} ctx.view
      */
     async show({ params, request, response, view }) {
+        //const data = request.all();
+        try {
+            const posto = await Posto.query().with('combustiveis').where('id', params.id).first();
+            if (!posto) {
+                return response.status(404).send({ message: "ID de Posto não existe!" });
+            }
+            return response.status(200).json(posto);
+        } catch (err) {
+            return response.status(500).send({ error: `Erro ${err.message}` });
+        }
+
     }
 
     /**
@@ -1118,27 +1200,33 @@ class PostoController {
      * @param {View} ctx.view
      */
     async edit({ params, request, response, view }) {
-        const data = request.all();
-        const posto = await Posto.query().where('id', params.id).first();
 
-        if (!posto) {
-            return response.status(404).send({ message: "Nenhum registro encontrado!" });
+        try {
+            const data = request.all();
+            const posto = await Posto.query().where('id', params.id).first();
 
-        } else {
+            if (!posto) {
+                return response.status(404).send({ message: "ID de Posto não existe!" });
 
-            posto.nome = data.nome;
-            posto.endereco = data.endereco;
-            posto.contato = data.contato;
-            posto.status = data.status;
-            posto.cidade = data.cidade;
-            posto.latitude = data.latitude;
-            posto.longitude = data.longitude;
-            posto.url = data.url;
-            posto.bandeira = data.bandeira;
-            posto.save();
+            } else {
+
+                posto.nome = data.nome;
+                posto.endereco = data.endereco;
+                posto.contato = data.contato;
+                posto.status = data.status;
+                posto.cidade = data.cidade;
+                posto.latitude = data.latitude;
+                posto.longitude = data.longitude;
+                posto.url = data.url;
+                posto.bandeira = data.bandeira;
+                posto.save();
+            }
+            return response.status(200).json(posto);
+
+        } catch (err) {
+            return response.status(500).send({ error: `Erro ${err.message}` });
         }
 
-        return posto;
     }
 
     /**

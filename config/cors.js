@@ -16,9 +16,7 @@ module.exports = {
   | Function - Receives the current origin and should return one of the above values.
   |
   */
-  origin: function (currentOrigin) {
-    return currentOrigin === 'https://api-gasosa.herokuapp.com/'
-  },
+  origin: true,
 
   /*
   |--------------------------------------------------------------------------
@@ -64,7 +62,7 @@ module.exports = {
   | Array - An array of allowed headers
   |
   */
-  exposeHeaders: false,
+  exposeHeaders: true,
 
   /*
   |--------------------------------------------------------------------------

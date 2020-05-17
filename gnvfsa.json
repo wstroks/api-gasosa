@@ -1,0 +1,65 @@
+[
+    {
+        "combustivel": "GNV",
+        "preco": "R$ 2,79",
+        "status": "há 7 hora(s), 9 minuto(s) e 52 segundo(s)",
+        "posto": "POSTO PORTAL DO SERTAO",
+        "endereco": "RODOVIA BR 324 S/N CIS 44055770, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GNV",
+        "preco": "R$ 2,89",
+        "status": "há 6 hora(s), 57 minuto(s) e 8 segundo(s)",
+        "posto": "PETROMASA",
+        "endereco": "AVENIDA PRESIDENTE DUTRA 428 PILAO 44010020, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GNV",
+        "preco": "R$ 2,89",
+        "status": "há 7 hora(s) e 10 segundo(s)",
+        "posto": "POSTO KALILANDIA II",
+        "endereco": "AVENIDA PRESIDENTE DUTRA 1320 PONTO CENTRAL 44075516, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GNV",
+        "preco": "R$ 2,89",
+        "status": "há 7 hora(s), 1 minuto(s) e 19 segundo(s)",
+        "posto": "POSTO GASAUTO",
+        "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA 103 TOMBA 44091002, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GNV",
+        "preco": "R$ 2,89",
+        "status": "há 7 hora(s), 4 minuto(s) e 29 segundo(s)",
+        "posto": "POSTO BRX",
+        "endereco": "AVENIDA SAMPAIO 788 CENTRO 44001472, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GNV",
+        "preco": "R$ 2,89",
+        "status": "há 7 hora(s), 9 minuto(s) e 5 segundo(s)",
+        "posto": "J MARTINS DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RUA EDUARDO FROES DA MATA 1197 SANTA MONICA 44078015, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GNV",
+        "preco": "R$ 2,90",
+        "status": "há 6 hora(s), 57 minuto(s) e 1 segundo(s)",
+        "posto": "POSTO SHANGAY",
+        "endereco": "RODOVIA BR 324 S/N CENTRO 44001970, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    }
+]

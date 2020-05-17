@@ -16,21 +16,21 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', () => {
-  return { "gasosa": 'Bot Online' }
-})
+Route.get('/','PostoController.starts')
 
 
 
 
 Route.group(() => {
   Route.post('create','PostoController.create');
-  Route.post('create/etanol','PostoController.createEtanol');
+  Route.get('json','PostoController.jsonadd');
+  Route.get('arquivos','PostoController.jsonvisualizar');
   Route.put('update','PostoController.update');
   Route.get('','PostoController.index');
   Route.get("gasolina", "PostoController.app");
   Route.get("etanol", "PostoController.etanol");
   Route.get("diesel", "PostoController.diesel");
+  Route.get("gnv", "PostoController.gnv");
   Route.post(":id", "PostoController.edit");
   Route.get(":id", "PostoController.show");
 }).prefix('postos')

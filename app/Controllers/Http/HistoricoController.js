@@ -1,19 +1,16 @@
 'use strict'
 
-const Posto = use('App/Models/Posto');
-const Combustivel = use('App/Models/Combustivel');
-const Database = use('Database');
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
 /**
- * Resourceful controller for interacting with combustivels
+ * Resourceful controller for interacting with historicos
  */
-class CombustivelController {
+class HistoricoController {
   /**
-   * Show a list of all combustivels.
-   * GET combustivels
+   * Show a list of all historicos.
+   * GET historicos
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -24,8 +21,8 @@ class CombustivelController {
   }
 
   /**
-   * Render a form to be used for creating a new combustivel.
-   * GET combustivels/create
+   * Render a form to be used for creating a new historico.
+   * GET historicos/create
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -36,8 +33,8 @@ class CombustivelController {
   }
 
   /**
-   * Create/save a new combustivel.
-   * POST combustivels
+   * Create/save a new historico.
+   * POST historicos
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -47,8 +44,8 @@ class CombustivelController {
   }
 
   /**
-   * Display a single combustivel.
-   * GET combustivels/:id
+   * Display a single historico.
+   * GET historicos/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -59,8 +56,8 @@ class CombustivelController {
   }
 
   /**
-   * Render a form to update an existing combustivel.
-   * GET combustivels/:id/edit
+   * Render a form to update an existing historico.
+   * GET historicos/:id/edit
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -71,8 +68,8 @@ class CombustivelController {
   }
 
   /**
-   * Update combustivel details.
-   * PUT or PATCH combustivels/:id
+   * Update historico details.
+   * PUT or PATCH historicos/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -82,26 +79,15 @@ class CombustivelController {
   }
 
   /**
-   * Delete a combustivel with id.
-   * DELETE combustivels/:id
+   * Delete a historico with id.
+   * DELETE historicos/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
   async destroy ({ params, request, response }) {
-
-    const combustivel = await Combustivel.query().where('id', params.id).first();
-    
-    if(!combustivel){
-      return response.status(404).send({message: "Nenhum registro encontrado"});
-      
-    }
-
-    await combustivel.delete();
-
-    return response.status(200).send({message:"delete done"});
   }
 }
 
-module.exports = CombustivelController
+module.exports = HistoricoController

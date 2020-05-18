@@ -8,6 +8,9 @@ class Posto extends Model {
     combustiveis(){
         return this.hasMany('App/Models/Combustivel');
     }
+    historicos(){
+        return this.hasMany('App/Models/Historico');
+    }
 }
 
 module.exports = Posto

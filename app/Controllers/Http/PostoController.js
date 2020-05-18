@@ -2,6 +2,7 @@
 
 const Posto = use('App/Models/Posto');
 const Combustivel = use('App/Models/Combustivel');
+const Historico = use('App/Models/Historico');
 const Database = use('Database');
 const puppeteer = require('puppeteer');
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
@@ -221,7 +222,7 @@ class PostoController {
      */
     async index({ request, params, response, view }) {
         try {
-            var posto = await Posto.query().with('combustiveis').fetch();
+            var posto = await Posto.query().with('combustiveis', (builder) => {builder.orderBy("valor", "ASC")}).fetch();
 
 
             // var array = [];
@@ -1613,22 +1614,24 @@ class PostoController {
                         });
 
                         var combustivel = await Combustivel.create(...dadosCombustivel);
+                        var historico = await Historico.create(...dadosCombustivel);
                     } else {
                         //console.log('1');
                         var combustivel1 = await Combustivel.query().where('posto_id', posto.id).where('tipo', '=', data[i].combustivel).first();
+                        dadosCombustivel.push({
+                            'valor': data[i].preco,
+                            'tipo': data[i].combustivel,
+                            'posto_id': posto.id
 
+                        });
                         if (combustivel1) {
                             combustivel1.valor = data[i].preco;
                             combustivel1.save();
+                            var historico = await Historico.create(...dadosCombustivel);
                         } else {
-                            dadosCombustivel.push({
-                                'valor': data[i].preco,
-                                'tipo': data[i].combustivel,
-                                'posto_id': posto.id
-
-                            });
-
+                           
                             var combustivel = await Combustivel.create(...dadosCombustivel);
+                            var historico = await Historico.create(...dadosCombustivel);
                         }
 
                     }

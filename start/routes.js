@@ -19,13 +19,17 @@ const Route = use('Route')
 Route.get('/','PostoController.starts')
 
 Route.group(() => {
+  Route.get('','HistoricoController.index');
+}).prefix('historicos');
+
+Route.group(() => {
   Route.get('','ComentarioController.index');
   Route.post('','ComentarioController.store');
   Route.delete(':id','ComentarioController.destroy');
 }).prefix('comentarios');
 
 Route.group(() => {
-  
+  Route.get('','CombustivelController.index');
   Route.delete(':id','CombustivelController.destroy');
 }).prefix('combustiveis');
 

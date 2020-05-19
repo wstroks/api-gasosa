@@ -1,5 +1,7 @@
 'use strict'
-
+const Posto = use('App/Models/Posto');
+const Combustivel = use('App/Models/Combustivel');
+const Historico = use('App/Models/Historico');
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
@@ -17,7 +19,13 @@ class HistoricoController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async index ({ request, response, view }) {
+  async index({ request, response, view }) {
+    try {
+      var posto = await Posto.query().with('historicos', (builder) => { builder.orderBy("created_at", "asc")}).fetch();
+      return response.status(200).json(posto);
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
   }
 
   /**
@@ -29,7 +37,7 @@ class HistoricoController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async create ({ request, response, view }) {
+  async create({ request, response, view }) {
   }
 
   /**
@@ -40,7 +48,7 @@ class HistoricoController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async store ({ request, response }) {
+  async store({ request, response }) {
   }
 
   /**
@@ -52,7 +60,7 @@ class HistoricoController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async show ({ params, request, response, view }) {
+  async show({ params, request, response, view }) {
   }
 
   /**
@@ -64,7 +72,7 @@ class HistoricoController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async edit ({ params, request, response, view }) {
+  async edit({ params, request, response, view }) {
   }
 
   /**
@@ -75,7 +83,7 @@ class HistoricoController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async update ({ params, request, response }) {
+  async update({ params, request, response }) {
   }
 
   /**
@@ -86,7 +94,7 @@ class HistoricoController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async destroy ({ params, request, response }) {
+  async destroy({ params, request, response }) {
   }
 }
 

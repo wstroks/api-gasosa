@@ -21,6 +21,14 @@ class CombustivelController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+    try {
+      var combustivel = await Combustivel.query().with('postos').orderBy("valor", "ASC").fetch();
+    
+
+      return response.status(200).json(combustivel);
+  } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+  }
   }
 
   /**

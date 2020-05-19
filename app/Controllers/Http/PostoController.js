@@ -1555,7 +1555,7 @@ class PostoController {
                 console.log(array[y]);
                 var data = require(array[y]);
                 for (var i = 0; i < Object.keys(data).length; i++) {
-                    dataseet.push(data);
+                    dataseet.push(data[i]);
 
                 }
             }

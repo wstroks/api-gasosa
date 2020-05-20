@@ -18,17 +18,19 @@ class PostoController {
 
     async starts({ response }) {
         const fetch = require("node-fetch");
-        var url = "https://api-gasosa.herokuapp.com/";
+       
 
 
 
-        let wakeUpDyno = (url, interval = 25, callback) => {
+        const wakeUpDyno = (url="https://api-gasosa.herokuapp.com/", interval = 25, callback) => {
+            var url = "https://api-gasosa.herokuapp.com/";
             var url1 = "https://api-gasosa.herokuapp.com/postos/etanol"
             var url2 = "https://api-gasosa.herokuapp.com/postos/diesel";
             var url3 = "https://api-gasosa.herokuapp.com/postos/gasolina";
             var url4 = "https://api-gasosa.herokuapp.com/postos/gnv";
             var url5 = "https://api-gasosa.herokuapp.com/postos/json";
-            const milliseconds = interval * 60000;
+            //const milliseconds = interval * 60000;
+            const milliseconds=  900000;
             setTimeout(() => {
 
                 try {

@@ -259,8 +259,8 @@ class PostoController {
 
         var fs = require('fs');
         const browser = await puppeteer.launch({
-            headless: false,
-            args: ['--no-sandbox']
+            headless: true,
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
 
         const page1 = await browser.newPage();
@@ -922,7 +922,7 @@ class PostoController {
         var fs = require('fs');
         const browser = await puppeteer.launch({
             headless: false,
-            args: ['--no-sandbox']
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
 
         const page1 = await browser.newPage();

@@ -259,7 +259,7 @@ class PostoController {
 
         var fs = require('fs');
         const browser = await puppeteer.launch({
-            headless: true,
+            headless: false,
             args: ['--no-sandbox']
         });
 
@@ -921,7 +921,7 @@ class PostoController {
         var adicionarData = 0;
         var fs = require('fs');
         const browser = await puppeteer.launch({
-            headless: true,
+            headless: false,
             args: ['--no-sandbox']
         });
 

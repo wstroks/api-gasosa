@@ -19,28 +19,25 @@ class PostoController {
     async starts({ response }) {
         const fetch = require("node-fetch");
        
+        var url = "https://api-gasosa.herokuapp.com/postos/etanol";
 
 
-
-        const wakeUpDyno = (url="https://api-gasosa.herokuapp.com/", interval = 25, callback) => {
-            var url = "https://api-gasosa.herokuapp.com/";
-            var url1 = "https://api-gasosa.herokuapp.com/postos/etanol"
+        const wakeUpDyno = (url="https://api-gasosa.herokuapp.com/postos/etanol", interval = 25, callback) => {
+            
+           /* var url1 = "https://api-gasosa.herokuapp.com/postos/etanol"
             var url2 = "https://api-gasosa.herokuapp.com/postos/diesel";
             var url3 = "https://api-gasosa.herokuapp.com/postos/gasolina";
             var url4 = "https://api-gasosa.herokuapp.com/postos/gnv";
-            var url5 = "https://api-gasosa.herokuapp.com/postos/json";
+            var url5 = "https://api-gasosa.herokuapp.com/postos/json";*/
             //const milliseconds = interval * 60000;
-            const milliseconds=  900000;
+            const milliseconds=  300000;
             setTimeout(() => {
 
                 try {
                     console.log(`setTimeout called.`);
                     // HTTP GET request to the dyno's url
                     fetch(url).then(() => console.log(`Fetching ${url}.`));
-                    fetch(url1).then(() => console.log(`Fetching ${url1}.`));
-                    fetch(url2).then(() => console.log(`Fetching ${url2}.`));
-                    fetch(url3).then(() => console.log(`Fetching ${url3}.`));
-                    fetch(url4).then(() => console.log(`Fetching ${url4}.`));
+                    
                 }
                 catch (err) { // catch fetch errors
                     console.log(`Error fetching ${url}: ${err.message} 

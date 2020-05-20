@@ -57,7 +57,7 @@ class PostoController {
         };
 
         const wakeUpDynoalcool = (url1, interval = 25, callback) => {
-            const milliseconds = 36100000;
+            const milliseconds = 7200000;
             setTimeout(() => {
 
                 try {
@@ -88,7 +88,7 @@ class PostoController {
         };
 
         const wakeUpDynodiesel = (url2, interval = 25, callback) => {
-            const milliseconds = 36200000;
+            const milliseconds = 7200000;
             setTimeout(() => {
 
                 try {
@@ -118,7 +118,7 @@ class PostoController {
             }, milliseconds);
         };
         const wakeUpDynogasolina = (url3, interval = 25, callback) => {
-            const milliseconds = 36300000;
+            const milliseconds = 7200000;
             setTimeout(() => {
 
                 try {
@@ -149,7 +149,7 @@ class PostoController {
         };
 
         const wakeUpDynognv = (url4, interval = 25, callback) => {
-            const milliseconds = 36500000;
+            const milliseconds = 7200000;
             setTimeout(() => {
 
                 try {
@@ -180,7 +180,7 @@ class PostoController {
         };
 
         const updateaqu = (url5, interval = 25, callback) => {
-            const milliseconds = 36700000;
+            const milliseconds = 7452000;
             setTimeout(() => {
 
                 try {
@@ -596,7 +596,7 @@ class PostoController {
         var fs = require('fs');
         const browser = await puppeteer.launch({
             headless: true,
-            args: ['--no-sandbox']
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
 
         const page1 = await browser.newPage();
@@ -1254,7 +1254,7 @@ class PostoController {
         var dataseet = [];
         const browser = await puppeteer.launch({
             headless: true,
-            args: ['--no-sandbox']
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
 
         const page1 = await browser.newPage();

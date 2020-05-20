@@ -18,14 +18,16 @@ class PostoController {
 
     async starts({ response }) {
         const fetch = require("node-fetch");
-        var url="https://api-gasosa.herokuapp.com/";
-        var url1="https://api-gasosa.herokuapp.com/postos/etanol";
-        var url2="https://api-gasosa.herokuapp.com/postos/diesel";
-        var url3="https://api-gasosa.herokuapp.com/postos/gasolina";
-        var url4="https://api-gasosa.herokuapp.com/postos/gnv";
-        var url5="https://api-gasosa.herokuapp.com/postos/json";
+        var url = "https://api-gasosa.herokuapp.com/";
 
-        const wakeUpDyno = (url, interval = 25, callback) => {
+
+
+        let wakeUpDyno = (url, interval = 25, callback) => {
+            var url1 = "https://api-gasosa.herokuapp.com/postos/etanol"
+            var url2 = "https://api-gasosa.herokuapp.com/postos/diesel";
+            var url3 = "https://api-gasosa.herokuapp.com/postos/gasolina";
+            var url4 = "https://api-gasosa.herokuapp.com/postos/gnv";
+            var url5 = "https://api-gasosa.herokuapp.com/postos/json";
             const milliseconds = interval * 60000;
             setTimeout(() => {
 
@@ -33,6 +35,10 @@ class PostoController {
                     console.log(`setTimeout called.`);
                     // HTTP GET request to the dyno's url
                     fetch(url).then(() => console.log(`Fetching ${url}.`));
+                    fetch(url1).then(() => console.log(`Fetching ${url1}.`));
+                    fetch(url2).then(() => console.log(`Fetching ${url2}.`));
+                    fetch(url3).then(() => console.log(`Fetching ${url3}.`));
+                    fetch(url4).then(() => console.log(`Fetching ${url4}.`));
                 }
                 catch (err) { // catch fetch errors
                     console.log(`Error fetching ${url}: ${err.message} 
@@ -54,162 +60,10 @@ class PostoController {
                 }
 
             }, milliseconds);
+
         };
 
-        const wakeUpDynoalcool = (url1, interval = 25, callback) => {
-            const milliseconds = 7200000;
-            setTimeout(() => {
-
-                try {
-                    console.log(`setTimeout called.`);
-                    // HTTP GET request to the dyno's url
-                    fetch(url1).then(() => console.log(`Fetching ${url1}.`));
-                }
-                catch (err) { // catch fetch errors
-                    console.log(`Error fetching ${url1}: ${err.message} 
-            Will try again in ${interval} minutes...`);
-                }
-                finally {
-
-                    try {
-                        callback(); // execute callback, if passed
-                    }
-                    catch (e) { // catch callback error
-                        callback ? console.log("Callback failed: ", e.message) : null;
-                    }
-                    finally {
-                        // do it all again
-                        return wakeUpDyno(url1, interval, callback);
-                    }
-
-                }
-
-            }, milliseconds);
-        };
-
-        const wakeUpDynodiesel = (url2, interval = 25, callback) => {
-            const milliseconds = 7200000;
-            setTimeout(() => {
-
-                try {
-                    console.log(`setTimeout called.`);
-                    // HTTP GET request to the dyno's url
-                    fetch(url2).then(() => console.log(`Fetching ${url2}.`));
-                }
-                catch (err) { // catch fetch errors
-                    console.log(`Error fetching ${url2}: ${err.message} 
-            Will try again in ${interval} minutes...`);
-                }
-                finally {
-
-                    try {
-                        callback(); // execute callback, if passed
-                    }
-                    catch (e) { // catch callback error
-                        callback ? console.log("Callback failed: ", e.message) : null;
-                    }
-                    finally {
-                        // do it all again
-                        return wakeUpDyno(url2, interval, callback);
-                    }
-
-                }
-
-            }, milliseconds);
-        };
-        const wakeUpDynogasolina = (url3, interval = 25, callback) => {
-            const milliseconds = 7200000;
-            setTimeout(() => {
-
-                try {
-                    console.log(`setTimeout called.`);
-                    // HTTP GET request to the dyno's url
-                    fetch(url3).then(() => console.log(`Fetching ${url3}.`));
-                }
-                catch (err) { // catch fetch errors
-                    console.log(`Error fetching ${url3}: ${err.message} 
-            Will try again in ${interval} minutes...`);
-                }
-                finally {
-
-                    try {
-                        callback(); // execute callback, if passed
-                    }
-                    catch (e) { // catch callback error
-                        callback ? console.log("Callback failed: ", e.message) : null;
-                    }
-                    finally {
-                        // do it all again
-                        return wakeUpDyno(url3, interval, callback);
-                    }
-
-                }
-
-            }, milliseconds);
-        };
-
-        const wakeUpDynognv = (url4, interval = 25, callback) => {
-            const milliseconds = 7200000;
-            setTimeout(() => {
-
-                try {
-                    console.log(`setTimeout called.`);
-                    // HTTP GET request to the dyno's url
-                    fetch(url4).then(() => console.log(`Fetching ${url4}.`));
-                }
-                catch (err) { // catch fetch errors
-                    console.log(`Error fetching ${url}: ${err.message} 
-            Will try again in ${interval} minutes...`);
-                }
-                finally {
-
-                    try {
-                        callback(); // execute callback, if passed
-                    }
-                    catch (e) { // catch callback error
-                        callback ? console.log("Callback failed: ", e.message) : null;
-                    }
-                    finally {
-                        // do it all again
-                        return wakeUpDyno(url4, interval, callback);
-                    }
-
-                }
-
-            }, milliseconds);
-        };
-
-        const updateaqu = (url5, interval = 25, callback) => {
-            const milliseconds = 7452000;
-            setTimeout(() => {
-
-                try {
-                    console.log(`setTimeout called.`);
-                    // HTTP GET request to the dyno's url
-                    fetch(url5).then(() => console.log(`Fetching ${url5}.`));
-                }
-                catch (err) { // catch fetch errors
-                    console.log(`Error fetching ${url5}: ${err.message} 
-            Will try again in ${interval} minutes...`);
-                }
-                finally {
-
-                    try {
-                        callback(); // execute callback, if passed
-                    }
-                    catch (e) { // catch callback error
-                        callback ? console.log("Callback failed: ", e.message) : null;
-                    }
-                    finally {
-                        // do it all again
-                        return wakeUpDyno(url5, interval, callback);
-                    }
-
-                }
-
-            }, milliseconds);
-        };
-        return response.status(200).json({"gasosa":"Bot Online"});
+        return response.status(200).json({ "gasosa": "Bot Online" });
     }
     /**
      * Show a list of all postos.
@@ -222,7 +76,7 @@ class PostoController {
      */
     async index({ request, params, response, view }) {
         try {
-            var posto = await Posto.query().with('combustiveis', (builder) => {builder.orderBy("valor", "ASC")}).fetch();
+            var posto = await Posto.query().with('combustiveis', (builder) => { builder.orderBy("valor", "ASC") }).fetch();
 
 
             // var array = [];
@@ -1495,7 +1349,7 @@ class PostoController {
                 for (var i = 0; i < t.length; i++) {
                     //console.log(t[i]);
                     var agora = t[i].split('\n');
-                    console.log(JSON.stringify(agora[7]));
+                    console.log(agora);
                     datas.push({
                         combustivel: agora[0],
                         preco: agora[1],
@@ -1630,7 +1484,7 @@ class PostoController {
                             combustivel1.save();
                             var historico = await Historico.create(...dadosCombustivel);
                         } else {
-                           
+
                             var combustivel = await Combustivel.create(...dadosCombustivel);
                             var historico = await Historico.create(...dadosCombustivel);
                         }

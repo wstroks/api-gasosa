@@ -19,11 +19,11 @@ class PostoController {
     async starts({ response }) {
         const fetch = require("node-fetch");
        
-        var url = "https://api-gasosa.herokuapp.com/postos/etanol";
+        var url="https://api-gasosa.herokuapp.com/postos/etanol";
 
 
-        const wakeUpDyno = (url="https://api-gasosa.herokuapp.com/postos/etanol", interval = 25, callback) => {
-            
+        const wakeUpDyno = (url, interval = 25, callback) => {
+            url = "https://api-gasosa.herokuapp.com/postos/etanol";
            /* var url1 = "https://api-gasosa.herokuapp.com/postos/etanol"
             var url2 = "https://api-gasosa.herokuapp.com/postos/diesel";
             var url3 = "https://api-gasosa.herokuapp.com/postos/gasolina";

@@ -1105,6 +1105,7 @@ class PostoController {
     }
     async app() {
         var dataseet = [];
+        var fs = require('fs');
         const browser = await puppeteer.launch({
             headless: true,
             args: ['--no-sandbox', '--disable-setuid-sandbox']
@@ -1363,9 +1364,9 @@ class PostoController {
 
 
                 }
-                var fs = require('fs');
-                const devtoListTrimmed = datas.filter(n => 1 != undefined)
-                fs.writeFile("gasolinafsa.json",
+                
+                const devtoListTrimmed = datas.filter(n => n != undefined)
+                fs.writeFile("gfsa.json",
                     JSON.stringify(devtoListTrimmed, null, 4),
                     (err) => console.log('File successfully written!'))
                 //return JSON.parse(datas);
@@ -1401,7 +1402,7 @@ class PostoController {
 
     async jsonvisualizar({ request, response, view }) {
         try {
-            var array = ['../../../dieselfsa.json', '../../../gasolinafsa.json', '../../../gnvfsa.json', '../../../etanolfsa.json']
+            var array = ['../../../dieselfsa.json', '../../../gfsa.json', '../../../gnvfsa.json', '../../../etanolfsa.json']
             //var mydata = JSON.parse(json);
             var dataseet = [];
             for (var y = 0; y < array.length; y++) {
@@ -1423,7 +1424,7 @@ class PostoController {
     }
     async jsonadd({ request, response, view }) {
         try {
-            var array = ['../../../dieselfsa.json', '../../../gasolinafsa.json', '../../../gnvfsa.json', '../../../etanolfsa.json']
+            var array = ['../../../dieselfsa.json', '../../../gfsa.json', '../../../gnvfsa.json', '../../../etanolfsa.json']
             //var mydata = JSON.parse(json);
             for (var y = 0; y < array.length; y++) {
                 console.log(array[y]);

@@ -4,7 +4,7 @@ const Task = use('Task')
 
 class Bot extends Task {
   static get schedule() {
-    return '*/31 * * * *'
+    return '*31 * * * *'
   }
   
   async handle() {

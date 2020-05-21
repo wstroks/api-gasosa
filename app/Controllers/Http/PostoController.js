@@ -607,11 +607,13 @@ class PostoController {
                     JSON.stringify(devtoListTrimmed, null, 4),
                     (err) => console.log('File successfully written!'))
 
-
+                
             });
 
 
+
             console.log("Etanol - Console.");
+            //browser.close();
 
         }, 70000);
 

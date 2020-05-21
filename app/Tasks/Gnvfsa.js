@@ -7,7 +7,6 @@ class Gnvfsa extends Task {
   static get schedule () {
     return '*/28 * * * *'
   }
-
   async handle () {
     try {
       var url ="https://api-gasosa.herokuapp.com/postos/gnv";

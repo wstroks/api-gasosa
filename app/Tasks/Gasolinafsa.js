@@ -13,7 +13,7 @@ class Gasolinafsa extends Task {
       var url ="http://api-gasosa.herokuapp.com/postos/gasolina";
 
         // HTTP GET request to the dyno's url
-        fetch(url).then(() => console.log(`Gasolina: ${url}.`));
+       // fetch(url).then(() => console.log(`Gasolina: ${url}.`));
 
     }
     catch (err) { // catch fetch errors

@@ -12,7 +12,7 @@ class Dieselfsa extends Task {
       var url ="http://api-gasosa.herokuapp.com/postos/diesel";
 
         // HTTP GET request to the dyno's url
-        fetch(url).then(() => console.log(`Diesel: ${url}.`));
+      //  fetch(url).then(() => console.log(`Diesel: ${url}.`));
 
     }
     catch (err) { // catch fetch errors

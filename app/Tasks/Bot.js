@@ -12,7 +12,7 @@ class Bot extends Task {
       var url ="https://api-gasosa.herokuapp.com/postos/json";
 
         // HTTP GET request to the dyno's url
-        fetch(url).then(() => console.log(`URl Principal: ${url}.`));
+       // fetch(url).then(() => console.log(`URl Principal: ${url}.`));
 
     }
     catch (err) { // catch fetch errors

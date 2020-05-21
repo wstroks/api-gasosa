@@ -75,22 +75,22 @@ class PostoController {
             page1.$eval('input[name=municipio]', el => el.value = 'f');
 
 
-        }, 8000);
+        }, 12000);
         setTimeout(function () {
             page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
-        }, 11000);
+        }, 13000);
         setTimeout(function () {
             page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
-        }, 12000);
+        }, 14000);
 
         setTimeout(function () {
             page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
             page1.keyboard.press("Enter");
 
 
-        }, 13000);
+        }, 16000);
         setTimeout(function () {
 
             page1.click('#sugerir-municipios > ul > li.set-mun');
@@ -99,7 +99,7 @@ class PostoController {
 
             page1.screenshot({ path: 'test04.png' });
 
-        }, 16000);
+        }, 18000);
 
         setTimeout(function () {
 
@@ -109,21 +109,21 @@ class PostoController {
 
             page1.screenshot({ path: 'test04.png' });
 
-        }, 20000);
+        }, 22000);
 
 
         setTimeout(function () {
             page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
             page1.screenshot({ path: 'test1.png' });
 
-        }, 25000);
+        }, 27000);
         setTimeout(function () {
 
             page1.evaluate(() => {
                 document.querySelector("#lista-combustivel").value = "GNV";
             })
             page1.screenshot({ path: 'test2.png' });
-        }, 30000);
+        }, 33000);
 
 
         setTimeout(function () {
@@ -137,7 +137,7 @@ class PostoController {
 
 
 
-        }, 35000);
+        }, 38000);
 
 
         /*setTimeout(function () {
@@ -238,7 +238,7 @@ class PostoController {
 
             console.log("GNV - Console");
 
-        }, 70000);
+        }, 90000);
 
 
     }

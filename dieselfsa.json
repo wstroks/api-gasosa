@@ -1,125 +1,35 @@
 [
     {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,44",
-        "status": "há 7 hora(s), 32 minuto(s) e 32 segundo(s)",
-        "posto": "MEGA POSTO 2",
-        "endereco": "RODOVIA BR. 116, KM.18 S/N TIQUARUCU 44140000, FEIRA DE SANTANA",
+        "combustivel": "OLEO DIESEL",
+        "preco": "R$ 2,52",
+        "status": "há 2 dia(s), 1 hora(s), 36 minuto(s) e 51 segundo(s)",
+        "posto": "POSTO JUBIABA",
+        "endereco": "AVENIDA DEPUTADO LUIS EDUARDO MAGALHAES S/N SUBAÉ 44079002, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
-        "combustivel": "DIESEL COMUM BICO",
-        "preco": "R$ 2,44",
-        "status": "há 7 hora(s), 2 minuto(s) e 29 segundo(s)",
-        "posto": "POSTO PIRAI 3",
-        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "combustivel": "OLEO DIESEL",
+        "preco": "R$ 2,57",
+        "status": "há 2 dia(s), 5 hora(s), 39 minuto(s) e 18 segundo(s)",
+        "posto": "POSTO ROSEIRA",
+        "endereco": "RODOVIA BR 324 S/N LIMOEIRO DO BOM VIVER 44137000, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,44",
-        "status": "há 7 hora(s), 10 minuto(s) e 22 segundo(s)",
-        "posto": "POSTO EXPOFEIRA",
-        "endereco": "RUA CENTRO INDUSTRIAL SUBAE SN CENTRO INDUSTRIAL SUBAE 44052510, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL METROPOLITANO",
-        "preco": "R$ 2,44",
-        "status": "há 7 hora(s), 13 minuto(s) e 58 segundo(s)",
-        "posto": "POSTO NOSSO GAS 1",
-        "endereco": "RODOVIA BR324, KM102-SENTIDO SALV/FEIRA S/N CIS 44096486, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,46",
-        "status": "há 7 hora(s), 2 minuto(s) e 30 segundo(s)",
-        "posto": "MEGA POSTO 1",
-        "endereco": "RODOVIA BR. 324, KM.99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,46",
-        "status": "há 7 hora(s), 2 minuto(s) e 30 segundo(s)",
-        "posto": "POSTO TREVO",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTA 970 TOMBA 44090156, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,46",
-        "status": "há 9 hora(s), 5 minuto(s) e 44 segundo(s)",
-        "posto": "POSTOS",
-        "endereco": "RODOVIA BR 324 SN DISTRITO BESSA 44245000, CONCEIÇÃO DO JACUÍPE",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,46",
-        "status": "há 11 hora(s), 15 minuto(s) e 10 segundo(s)",
-        "posto": "PETROSERRA",
-        "endereco": "RODOVIA BR 101 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,50",
-        "status": "há 7 hora(s), 23 minuto(s) e 50 segundo(s)",
-        "posto": "BRAX-FEIRA",
-        "endereco": "RODOVIA BR 324 KM 99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,54",
-        "status": "há 7 hora(s), 33 minuto(s) e 39 segundo(s)",
-        "posto": "POSTO PIRAI 3",
-        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,54",
-        "status": "há 7 hora(s), 54 minuto(s) e 8 segundo(s)",
-        "posto": "POSTO EXPOFEIRA",
-        "endereco": "RUA CENTRO INDUSTRIAL SUBAE SN CENTRO INDUSTRIAL SUBAE 44052510, FEIRA DE SANTANA",
+        "combustivel": "DIESEL S 10 BICO",
+        "preco": "R$ 2,59",
+        "status": "há 9 hora(s), 40 minuto(s) e 8 segundo(s)",
+        "posto": "BRASINHA CENTRO COMERCIO DE COMBUSTIVEIS E PECUARIA LTD",
+        "endereco": "RUA MONS MARIO PESSOA S/N CENTRO 44010440, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
         "combustivel": "DIESEL S",
-        "preco": "R$ 2,54",
-        "status": "há 8 hora(s), 13 minuto(s) e 16 segundo(s)",
-        "posto": "POSTO NOSSO GAS 1",
-        "endereco": "RODOVIA BR324, KM102-SENTIDO SALV/FEIRA S/N CIS 44096486, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,54",
-        "status": "há 7 hora(s), 2 minuto(s) e 22 segundo(s)",
-        "posto": "POSTO TREVO",
-        "endereco": "RODOVIA BR 116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S",
-        "preco": "R$ 2,54",
-        "status": "há 7 hora(s), 5 minuto(s) e 41 segundo(s)",
+        "preco": "R$ 2,61",
+        "status": "há 2 hora(s), 6 minuto(s) e 18 segundo(s)",
         "posto": "POSTO SAO JOAO",
         "endereco": "RODOVIA BA 502, KM 02 S/N CIS 44330000, CACHOEIRA",
         "contato": "null",
@@ -127,26 +37,296 @@
     },
     {
         "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,56",
-        "status": "há 7 hora(s), 6 minuto(s) e 26 segundo(s)",
-        "posto": "POSTO TREVO",
-        "endereco": "RODOVIA BR 116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "preco": "R$ 2,61",
+        "status": "há 1 dia(s), 8 hora(s), 44 minuto(s) e 18 segundo(s)",
+        "posto": "PETROSERRA",
+        "endereco": "RODOVIA BR 101 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,56",
-        "status": "há 7 hora(s), 10 minuto(s) e 8 segundo(s)",
-        "posto": "POSTO TREVO",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTA 970 TOMBA 44090156, FEIRA DE SANTANA",
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,62",
+        "status": "há 4 hora(s), 57 minuto(s) e 15 segundo(s)",
+        "posto": "POSTO JUBIABA",
+        "endereco": "AVENIDA DEPUTADO LUIS EDUARDO MAGALHAES S/N SUBAÉ 44079002, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
         "combustivel": "OLEO DIESEL BS",
-        "preco": "R$ 2,56",
-        "status": "há 8 hora(s), 3 minuto(s) e 27 segundo(s)",
+        "preco": "R$ 2,65",
+        "status": "há 2 hora(s), 35 minuto(s) e 45 segundo(s)",
+        "posto": "MEGA POSTO 1",
+        "endereco": "RODOVIA BR. 324, KM.99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,65",
+        "status": "há 2 hora(s), 15 minuto(s) e 17 segundo(s)",
+        "posto": "J N COMERCIO DE COMBUSTIVEIS LTDA",
+        "endereco": "AVENIDA DEPUTADO FRANCISCO JOSE PINTO DOS SANTOS 942 PEDRA DO DESCANSO 44007190, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,65",
+        "status": "há 2 hora(s), 56 minuto(s) e 0 segundo(s)",
+        "posto": "POSTO PAU DE LEGUA",
+        "endereco": "RODOVIA BA 502 KM 02 HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL BS 10 ADITIVADO",
+        "preco": "R$ 2,66",
+        "status": "há 2 hora(s), 32 minuto(s) e 39 segundo(s)",
+        "posto": "POSTO CIDADE",
+        "endereco": "RUA ITAUEIRA 444 CASEB 44042240, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL BICO",
+        "preco": "R$ 2,66",
+        "status": "há 2 hora(s), 39 minuto(s) e 57 segundo(s)",
+        "posto": "POSTO JOSE FALCAO",
+        "endereco": "AVENIDA JOSE FALCAO DA SILVA S/N BARAÚNA 44020122, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL BICO",
+        "preco": "R$ 2,66",
+        "status": "há 2 hora(s), 47 minuto(s) e 41 segundo(s)",
+        "posto": "POSTO CANAL",
+        "endereco": "RUA JOAO EVANGELISTA 563 CENTRO 44002865, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 BICO",
+        "preco": "R$ 2,66",
+        "status": "há 8 hora(s), 9 minuto(s) e 3 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "RUA DOUTOR MACARIO CERQUEIRA 780 MUCHILA 44005000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL BICO",
+        "preco": "R$ 2,66",
+        "status": "há 1 dia(s), 2 hora(s), 12 minuto(s) e 27 segundo(s)",
+        "posto": "POSTO MUCHILA",
+        "endereco": "RUA DOUTOR MACARIO CERQUEIRA S/N MUCHILA 44005000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 COMUM (B:5)",
+        "preco": "R$ 2,66",
+        "status": "há 2 dia(s), 8 hora(s), 2 minuto(s) e 42 segundo(s)",
+        "posto": "POSTO SENADOR",
+        "endereco": "RUA SENADOR QUINTINO 1125 OLHOS D ÁGUA 44003541, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S500 COMUM BICO",
+        "preco": "R$ 2,67",
+        "status": "há 2 hora(s), 44 minuto(s) e 0 segundo(s)",
+        "posto": "POSTO JOMAFA",
+        "endereco": "RUA SENADOR QUINTINO 3090 TOMBA 44090001, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S",
+        "preco": "R$ 2,67",
+        "status": "há 3 hora(s), 2 minuto(s) e 41 segundo(s)",
+        "posto": "LM POSTO DE COMBUSTIVEL",
+        "endereco": "RUA AMARALINA SN PAMPALONA 44031645, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S500 COMUM BICO",
+        "preco": "R$ 2,67",
+        "status": "há 4 hora(s), 51 minuto(s) e 28 segundo(s)",
+        "posto": "SANTA MARIA - COMERCIAL DE COMBUSTIVEIS LTDA",
+        "endereco": "RUA PRIMAVERA 362 PAMPALONA 44031090, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S500 COMUM BICO",
+        "preco": "R$ 2,67",
+        "status": "há 5 hora(s), 38 minuto(s) e 59 segundo(s)",
+        "posto": "POSTO 2001",
+        "endereco": "AVENIDA PRESIDENTE DUTRA - LADO IMPAR 128 CENTRO 44001615, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,67",
+        "status": "há 2 dia(s), 5 hora(s), 19 minuto(s) e 47 segundo(s)",
+        "posto": "POSTO ROSEIRA",
+        "endereco": "RODOVIA BR 324 S/N LIMOEIRO DO BOM VIVER 44137000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL COMUM",
+        "preco": "R$ 2,68",
+        "status": "há 2 hora(s), 21 minuto(s) e 52 segundo(s)",
+        "posto": "J.J.L. DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RUA LANDULFO ALVES 1141 CENTRO 44001496, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S",
+        "preco": "R$ 2,70",
+        "status": "há 2 hora(s), 34 minuto(s) e 31 segundo(s)",
+        "posto": "LM POSTO DE COMBUSTIVEL",
+        "endereco": "RUA AMARALINA SN PAMPALONA 44031645, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
+        "preco": "R$ 2,70",
+        "status": "há 5 hora(s), 18 minuto(s) e 47 segundo(s)",
+        "posto": "POSTO 2001",
+        "endereco": "AVENIDA PRESIDENTE DUTRA - LADO IMPAR 128 CENTRO 44001615, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
+        "preco": "R$ 2,70",
+        "status": "há 5 hora(s), 36 minuto(s) e 56 segundo(s)",
+        "posto": "POSTO JOMAFA",
+        "endereco": "RUA SENADOR QUINTINO 3090 TOMBA 44090001, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 12 minuto(s) e 6 segundo(s)",
+        "posto": "MEGA POSTO 2",
+        "endereco": "RODOVIA BR. 116, KM.18 S/N TIQUARUCU 44140000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL METROPOLITANO",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 33 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO NOSSO GAS 1",
+        "endereco": "RODOVIA BR324, KM102-SENTIDO SALV/FEIRA S/N CIS 44096486, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 COMUM (B:13)",
+        "preco": "R$ 2,73",
+        "status": "há 2 hora(s), 59 minuto(s) e 32 segundo(s)",
+        "posto": "POSTO PARADA DO ENGENHO",
+        "endereco": "RODOVIA BR 324 KM 600 2780 CENTRO INDUSTRIAL DE ARATU 43700971, SIMÕES FILHO",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 13 minuto(s) e 18 segundo(s)",
+        "posto": "POSTO EXPOFEIRA",
+        "endereco": "RUA CENTRO INDUSTRIAL SUBAE SN CENTRO INDUSTRIAL SUBAE 44052510, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL COMUM BICO",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 15 minuto(s) e 14 segundo(s)",
+        "posto": "POSTO PIRAI 3",
+        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S10 BICO",
+        "preco": "R$ 2,73",
+        "status": "há 3 hora(s), 27 minuto(s) e 27 segundo(s)",
+        "posto": "POSTO JOAO DURVAL",
+        "endereco": "RUA DOUTOR ARAUJO PINHO 2030 OLHOS D ÁGUA 44003456, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,74",
+        "status": "há 4 hora(s), 53 minuto(s) e 38 segundo(s)",
+        "posto": "POSTO NORDESTE",
+        "endereco": "PRACA DA REPUBLICA S/N CENTRO 44001784, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,74",
+        "status": "há 2 hora(s), 11 minuto(s) e 30 segundo(s)",
+        "posto": "POSTO TRES MARIAS",
+        "endereco": "RUA BARTOLOMEU DE GUSMAO 1300 SOBRADINHO 44021205, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL",
+        "preco": "R$ 2,74",
+        "status": "há 2 hora(s), 30 minuto(s) e 51 segundo(s)",
+        "posto": "POSTO SANTA FE",
+        "endereco": "AVENIDA ANTONIO SERGIO CARNEIRO 1210 SANTO ANTONIO DOS PRAZERES 44071270, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL METROPOLITANO",
+        "preco": "R$ 2,74",
+        "status": "há 3 hora(s), 4 minuto(s) e 28 segundo(s)",
+        "posto": "POSTO BAHIA",
+        "endereco": "AVENIDA TRANSNORDESTINA 2060 CAMPO LIMPO 44032411, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S500 COMUM",
+        "preco": "R$ 2,74",
+        "status": "há 3 hora(s), 6 minuto(s) e 32 segundo(s)",
+        "posto": "POSTO RADIAL",
+        "endereco": "RODOVIA BR 116 SN NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,75",
+        "status": "há 5 hora(s), 3 minuto(s) e 41 segundo(s)",
+        "posto": "J.J.L. DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RUA LANDULFO ALVES 1141 CENTRO 44001496, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,75",
+        "status": "há 2 hora(s), 18 minuto(s) e 13 segundo(s)",
         "posto": "MEGA POSTO 1",
         "endereco": "RODOVIA BR. 324, KM.99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
         "contato": "null",
@@ -154,8 +334,35 @@
     },
     {
         "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,56",
-        "status": "há 7 hora(s), 32 minuto(s) e 27 segundo(s)",
+        "preco": "R$ 2,75",
+        "status": "há 2 hora(s), 24 minuto(s) e 10 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "RODOVIA BR 116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S10 BICO",
+        "preco": "R$ 2,75",
+        "status": "há 2 hora(s), 25 minuto(s) e 48 segundo(s)",
+        "posto": "POSTO PORTAL DO SERTAO",
+        "endereco": "RODOVIA BR 324 S/N CIS 44055770, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,75",
+        "status": "há 3 hora(s), 2 minuto(s) e 47 segundo(s)",
+        "posto": "TORRESCARNEIRO COMERCIO E DERIVADOS DE PETROLEO - EIRELI",
+        "endereco": "AVENIDA VISCONDE DO RIO BRANCO 825 CENTRO 44026000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,75",
+        "status": "há 3 hora(s), 17 minuto(s) e 21 segundo(s)",
         "posto": "POSTO TREVO",
         "endereco": "AVENIDA TRANSNORDESTINA 2.300 PARQUE IPE 44054008, FEIRA DE SANTANA",
         "contato": "null",
@@ -163,683 +370,80 @@
     },
     {
         "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,56",
-        "status": "há 7 hora(s), 48 minuto(s) e 9 segundo(s)",
-        "posto": "POSTO TRES MARIAS",
-        "endereco": "RUA BARTOLOMEU DE GUSMAO 1300 SOBRADINHO 44021205, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL S500 COMUM",
-        "preco": "R$ 2,56",
-        "status": "há 7 hora(s), 52 minuto(s) e 23 segundo(s)",
-        "posto": "POSTO RADIAL",
-        "endereco": "RODOVIA BR 116 SN NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL METROPOLITANO",
-        "preco": "R$ 2,56",
-        "status": "há 8 hora(s), 57 minuto(s) e 28 segundo(s)",
-        "posto": "POSTO BAHIA",
-        "endereco": "AVENIDA TRANSNORDESTINA 2060 CAMPO LIMPO 44032411, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BS",
-        "preco": "R$ 2,57",
-        "status": "há 8 hora(s), 8 minuto(s) e 31 segundo(s)",
-        "posto": "POSTOS",
-        "endereco": "RODOVIA BR 324 SN DISTRITO BESSA 44245000, CONCEIÇÃO DO JACUÍPE",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL",
-        "preco": "R$ 2,57",
-        "status": "há 7 hora(s), 49 minuto(s) e 55 segundo(s)",
-        "posto": "POSTO ROSEIRA",
-        "endereco": "RODOVIA BR 324 S/N LIMOEIRO DO BOM VIVER 44137000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL COMUM BICO",
-        "preco": "R$ 2,57",
-        "status": "há 9 hora(s) e 44 segundo(s)",
-        "posto": "POSTO-CIS TOMBA",
-        "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA S/N TOMBA 44091002, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S 10 BICO",
-        "preco": "R$ 2,59",
-        "status": "há 8 hora(s), 11 minuto(s) e 19 segundo(s)",
-        "posto": "POSTO-CIS TOMBA",
-        "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA S/N TOMBA 44091002, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BS",
-        "preco": "R$ 2,60",
-        "status": "há 7 hora(s), 23 minuto(s) e 43 segundo(s)",
-        "posto": "BRAX-FEIRA",
-        "endereco": "RODOVIA BR 324 KM 99 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S 5 0 0 BICO",
-        "preco": "R$ 2,60",
-        "status": "há 7 hora(s), 15 minuto(s) e 14 segundo(s)",
-        "posto": "POSTO TROPICAL",
-        "endereco": "ATALHO EDUARDO FROES DA MOTA 5700 CIDADE NOVA 44053005, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL S",
-        "preco": "R$ 2,60",
-        "status": "há 7 hora(s), 7 minuto(s) e 17 segundo(s)",
-        "posto": "POSTO RADIAL",
-        "endereco": "RODOVIA BR 101 S/N HUMILDES 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S 5 0",
-        "preco": "R$ 2,61",
-        "status": "há 3 hora(s), 23 minuto(s) e 39 segundo(s)",
-        "posto": "POSTO SAO GONCALO 3",
-        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,64",
-        "status": "há 8 hora(s), 10 minuto(s) e 39 segundo(s)",
-        "posto": "POSTO SHALOM",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTA 1500 LAGOA GRANDE 44042260, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 BICO",
-        "preco": "R$ 2,65",
-        "status": "há 7 hora(s), 17 minuto(s) e 41 segundo(s)",
-        "posto": "POSTO CONTERRANEO",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTTA 1680 QUEIMADINHA 44050024, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL S10 BICO",
-        "preco": "R$ 2,65",
-        "status": "há 7 hora(s), 32 minuto(s) e 31 segundo(s)",
-        "posto": "POSTO PORTAL DO SERTAO",
-        "endereco": "RODOVIA BR 324 S/N CIS 44055770, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S",
-        "preco": "R$ 2,65",
-        "status": "há 7 hora(s), 47 minuto(s) e 39 segundo(s)",
-        "posto": "POSTO PAU DE LEGUA",
-        "endereco": "RODOVIA BA 502 KM 02 HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S 1 0 BICO",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 26 minuto(s) e 59 segundo(s)",
-        "posto": "POSTO TROPICAL",
-        "endereco": "ATALHO EDUARDO FROES DA MOTA 5700 CIDADE NOVA 44053005, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S500 COMUM BICO",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 54 minuto(s) e 17 segundo(s)",
-        "posto": "POSTO MONACO",
-        "endereco": "RUA TUPINAMBAS 4000 SAO JOAO 44051224, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 6 hora(s), 51 minuto(s) e 49 segundo(s)",
-        "posto": "POSTO AYRTON SENNA",
-        "endereco": "AVENIDA AYRTON SENNA DA SILVA S/N CONCEIÇÃO 44065002, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 3 minuto(s) e 28 segundo(s)",
-        "posto": "POSTO CONTORNO",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTA 1951 PARQ. GETULIO VARGAS 44076822, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 9 minuto(s) e 34 segundo(s)",
-        "posto": "POSTO TOMBA",
-        "endereco": "RUA PAPA JOAO XXIII 104 TOMBA 44090652, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 16 minuto(s) e 5 segundo(s)",
-        "posto": "POSTO TRES MARIAS",
-        "endereco": "RUA BARTOLOMEU DE GUSMAO 1300 SOBRADINHO 44021205, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 17 minuto(s) e 39 segundo(s)",
-        "posto": "POSTO PIRAI",
-        "endereco": "RUA DOUTOR ANTONIO BORJA 000145 CENTRO 44010390, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 18 minuto(s) e 33 segundo(s)",
-        "posto": "POSTO VILA OLIMPIA",
-        "endereco": "AVENIDA RIO DE JANEIRO 845 PEDRA DO DESCANSO 44007195, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL S10 COMUM",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 32 minuto(s) e 43 segundo(s)",
-        "posto": "POSTO RADIAL",
-        "endereco": "RODOVIA BR 116 SN NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 34 minuto(s) e 1 segundo(s)",
-        "posto": "POSTO GETULIO VARGAS",
-        "endereco": "AVENIDA GUTULIO VARGAS 1839 CAPUCHINHOS 44050000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BICO",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 43 minuto(s) e 11 segundo(s)",
-        "posto": "POSTO CANAL",
-        "endereco": "RUA JOAO EVANGELISTA 563 CENTRO 44002865, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 48 minuto(s) e 32 segundo(s)",
-        "posto": "POSTO BOULEVARD",
-        "endereco": "RUA CORONEL JOSE PINTO 1140 SAO JOAO 44051400, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BICO",
-        "preco": "R$ 2,66",
-        "status": "há 7 hora(s), 50 minuto(s) e 1 segundo(s)",
-        "posto": "POSTO MUCHILA",
-        "endereco": "RUA DOUTOR MACARIO CERQUEIRA S/N MUCHILA 44005000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 8 hora(s) e 19 segundo(s)",
-        "posto": "POSTO SHALOM",
-        "endereco": "AVENIDA MARIA QUITERIA 694 EUCALIPTO 44075970, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 BICO",
-        "preco": "R$ 2,66",
-        "status": "há 8 hora(s), 16 minuto(s) e 21 segundo(s)",
-        "posto": "REDE ATENDBEM",
-        "endereco": "AVENIDA GETULIO VARGAS 2838 PARQ. GETULIO VARGAS 44076684, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 8 hora(s), 21 minuto(s) e 50 segundo(s)",
-        "posto": "POSTO MARIA QUITERIA",
-        "endereco": "AVENIDA MARIA QUITERIA 3208 QUEIMADINHA 44050368, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,66",
-        "status": "há 8 hora(s), 23 minuto(s) e 59 segundo(s)",
-        "posto": "MORIA",
-        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 1720 CAPUCHINHOS 44076000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 BICO",
-        "preco": "R$ 2,66",
-        "status": "há 8 hora(s), 28 minuto(s) e 37 segundo(s)",
-        "posto": "REDE ATENDBEM",
-        "endereco": "RUA DOUTOR MACARIO CERQUEIRA 780 MUCHILA 44005000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S",
-        "preco": "R$ 2,66",
-        "status": "há 8 hora(s), 47 minuto(s) e 2 segundo(s)",
-        "posto": "POSTO BAHIA",
-        "endereco": "AVENIDA TRANSNORDESTINA 2060 CAMPO LIMPO 44032411, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BICO",
-        "preco": "R$ 2,66",
-        "status": "há 8 hora(s), 56 minuto(s) e 38 segundo(s)",
-        "posto": "POSTO JOSE FALCAO",
-        "endereco": "AVENIDA JOSE FALCAO DA SILVA S/N BARAÚNA 44020122, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 9 hora(s), 33 minuto(s) e 17 segundo(s)",
-        "posto": "POSTO SENHOR DOS PASSOS",
-        "endereco": "AVENIDA SENHOR DOS PASSOS 1705 CENTRO 44002375, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 COMUM (B:5)",
-        "preco": "R$ 2,66",
-        "status": "há 10 hora(s), 11 minuto(s) e 21 segundo(s)",
-        "posto": "POSTO SENADOR",
-        "endereco": "RUA SENADOR QUINTINO 1125 OLHOS D ÁGUA 44003541, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL BS",
-        "preco": "R$ 2,66",
-        "status": "há 10 hora(s), 20 minuto(s) e 47 segundo(s)",
-        "posto": "POSTO IGUATEMI",
-        "endereco": "AVENIDA JOAO D. CARNEIRO 3600 CORONEL JOSE PINTO 44037010, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,67",
-        "status": "há 4 hora(s), 15 minuto(s) e 55 segundo(s)",
-        "posto": "SERV BEM",
-        "endereco": "RODOVIA BR 324 S/N SEDE 44230000, AMÉLIA RODRIGUES",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S500 COMUM BICO",
-        "preco": "R$ 2,67",
-        "status": "há 7 hora(s), 6 minuto(s) e 17 segundo(s)",
-        "posto": "POSTO 2001",
-        "endereco": "AVENIDA PRESIDENTE DUTRA - LADO IMPAR 128 CENTRO 44001615, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S500 COMUM BICO",
-        "preco": "R$ 2,67",
-        "status": "há 7 hora(s), 8 minuto(s) e 44 segundo(s)",
-        "posto": "SANTA MARIA - COMERCIAL DE COMBUSTIVEIS LTDA",
-        "endereco": "RUA PRIMAVERA 362 PAMPALONA 44031090, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S500 COMUM BICO",
-        "preco": "R$ 2,67",
-        "status": "há 7 hora(s), 57 minuto(s) e 1 segundo(s)",
-        "posto": "POSTO JOMAFA",
-        "endereco": "RUA SENADOR QUINTINO 3090 TOMBA 44090001, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S500 BICO",
-        "preco": "R$ 2,67",
-        "status": "há 7 hora(s), 57 minuto(s) e 36 segundo(s)",
-        "posto": "POSTO CONTERRANEO",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTTA 1680 QUEIMADINHA 44050024, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL S",
-        "preco": "R$ 2,67",
-        "status": "há 9 hora(s), 16 minuto(s) e 30 segundo(s)",
-        "posto": "LM POSTO DE COMBUSTIVEL",
-        "endereco": "RUA AMARALINA SN PAMPALONA 44031645, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL S",
-        "preco": "R$ 2,67",
-        "status": "há 8 hora(s), 40 minuto(s) e 20 segundo(s)",
-        "posto": "POSTO RADIAL",
-        "endereco": "RODOVIA BR 101 S/N HUMILDES 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 COMUM",
-        "preco": "R$ 2,68",
-        "status": "há 2 dia(s), 2 hora(s), 23 minuto(s) e 46 segundo(s)",
-        "posto": "MAXXI DISTRIBUIDORA DE PETROLEO",
-        "endereco": "RODOVIA BR 101 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S500 COMUM BICO",
-        "preco": "R$ 2,69",
-        "status": "há 7 hora(s), 2 minuto(s) e 35 segundo(s)",
-        "posto": "REDE ATENDBEM",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTA 18658 JARDIM CRUZEIRO 44024066, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BS",
-        "preco": "R$ 2,69",
-        "status": "há 8 hora(s), 10 minuto(s) e 41 segundo(s)",
-        "posto": "POSTO SHALOM",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTA 1500 LAGOA GRANDE 44042260, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,69",
-        "status": "há 8 hora(s), 48 minuto(s) e 3 segundo(s)",
-        "posto": "POSTO ORION",
-        "endereco": "RUA COMENDADOR GOMES 90 TOMBA 44091238, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,70",
-        "status": "há 7 hora(s), 2 minuto(s) e 37 segundo(s)",
-        "posto": "POSTO 2001",
-        "endereco": "AVENIDA PRESIDENTE DUTRA - LADO IMPAR 128 CENTRO 44001615, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 COMUM BICO",
-        "preco": "R$ 2,70",
-        "status": "há 7 hora(s), 10 minuto(s) e 20 segundo(s)",
-        "posto": "POSTO MONACO",
-        "endereco": "RUA TUPINAMBAS 4000 SAO JOAO 44051224, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,70",
-        "status": "há 7 hora(s), 11 minuto(s) e 23 segundo(s)",
-        "posto": "SANTA MARIA - COMERCIAL DE COMBUSTIVEIS LTDA",
-        "endereco": "RUA PRIMAVERA 362 PAMPALONA 44031090, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,70",
-        "status": "há 7 hora(s), 54 minuto(s) e 16 segundo(s)",
-        "posto": "POSTO JACUIPE",
-        "endereco": "RUA ARIVALDO DE CARVALHO 000011 SOBRADINHO 44021225, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL S",
-        "preco": "R$ 2,70",
-        "status": "há 9 hora(s), 38 minuto(s) e 26 segundo(s)",
-        "posto": "LM POSTO DE COMBUSTIVEL",
-        "endereco": "RUA AMARALINA SN PAMPALONA 44031645, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL",
-        "preco": "R$ 2,70",
-        "status": "há 7 hora(s), 12 minuto(s) e 15 segundo(s)",
-        "posto": "POSTO SANTA FE",
-        "endereco": "AVENIDA ANTONIO SERGIO CARNEIRO 1210 SANTO ANTONIO DOS PRAZERES 44071270, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL COMUM",
-        "preco": "R$ 2,71",
-        "status": "há 8 hora(s), 15 minuto(s) e 52 segundo(s)",
-        "posto": "J.J.L. DERIVADOS DE PETROLEO LTDA",
-        "endereco": "RUA LANDULFO ALVES 1141 CENTRO 44001496, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL BS",
-        "preco": "R$ 2,72",
-        "status": "há 7 hora(s), 15 minuto(s) e 57 segundo(s)",
-        "posto": "MEGA POSTO 2",
-        "endereco": "RODOVIA BR. 116, KM.18 S/N TIQUARUCU 44140000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,72",
-        "status": "há 7 hora(s), 41 minuto(s) e 49 segundo(s)",
-        "posto": "POSTO TREVO",
-        "endereco": "RUA VOLUNTARIOS DA PATRIA 402 BARAUNA 44020055, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 BICO",
-        "preco": "R$ 2,73",
-        "status": "há 7 hora(s), 14 minuto(s) e 29 segundo(s)",
-        "posto": "REDE ATENDBEM",
-        "endereco": "AVENIDA EDUARDO FROES DA MOTA 18658 JARDIM CRUZEIRO 44024066, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 COMUM (B:13)",
-        "preco": "R$ 2,73",
-        "status": "há 7 hora(s), 33 minuto(s) e 39 segundo(s)",
-        "posto": "POSTO PARADA DO ENGENHO",
-        "endereco": "RODOVIA BR 324 KM 600 2780 CENTRO INDUSTRIAL DE ARATU 43700971, SIMÕES FILHO",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S10 BICO",
-        "preco": "R$ 2,73",
-        "status": "há 7 hora(s), 34 minuto(s) e 49 segundo(s)",
-        "posto": "REDE ATENDBEM",
-        "endereco": "AVENIDA CANAL 147 CENTRO 44002448, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL S10 BICO",
-        "preco": "R$ 2,73",
-        "status": "há 8 hora(s), 24 minuto(s) e 44 segundo(s)",
-        "posto": "POSTO JOAO DURVAL",
-        "endereco": "RUA DOUTOR ARAUJO PINHO 2030 OLHOS D ÁGUA 44003456, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S 5 0",
-        "preco": "R$ 2,74",
-        "status": "há 3 hora(s), 24 minuto(s) e 47 segundo(s)",
-        "posto": "POSTO SAO GONCALO 1",
-        "endereco": "RODOVIA BR 324 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,74",
-        "status": "há 7 hora(s), 10 minuto(s) e 42 segundo(s)",
-        "posto": "POSTO ELDOURADO",
-        "endereco": "RUA JOSE JOAQUIM SEABRA 410 CENTRO 44002000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S",
-        "preco": "R$ 2,74",
-        "status": "há 9 hora(s), 3 minuto(s) e 19 segundo(s)",
-        "posto": "POSTO NORDESTE",
-        "endereco": "PRACA DA REPUBLICA S/N CENTRO 44001784, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S500 COMUM BICO",
-        "preco": "R$ 2,74",
-        "status": "há 7 hora(s), 12 minuto(s) e 39 segundo(s)",
-        "posto": "REDE ATENDBEM",
-        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 3797 CASEB 44052064, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S",
         "preco": "R$ 2,75",
-        "status": "há 7 hora(s), 34 minuto(s) e 56 segundo(s)",
-        "posto": "J.J.L. DERIVADOS DE PETROLEO LTDA",
-        "endereco": "RUA LANDULFO ALVES 1141 CENTRO 44001496, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL S10 BICO",
-        "preco": "R$ 2,75",
-        "status": "há 7 hora(s), 46 minuto(s) e 44 segundo(s)",
-        "posto": "POSTO JOMAFA",
-        "endereco": "RUA SENADOR QUINTINO 3090 TOMBA 44090001, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,75",
-        "status": "há 2 hora(s), 23 minuto(s) e 59 segundo(s)",
-        "posto": "POSTO CONTORNO",
-        "endereco": "AVENIDA EDUARDO FROS DA MOTA 6185 CIDADE NOVA 44053005, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,75",
-        "status": "há 7 hora(s), 12 minuto(s) e 26 segundo(s)",
-        "posto": "TORRESCARNEIRO COMERCIO E DERIVADOS DE PETROLEO - EIRELI",
-        "endereco": "AVENIDA VISCONDE DO RIO BRANCO 825 CENTRO 44026000, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "DIESEL COMUM S500 BICO",
-        "preco": "R$ 2,75",
-        "status": "há 7 hora(s), 57 minuto(s) e 58 segundo(s)",
-        "posto": "POSTO DA PAPA",
-        "endereco": "RUA PAPA JOAO XXIII 1990 OLHOS D ÁGUA 44003465, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,75",
-        "status": "há 9 hora(s), 30 minuto(s) e 40 segundo(s)",
+        "status": "há 3 hora(s), 31 minuto(s) e 55 segundo(s)",
         "posto": "TORRESCARNEIRO COMERCIO E DERIVADOS DE PETROLEO - EIRELI",
         "endereco": "AVENIDA PRESIDENTE DUTRA 574 BRASILIA 44010020, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
-        "combustivel": "DIESEL ORIGINAL IPIRANGA BICO",
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,75",
+        "status": "há 3 hora(s), 53 minuto(s) e 54 segundo(s)",
+        "posto": "POSTOS",
+        "endereco": "RODOVIA BR 324 SN DISTRITO BESSA 44245000, CONCEIÇÃO DO JACUÍPE",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL COMUM S500 BICO",
+        "preco": "R$ 2,75",
+        "status": "há 4 hora(s), 40 minuto(s) e 6 segundo(s)",
+        "posto": "POSTO DA PAPA",
+        "endereco": "RUA PAPA JOAO XXIII 1990 OLHOS D ÁGUA 44003465, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S500 BICO",
         "preco": "R$ 2,76",
-        "status": "há 8 hora(s), 5 minuto(s) e 15 segundo(s)",
-        "posto": "POSTO DA NOIDE",
-        "endereco": "AVENIDA NOIDE FERREIRA DE CERQUEIRA 6791 SIM 44085052, FEIRA DE SANTANA",
+        "status": "há 2 hora(s), 47 minuto(s) e 1 segundo(s)",
+        "posto": "POSTO CONTORNO",
+        "endereco": "AVENIDA EDUARDO FROS DA MOTA 6185 CIDADE NOVA 44053005, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S500 COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 3 hora(s), 15 minuto(s) e 34 segundo(s)",
+        "posto": "POSTO MONACO",
+        "endereco": "RUA TUPINAMBAS 4000 SAO JOAO 44051224, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
         "combustivel": "DIESEL S 1 0 BICO",
         "preco": "R$ 2,76",
-        "status": "há 8 hora(s), 35 minuto(s) e 43 segundo(s)",
+        "status": "há 3 hora(s), 40 minuto(s) e 32 segundo(s)",
         "posto": "POSTO SAO GONCALO 9",
         "endereco": "ESTRADA DO CALUNDU S/N LAGOA SALGADA 44083624, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
-        "combustivel": "OLEO DIESEL B S 500 BICO",
+        "combustivel": "OLEO DIESEL B S500 COMUM BICO",
+        "preco": "R$ 2,76",
+        "status": "há 4 hora(s), 2 minuto(s) e 9 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 18658 JARDIM CRUZEIRO 44024066, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S500 BICO",
         "preco": "R$ 2,77",
-        "status": "há 7 hora(s), 22 minuto(s) e 58 segundo(s)",
-        "posto": "POSTO SHANGAY",
-        "endereco": "RODOVIA BR 324 S/N CENTRO 44001970, FEIRA DE SANTANA",
+        "status": "há 2 hora(s), 43 minuto(s) e 8 segundo(s)",
+        "posto": "POSTO CONTERRANEO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTTA 1680 QUEIMADINHA 44050024, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
         "combustivel": "DIESEL COMUM",
         "preco": "R$ 2,77",
-        "status": "há 7 hora(s), 40 minuto(s) e 47 segundo(s)",
+        "status": "há 3 hora(s), 46 minuto(s) e 53 segundo(s)",
         "posto": "POSTO PAMPALONA",
         "endereco": "RUA PRIMAVERA 3690 PAMPALONA 44031090, FEIRA DE SANTANA",
         "contato": "null",
@@ -848,54 +452,450 @@
     {
         "combustivel": "DIESEL B S500 BICO",
         "preco": "R$ 2,77",
-        "status": "há 8 hora(s), 17 minuto(s) e 8 segundo(s)",
+        "status": "há 4 hora(s), 28 minuto(s) e 42 segundo(s)",
         "posto": "LSL COMERCIO DE DERIVADOS DE PETROLEO LTDA",
         "endereco": "RODOVIA BR 116 KM 424 SN NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
-        "combustivel": "DIESEL S 5 0",
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,77",
+        "status": "há 2 hora(s), 17 minuto(s) e 46 segundo(s)",
+        "posto": "POSTO NOSSO GAS 1",
+        "endereco": "RODOVIA BR324, KM102-SENTIDO SALV/FEIRA S/N CIS 44096486, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
+        "preco": "R$ 2,77",
+        "status": "há 2 hora(s), 40 minuto(s) e 17 segundo(s)",
+        "posto": "POSTO PIRAI 3",
+        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,77",
+        "status": "há 2 hora(s), 55 minuto(s) e 24 segundo(s)",
+        "posto": "POSTO EXPOFEIRA",
+        "endereco": "RUA CENTRO INDUSTRIAL SUBAE SN CENTRO INDUSTRIAL SUBAE 44052510, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL BS",
+        "preco": "R$ 2,77",
+        "status": "há 3 hora(s), 32 minuto(s) e 7 segundo(s)",
+        "posto": "MEGA POSTO 2",
+        "endereco": "RODOVIA BR. 116, KM.18 S/N TIQUARUCU 44140000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
         "preco": "R$ 2,78",
-        "status": "há 3 hora(s), 44 minuto(s) e 15 segundo(s)",
-        "posto": "POSTO SAO GONCALO 4",
-        "endereco": "RODOVIA BR 324 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "status": "há 3 hora(s), 52 minuto(s) e 20 segundo(s)",
+        "posto": "SANTA MARIA - COMERCIAL DE COMBUSTIVEIS LTDA",
+        "endereco": "RUA PRIMAVERA 362 PAMPALONA 44031090, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S10 BICO",
+        "preco": "R$ 2,78",
+        "status": "há 5 hora(s), 39 minuto(s) e 27 segundo(s)",
+        "posto": "POSTO ELDOURADO",
+        "endereco": "RUA JOSE JOAQUIM SEABRA 410 CENTRO 44002000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,78",
+        "status": "há 2 hora(s), 7 minuto(s) e 31 segundo(s)",
+        "posto": "POSTO BOULEVARD",
+        "endereco": "RUA CORONEL JOSE PINTO 1140 SAO JOAO 44051400, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
         "combustivel": "OLEO DIESEL B S",
         "preco": "R$ 2,78",
-        "status": "há 3 hora(s), 17 minuto(s) e 0 segundo(s)",
-        "posto": "SERV BEM",
-        "endereco": "RODOVIA BR 324 S/N SEDE 44230000, AMÉLIA RODRIGUES",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,78",
-        "status": "há 7 hora(s), 8 minuto(s) e 42 segundo(s)",
+        "status": "há 2 hora(s), 9 minuto(s) e 27 segundo(s)",
         "posto": "POSTO TREVO",
-        "endereco": "AVENIDA AV. PRESIDENTE DUTRA 2325 BRASILIA 44088455, FEIRA DE SANTANA",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 970 TOMBA 44090156, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,78",
+        "status": "há 2 hora(s), 14 minuto(s) e 5 segundo(s)",
+        "posto": "POSTO SENHOR DOS PASSOS",
+        "endereco": "AVENIDA SENHOR DOS PASSOS 1705 CENTRO 44002375, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,78",
+        "status": "há 2 hora(s), 15 minuto(s) e 3 segundo(s)",
+        "posto": "POSTO IGUATEMI",
+        "endereco": "AVENIDA JOAO D. CARNEIRO 3600 CORONEL JOSE PINTO 44037010, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,78",
+        "status": "há 2 hora(s), 24 minuto(s) e 19 segundo(s)",
+        "posto": "POSTO CONTORNO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 1951 PARQ. GETULIO VARGAS 44076822, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,78",
+        "status": "há 2 hora(s), 47 minuto(s) e 22 segundo(s)",
+        "posto": "POSTO AYRTON SENNA",
+        "endereco": "AVENIDA AYRTON SENNA DA SILVA S/N CONCEIÇÃO 44065002, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
         "combustivel": "DIESEL S",
         "preco": "R$ 2,78",
-        "status": "há 7 hora(s), 19 minuto(s) e 5 segundo(s)",
-        "posto": "J N COMERCIO DE COMBUSTIVEIS LTDA",
-        "endereco": "AVENIDA DEPUTADO FRANCISCO JOSE PINTO DOS SANTOS 942 PEDRA DO DESCANSO 44007190, FEIRA DE SANTANA",
+        "status": "há 2 hora(s), 51 minuto(s) e 40 segundo(s)",
+        "posto": "POSTO BAHIA",
+        "endereco": "AVENIDA TRANSNORDESTINA 2060 CAMPO LIMPO 44032411, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,78",
+        "status": "há 2 hora(s), 52 minuto(s) e 21 segundo(s)",
+        "posto": "POSTO VILA OLIMPIA",
+        "endereco": "AVENIDA RIO DE JANEIRO 845 PEDRA DO DESCANSO 44007195, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,78",
+        "status": "há 3 hora(s), 45 minuto(s) e 14 segundo(s)",
+        "posto": "POSTO TOMBA",
+        "endereco": "RUA PAPA JOAO XXIII 104 TOMBA 44090652, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
+        "preco": "R$ 2,79",
+        "status": "há 2 hora(s), 6 minuto(s) e 52 segundo(s)",
+        "posto": "POSTO PIRAI",
+        "endereco": "RUA DOUTOR ANTONIO BORJA 000145 CENTRO 44010390, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
         "combustivel": "OLEO DIESEL B S",
-        "preco": "R$ 2,78",
-        "status": "há 9 hora(s), 52 minuto(s) e 51 segundo(s)",
+        "preco": "R$ 2,79",
+        "status": "há 2 hora(s), 8 minuto(s) e 37 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "RODOVIA BR 116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S500 COMUM BICO",
+        "preco": "R$ 2,79",
+        "status": "há 2 hora(s), 14 minuto(s) e 29 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 3797 CASEB 44052064, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL COMUM",
+        "preco": "R$ 2,79",
+        "status": "há 2 hora(s), 15 minuto(s) e 46 segundo(s)",
+        "posto": "POSTO CONCEICAO",
+        "endereco": "RUA CALAMAR 743 CONCEICAO 44065706, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
+        "preco": "R$ 2,79",
+        "status": "há 2 hora(s), 35 minuto(s) e 13 segundo(s)",
+        "posto": "MORIA",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 1720 CAPUCHINHOS 44076000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 BICO",
+        "preco": "R$ 2,79",
+        "status": "há 2 hora(s), 35 minuto(s) e 35 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA CANAL 147 CENTRO 44002448, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 BICO",
+        "preco": "R$ 2,79",
+        "status": "há 2 hora(s), 44 minuto(s) e 25 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GETULIO VARGAS 2838 PARQ. GETULIO VARGAS 44076684, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,79",
+        "status": "há 3 hora(s), 2 minuto(s) e 49 segundo(s)",
+        "posto": "TORRESCARNEIRO COMERCIO E DERIVADOS DE PETROLEO - EIRELI",
+        "endereco": "AVENIDA VISCONDE DO RIO BRANCO 825 CENTRO 44026000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S 10 BICO",
+        "preco": "R$ 2,79",
+        "status": "há 3 hora(s), 3 minuto(s) e 7 segundo(s)",
+        "posto": "POSTO-CIS TOMBA",
+        "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA S/N TOMBA 44091002, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S10 COMUM",
+        "preco": "R$ 2,79",
+        "status": "há 3 hora(s), 23 minuto(s) e 57 segundo(s)",
+        "posto": "POSTO RADIAL",
+        "endereco": "RODOVIA BR 116 SN NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL BS",
+        "preco": "R$ 2,79",
+        "status": "há 3 hora(s), 25 minuto(s) e 15 segundo(s)",
+        "posto": "POSTOS",
+        "endereco": "RODOVIA BR 324 SN DISTRITO BESSA 44245000, CONCEIÇÃO DO JACUÍPE",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,79",
+        "status": "há 4 hora(s), 31 minuto(s) e 50 segundo(s)",
+        "posto": "TORRESCARNEIRO COMERCIO E DERIVADOS DE PETROLEO - EIRELI",
+        "endereco": "AVENIDA PRESIDENTE DUTRA 574 BRASILIA 44010020, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,79",
+        "status": "há 4 hora(s), 43 minuto(s) e 55 segundo(s)",
+        "posto": "POSTO SANTA FE",
+        "endereco": "AVENIDA ANTONIO SERGIO CARNEIRO 1210 SANTO ANTONIO DOS PRAZERES 44071270, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,79",
+        "status": "há 4 hora(s), 57 minuto(s) e 24 segundo(s)",
+        "posto": "POSTO GETULIO VARGAS",
+        "endereco": "AVENIDA GUTULIO VARGAS 1839 CAPUCHINHOS 44050000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 BICO",
+        "preco": "R$ 2,79",
+        "status": "há 5 hora(s), 56 minuto(s) e 55 segundo(s)",
+        "posto": "REDE ATENDBEM",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 3797 CASEB 44052064, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL BS",
+        "preco": "R$ 2,79",
+        "status": "há 11 hora(s), 31 minuto(s) e 3 segundo(s)",
+        "posto": "POSTO MARIA QUITERIA",
+        "endereco": "AVENIDA MARIA QUITERIA 3208 QUEIMADINHA 44050368, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,80",
+        "status": "há 2 hora(s), 10 minuto(s) e 14 segundo(s)",
+        "posto": "POSTO TREVO",
+        "endereco": "AVENIDA EDUARDO FROES DA MOTA 970 TOMBA 44090156, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,80",
+        "status": "há 2 hora(s), 12 minuto(s) e 33 segundo(s)",
+        "posto": "POSTO PAMPALONA",
+        "endereco": "RUA PRIMAVERA 3690 PAMPALONA 44031090, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 BICO",
+        "preco": "R$ 2,80",
+        "status": "há 2 hora(s), 13 minuto(s) e 42 segundo(s)",
+        "posto": "POSTO CONTORNO",
+        "endereco": "AVENIDA EDUARDO FROS DA MOTA 6185 CIDADE NOVA 44053005, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 COMUM BICO",
+        "preco": "R$ 2,80",
+        "status": "há 2 hora(s), 23 minuto(s) e 26 segundo(s)",
+        "posto": "POSTO MONACO",
+        "endereco": "RUA TUPINAMBAS 4000 SAO JOAO 44051224, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S10 BICO",
+        "preco": "R$ 2,80",
+        "status": "há 2 hora(s), 51 minuto(s) e 52 segundo(s)",
+        "posto": "POSTO FRAGA MAIA",
+        "endereco": "AVENIDA FRAGA MAIA 4230 CIDADE NOVA 44053055, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "BIODIESEL S500 BICO",
+        "preco": "R$ 2,80",
+        "status": "há 3 hora(s), 23 minuto(s) e 14 segundo(s)",
+        "posto": "POSTO JP",
+        "endereco": "AVENIDA FRANCISCO FRAGA MAIA 5280 MANGABEIRA 44056232, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S10 BICO",
+        "preco": "R$ 2,80",
+        "status": "há 5 hora(s), 8 minuto(s) e 49 segundo(s)",
+        "posto": "LSL COMERCIO DE DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RODOVIA BR 116 KM 424 SN NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
+        "preco": "R$ 2,80",
+        "status": "há 4 hora(s), 55 minuto(s) e 45 segundo(s)",
+        "posto": "POSTO DA PAPA",
+        "endereco": "RUA PAPA JOAO XXIII 1990 OLHOS D ÁGUA 44003465, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
+        "preco": "R$ 2,82",
+        "status": "há 2 hora(s), 22 minuto(s) e 40 segundo(s)",
+        "posto": "POSTO ORION",
+        "endereco": "RUA COMENDADOR GOMES 90 TOMBA 44091238, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S",
+        "preco": "R$ 2,82",
+        "status": "há 2 hora(s), 24 minuto(s) e 30 segundo(s)",
         "posto": "POSTO TREVO",
         "endereco": "RUA VOLUNTARIOS DA PATRIA 402 BARAUNA 44020055, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL ORIGINAL IPIRANGA BICO",
+        "preco": "R$ 2,83",
+        "status": "há 3 hora(s), 4 minuto(s) e 47 segundo(s)",
+        "posto": "POSTO DA NOIDE",
+        "endereco": "AVENIDA NOIDE FERREIRA DE CERQUEIRA 6791 SIM 44085052, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S10 BICO",
+        "preco": "R$ 2,84",
+        "status": "há 5 hora(s), 12 minuto(s) e 48 segundo(s)",
+        "posto": "POSTO VISAO",
+        "endereco": "AVENIDA GOVERNADOR JOAO DURVAL CARNEIRO 2830 CASEB 44052004, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL S10 BICO",
+        "preco": "R$ 2,84",
+        "status": "há 7 hora(s), 44 minuto(s) e 50 segundo(s)",
+        "posto": "POSTO KALILANDIA",
+        "endereco": "RUA GERMINIANO COSTA 490 CENTRO 44001120, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S10 BICO",
+        "preco": "R$ 2,85",
+        "status": "há 2 hora(s), 5 minuto(s) e 30 segundo(s)",
+        "posto": "POSTO JACUIPE",
+        "endereco": "RUA ARIVALDO DE CARVALHO 000011 SOBRADINHO 44021225, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "OLEO DIESEL B S500 BICO",
+        "preco": "R$ 2,85",
+        "status": "há 4 hora(s), 7 minuto(s) e 25 segundo(s)",
+        "posto": "POSTO PRESIDENTE",
+        "endereco": "AVENIDA PRESIDENTE DUTRA 1199 CAPUCHINHOS 44060000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S",
+        "preco": "R$ 2,85",
+        "status": "há 8 hora(s), 43 minuto(s) e 0 segundo(s)",
+        "posto": "POSTO CONCEICAO",
+        "endereco": "RUA CALAMAR 743 CONCEICAO 44065706, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S 5 0 0 BICO",
+        "preco": "R$ 2,86",
+        "status": "há 2 hora(s), 8 minuto(s) e 29 segundo(s)",
+        "posto": "POSTO SAO GONCALO 1",
+        "endereco": "RODOVIA BR 324 S/N HUMILDES (FEIRA DE SANTANA) 44135000, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "DIESEL S 5 0 0 BICO",
+        "preco": "R$ 2,86",
+        "status": "há 2 hora(s), 39 minuto(s) e 12 segundo(s)",
+        "posto": "POSTO SAO GONCALO 3",
+        "endereco": "RODOVIA BR-116 S/N NOVO HORIZONTE 44036331, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     }

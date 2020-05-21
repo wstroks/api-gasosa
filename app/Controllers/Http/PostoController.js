@@ -17,51 +17,7 @@ class PostoController {
 
 
     async starts({ response }) {
-        const fetch = require("node-fetch");
-       
-        var url="https://api-gasosa.herokuapp.com/postos/etanol";
-
-
-        const wakeUpDyno = (url, interval = 25, callback) => {
-            url = "https://api-gasosa.herokuapp.com/postos/etanol";
-           /* var url1 = "https://api-gasosa.herokuapp.com/postos/etanol"
-            var url2 = "https://api-gasosa.herokuapp.com/postos/diesel";
-            var url3 = "https://api-gasosa.herokuapp.com/postos/gasolina";
-            var url4 = "https://api-gasosa.herokuapp.com/postos/gnv";
-            var url5 = "https://api-gasosa.herokuapp.com/postos/json";*/
-            //const milliseconds = interval * 60000;
-            const milliseconds=  300000;
-            setTimeout(() => {
-
-                try {
-                    console.log(`setTimeout called.`);
-                    // HTTP GET request to the dyno's url
-                    fetch(url).then(() => console.log(`Fetching ${url}.`));
-                    
-                }
-                catch (err) { // catch fetch errors
-                    console.log(`Error fetching ${url}: ${err.message} 
-            Will try again in ${interval} minutes...`);
-                }
-                finally {
-
-                    try {
-                        callback(); // execute callback, if passed
-                    }
-                    catch (e) { // catch callback error
-                        callback ? console.log("Callback failed: ", e.message) : null;
-                    }
-                    finally {
-                        // do it all again
-                        return wakeUpDyno(url, interval, callback);
-                    }
-
-                }
-
-            }, milliseconds);
-
-        };
-
+        
         return response.status(200).json({ "gasosa": "Bot Online" });
     }
     /**
@@ -437,7 +393,7 @@ class PostoController {
 
             // console.log("foi2"+dataseet);
             console.log("foi");
-
+            //browser.close();
             // console.log(data);
         }, 70000);
 
@@ -763,7 +719,7 @@ class PostoController {
 
             // console.log("foi2"+dataseet);
             console.log("foi");
-
+           // browser.close();
             // console.log(data);
         }, 70000);
 
@@ -1093,6 +1049,7 @@ class PostoController {
 
             // console.log("foi2"+dataseet);
             console.log("foi");
+           // browser.close();
 
             // console.log(data);
         }, 70000);
@@ -1387,6 +1344,7 @@ class PostoController {
             // console.log("foi" + JSON.stringify(data));
 
             // console.log(data);
+            //browser.close();
         }, 70000);
     }
 

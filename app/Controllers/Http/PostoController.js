@@ -140,7 +140,7 @@ class PostoController {
         }, 35000);
 
 
-        setTimeout(function () {
+        /*setTimeout(function () {
 
 
 
@@ -150,7 +150,7 @@ class PostoController {
 
 
 
-        }, 44000);
+        }, 44000);*/
         setTimeout(function () {
 
             page1.click('body > div.ctrl-top > a');
@@ -234,7 +234,6 @@ class PostoController {
 
 
             });
-
 
 
             console.log("GNV - Console");

@@ -2,7 +2,7 @@
     {
         "combustivel": "GNV",
         "preco": "R$ 2,59",
-        "status": "há 2 hora(s), 3 minuto(s) e 17 segundo(s)",
+        "status": "há 2 hora(s), 27 minuto(s) e 29 segundo(s)",
         "posto": "POSTO GASAUTO",
         "endereco": "AVENIDA DEPUTADO COLBERT MARTINS DA SILVA 103 TOMBA 44091002, FEIRA DE SANTANA",
         "contato": "null",
@@ -11,7 +11,7 @@
     {
         "combustivel": "GNV",
         "preco": "R$ 2,79",
-        "status": "há 1 hora(s), 59 minuto(s) e 54 segundo(s)",
+        "status": "há 2 hora(s), 9 minuto(s) e 56 segundo(s)",
         "posto": "POSTO PORTAL DO SERTAO",
         "endereco": "RODOVIA BR 324 S/N CIS 44055770, FEIRA DE SANTANA",
         "contato": "null",
@@ -20,7 +20,7 @@
     {
         "combustivel": "GNV",
         "preco": "R$ 2,79",
-        "status": "há 4 hora(s) e 42 segundo(s)",
+        "status": "há 3 hora(s), 17 minuto(s) e 47 segundo(s)",
         "posto": "POSTO NOSSO GAS 1",
         "endereco": "RODOVIA BR324, KM102-SENTIDO SALV/FEIRA S/N CIS 44096486, FEIRA DE SANTANA",
         "contato": "null",
@@ -29,25 +29,16 @@
     {
         "combustivel": "GNV",
         "preco": "R$ 2,89",
-        "status": "há 1 hora(s), 58 minuto(s) e 5 segundo(s)",
-        "posto": "PETROMASA",
-        "endereco": "AVENIDA PRESIDENTE DUTRA 428 PILAO 44010020, FEIRA DE SANTANA",
+        "status": "há 2 hora(s), 8 minuto(s) e 7 segundo(s)",
+        "posto": "POSTO BRX",
+        "endereco": "AVENIDA SAMPAIO 788 CENTRO 44001472, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     },
     {
         "combustivel": "GNV",
         "preco": "R$ 2,89",
-        "status": "há 1 hora(s), 59 minuto(s) e 38 segundo(s)",
-        "posto": "J MARTINS DERIVADOS DE PETROLEO LTDA",
-        "endereco": "RUA EDUARDO FROES DA MATA 1197 SANTA MONICA 44078015, FEIRA DE SANTANA",
-        "contato": "null",
-        "cidade": "Feira de Santana"
-    },
-    {
-        "combustivel": "GNV",
-        "preco": "R$ 2,89",
-        "status": "há 2 hora(s), 3 minuto(s) e 35 segundo(s)",
+        "status": "há 2 hora(s), 9 minuto(s) e 54 segundo(s)",
         "posto": "POSTO KALILANDIA II",
         "endereco": "AVENIDA PRESIDENTE DUTRA 1320 PONTO CENTRAL 44075516, FEIRA DE SANTANA",
         "contato": "null",
@@ -56,9 +47,18 @@
     {
         "combustivel": "GNV",
         "preco": "R$ 2,89",
-        "status": "há 2 hora(s), 5 minuto(s) e 58 segundo(s)",
-        "posto": "POSTO BRX",
-        "endereco": "AVENIDA SAMPAIO 788 CENTRO 44001472, FEIRA DE SANTANA",
+        "status": "há 3 hora(s), 2 minuto(s) e 13 segundo(s)",
+        "posto": "J MARTINS DERIVADOS DE PETROLEO LTDA",
+        "endereco": "RUA EDUARDO FROES DA MATA 1197 SANTA MONICA 44078015, FEIRA DE SANTANA",
+        "contato": "null",
+        "cidade": "Feira de Santana"
+    },
+    {
+        "combustivel": "GNV",
+        "preco": "R$ 2,89",
+        "status": "há 3 hora(s), 50 minuto(s) e 2 segundo(s)",
+        "posto": "PETROMASA",
+        "endereco": "AVENIDA PRESIDENTE DUTRA 428 PILAO 44010020, FEIRA DE SANTANA",
         "contato": "null",
         "cidade": "Feira de Santana"
     }

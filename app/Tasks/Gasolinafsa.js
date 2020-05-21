@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 
 class Gasolinafsa extends Task {
   static get schedule () {
-    return '24 * * * *'
+    return '15 * * * *'
   }
 
   async handle () {

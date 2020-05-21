@@ -45,7 +45,7 @@ class PostoController {
         var fs = require('fs');
         const browser = await puppeteer.launch({
             headless: false,
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+            args: ['--no-sandbox']
         });
 
         const page1 = await browser.newPage();

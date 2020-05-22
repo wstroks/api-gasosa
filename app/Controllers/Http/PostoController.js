@@ -584,7 +584,7 @@ class PostoController {
              await page1.waitFor(5000)
             console.log("aqui1");
             await page1.screenshot({ path: 'test5.png' });
-            let data =  await page1.evaluate(() => {
+           var datas= await page1.evaluate(() => {
 
                 let array1 = [];
 
@@ -621,19 +621,10 @@ class PostoController {
 
                 }
 
-                return array1;
-            });
-
-
-
-
-            data.then(t => {
-
-                // console.log("1" + t.length);
                 var datas = [];
-                for (var i = 0; i < t.length; i++) {
+                for (var i = 0; i < array1.length; i++) {
                     //console.log(t[i]);
-                    var agora = t[i].split('\n');
+                    var agora = array1[i].split('\n');
 
                     //console.log(JSON.stringify(agora[7]));
                     datas.push({
@@ -649,15 +640,28 @@ class PostoController {
 
 
                 }
+                
+                return datas;
 
-                const devtoListTrimmed = datas.filter(n => n != undefined)
+               // return array1;
+            });
+
+            const devtoListTrimmed = datas.filter(n => n != undefined)
                 fs.writeFile("dieselfsa.json",
                     JSON.stringify(devtoListTrimmed, null, 4),
                     (err) => console.log('File successfully written!'))
 
 
+            
+
+            /*data.then(t => {
+
+                // console.log("1" + t.length);
+                
+
+
                 // browser.close();
-            });
+            });*/
 
           //  await browser.close();
 
@@ -665,8 +669,9 @@ class PostoController {
        
         // browser.close();
         return response.status(200).send("Diesel - Console.");
+        await browser.close();
     } catch (err) {
-        return response.status(500).send({ error: `Erro ${err.message} e ${err}`});
+        return response.status(404).send({ error: `Erro ${err.message} e ${err.messages}`});
     }
 
 

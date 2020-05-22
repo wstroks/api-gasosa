@@ -28,6 +28,15 @@ class HistoricoController {
     }
   }
 
+  async historico({ request, response, view }) {
+    try {
+      var historico = await Historico.query().with('postos_historico', (builder) => { builder.orderBy("created_at", "asc")}).fetch();
+      return response.status(200).json(historico);
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
+  }
+
   /**
    * Render a form to be used for creating a new historico.
    * GET historicos/create

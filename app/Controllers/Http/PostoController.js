@@ -38,15 +38,27 @@ class PostoController {
         }
     }
 
+    async paginacao({ request, params, response, view }) {
+        try {
+            var posto = await Posto.query().with('combustiveis', (builder) => { builder.orderBy("valor", "ASC") }).forPage(1, 10);
+            
+
+            return response.status(200).json(posto);
+        } catch (err) {
+            return response.status(500).send({ error: `Erro ${err.message}` });
+        }
+    }
+
+
     async gnv({ response }) {
 
         try {
-            var dataseet = [];
+           
 
             var dataseet = [];
             var fs = require('fs');
             const browser = await puppeteer.launch({
-                headless: false,
+                headless: true,
                 args: ['--no-sandbox']
             });
 
@@ -1513,7 +1525,7 @@ class PostoController {
             )
             await page1.waitFor(10000);
             await page1.click('#updateResults');
-           // await page1.click('body > div.ctrl-top > a');
+            // await page1.click('body > div.ctrl-top > a');
 
 
             /*  await page1.waitForFunction(

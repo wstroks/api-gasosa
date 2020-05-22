@@ -40,12 +40,17 @@ class PostoController {
 
     async gnv({ response }) {
 
+        
         var dataseet = [];
 
         var fs = require('fs');
         const browser = await puppeteer.launch({
-            headless: false,
-            args: ['--no-sandbox']
+            headless: true,
+            args: [ '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--single-process',
+            '–disable-dev-shm-use']
         });
 
         const page1 = await browser.newPage();
@@ -247,8 +252,12 @@ class PostoController {
         var dataseet = [];
         var fs = require('fs');
         const browser = await puppeteer.launch({
-            headless: false,
-            args: ['--no-sandbox']
+            headless: true,
+            args: [ '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--single-process',
+            '–disable-dev-shm-use']
         });
 
         const page1 = await browser.newPage();

@@ -542,11 +542,13 @@ class PostoController {
 
             console.log("aqui pesquisar");
 
-            /*await page1.waitForFunction(
-                'document.querySelector("#sel-combustivel").innerText.includes("PESQUISAR")'
-            )*/
+            
             console.log("aqui UP 1222");
-            await page1.screenshot({ path: 'test3.png' });
+            await page1.waitFor(5000);
+            await page1.waitForFunction(
+                'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+            )
+           // await page1.screenshot({ path: 'test3.png' });
             await page1.click('#sel-combustivel');
 
             await page1.screenshot({ path: 'test4.png' });

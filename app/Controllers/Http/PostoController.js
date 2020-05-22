@@ -522,7 +522,9 @@ class PostoController {
             await page1.screenshot({ path: 'test04.png' });
 
 
-
+            await page1.waitForFunction(
+                'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button").innerText.includes("local")'
+            )
 
 
             await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');

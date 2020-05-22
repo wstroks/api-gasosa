@@ -464,6 +464,8 @@ class PostoController {
             });
             await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
 
+            
+
             await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
 
             //await page1.waitFor(2000);
@@ -505,7 +507,7 @@ class PostoController {
             await page1.waitForFunction(
                 'document.querySelector("#sugerir-municipios").innerText.includes("FEIRA DE SANTANA")'
             )
-
+            console.log("aqui pesquisar 4");
 
             await page1.click('#sugerir-municipios > ul > li.set-mun');
             await page1.screenshot({ path: 'test03.png' });
@@ -514,24 +516,24 @@ class PostoController {
 
 
 
-
+            console.log("aqui pesquisar 5");
 
             await page1.screenshot({ path: 'test03.png' });
             await page1.click('#aplicar');
 
             await page1.screenshot({ path: 'test04.png' });
 
-
+            console.log("aqui pesquisar 2");
             await page1.waitForFunction(
                 'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button").innerText.includes("local")'
             )
 
-
+            console.log("aqui pesquisar 1");
             await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
             await page1.screenshot({ path: 'test1.png' });
 
 
-
+            await page1.waitFor(5000);
 
             await page1.evaluate(() => {
                 document.querySelector("#lista-combustivel").value = "DIESEL";
@@ -669,7 +671,7 @@ class PostoController {
        
         // browser.close();
         return response.status(200).send("Diesel - Console.");
-        await browser.close();
+        
     } catch (err) {
         return response.status(404).send({ error: `Erro ${err.message} e ${err.messages}`});
     }

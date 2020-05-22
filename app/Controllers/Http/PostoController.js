@@ -444,8 +444,8 @@ class PostoController {
         }, 70000);
 
     }
-    async test() {
-
+    async test({response}) {
+        try{
         var dataseet = [];
         var fs = require('fs');
         const browser = await puppeteer.launch({
@@ -580,7 +580,8 @@ class PostoController {
             /* await page1.waitForFunction(
                  'document.querySelector("#nav-lista > div:nth-child(101) > div.flex-item2 > div:nth-child(5)").innerText.includes("POSTO")'
              )*/
-
+             await page1.waitFor(5000)
+            
             await page1.screenshot({ path: 'test5.png' });
             let data = page1.evaluate(() => {
 
@@ -659,9 +660,13 @@ class PostoController {
 
           //  await browser.close();
 
-            console.log("Diesel - Console.");
+           // console.log();
        
         // browser.close();
+        return response.status(200).send("Diesel - Console.");
+    } catch (err) {
+        return response.status(500).send({ error: `Erro ${err.message}` });
+    }
 
 
 

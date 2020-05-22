@@ -252,7 +252,7 @@ class PostoController {
         var dataseet = [];
         var fs = require('fs');
         const browser = await puppeteer.launch({
-            headless: true,
+           headless: true,
             args: [ '--no-sandbox',
             '--disable-setuid-sandbox',
             '--disable-dev-shm-usage',
@@ -276,7 +276,7 @@ class PostoController {
             page1.screenshot({ path: 'test02.png' });
 
 
-        }, 6000);
+        }, 2000);
 
         setTimeout(function () {
             page1.screenshot({ path: 'test022.png' });
@@ -286,11 +286,11 @@ class PostoController {
 
             page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-        }, 8000);
+        }, 6000);
         setTimeout(function () {
             page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
-        }, 11000);
+        }, 10000);
         setTimeout(function () {
             page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
@@ -300,7 +300,7 @@ class PostoController {
             page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
             page1.keyboard.press("Enter");
 
-        }, 13000);
+        }, 14000);
         setTimeout(function () {
 
             page1.click('#sugerir-municipios > ul > li.set-mun');

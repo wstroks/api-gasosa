@@ -247,6 +247,7 @@ class PostoController {
 
 
     }
+
     async diesel() {
 
         var dataseet = [];
@@ -258,192 +259,409 @@ class PostoController {
                 '--disable-dev-shm-usage',
                 '--single-process']
         });
-        try {
-            const page1 = await browser.newPage();
 
-            await page1.setViewport({
-                width: 1920,
-                height: 1080
+        const page1 = await browser.newPage();
+
+        await page1.setViewport({
+            width: 1920,
+            height: 1080
+        });
+        await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
+
+        await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
+        setTimeout(function () {
+            page1.screenshot({ path: 'test01.png' });
+
+            page1.click('#add-center');
+            page1.screenshot({ path: 'test02.png' });
+
+
+        }, 2000);
+
+        setTimeout(function () {
+            page1.screenshot({ path: 'test022.png' });
+            page1.focus('#modal-regions > div > div > div.modal-body > input');
+            page1.click('#modal-regions > div > div > div.modal-body > input');
+            page1.waitForNavigation();
+
+            page1.$eval('input[name=municipio]', el => el.value = 'f');
+
+        }, 6000);
+        setTimeout(function () {
+            page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
+
+        }, 10000);
+        setTimeout(function () {
+            page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
+
+        }, 12000);
+
+        setTimeout(function () {
+            page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
+            page1.keyboard.press("Enter");
+
+        }, 14000);
+        setTimeout(function () {
+
+            page1.click('#sugerir-municipios > ul > li.set-mun');
+            page1.screenshot({ path: 'test03.png' });
+
+            page1.screenshot({ path: 'test04.png' });
+
+        }, 16000);
+
+        setTimeout(function () {
+
+            page1.screenshot({ path: 'test03.png' });
+            page1.click('#aplicar');
+
+            page1.screenshot({ path: 'test04.png' });
+
+        }, 20000);
+
+
+        setTimeout(function () {
+            page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
+            page1.screenshot({ path: 'test1.png' });
+
+        }, 25000);
+        setTimeout(function () {
+
+            page1.evaluate(() => {
+                document.querySelector("#lista-combustivel").value = "DIESEL";
+            })
+            page1.screenshot({ path: 'test2.png' });
+        }, 30000);
+
+
+        setTimeout(function () {
+
+            page1.screenshot({ path: 'test3.png' });
+            page1.click('#sel-combustivel');
+
+            page1.screenshot({ path: 'test4.png' });
+
+        }, 35000);
+
+
+        setTimeout(function () {
+            page1.click('#updateResults');
+
+        }, 42000);
+
+        setTimeout(function () {
+            page1.click('#updateResults');
+
+        }, 44000);
+        setTimeout(function () {
+            page1.click('#updateResults');
+            page1.click('body > div.ctrl-top > a');
+        }, 46000);
+
+        setTimeout(function () {
+
+            page1.screenshot({ path: 'test5.png' });
+            let data = page1.evaluate(() => {
+
+                let array1 = [];
+
+                for (var i = 2; i < 102; i++) {
+
+                    let p = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2").innerText;
+
+                    let contato = null;
+                    let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
+
+                    let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
+                    let status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+
+
+                    let posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+                    let endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                    //let contato = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(7)").innerText;
+                    var test = preco.split(" ");
+                    if (test[0] == "De") {
+                        preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+                        status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+
+
+                        posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                        endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(6)").innerText;
+                    }
+                    var str = nome;
+                    var result1 = str.indexOf('1');
+                    var result2 = str.indexOf('5');
+
+                    var x = nome + "\n" + preco + "\n" + status.substr(1, status.length - 1) + "\n" + posto.substr(1, posto.length - 1) + "\n" + endereco.substr(1, endereco.length - 1) + "\n" + contato + "\n" + "null";
+
+                    array1.push(x);
+
+                }
+
+                return array1;
             });
-            await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
-
-            await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
-            setTimeout(function () {
-                page1.screenshot({ path: 'test01.png' });
-
-                page1.click('#add-center');
-                page1.screenshot({ path: 'test02.png' });
 
 
-            }, 2000);
-
-            setTimeout(function () {
-                page1.screenshot({ path: 'test022.png' });
-                page1.focus('#modal-regions > div > div > div.modal-body > input');
-                page1.click('#modal-regions > div > div > div.modal-body > input');
-                page1.waitForNavigation();
-
-                page1.$eval('input[name=municipio]', el => el.value = 'f');
-
-            }, 6000);
-            setTimeout(function () {
-                page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
-
-            }, 10000);
-            setTimeout(function () {
-                page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
-
-            }, 12000);
-
-            setTimeout(function () {
-                page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
-                page1.keyboard.press("Enter");
-
-            }, 14000);
-            setTimeout(function () {
-
-                page1.click('#sugerir-municipios > ul > li.set-mun');
-                page1.screenshot({ path: 'test03.png' });
-
-                page1.screenshot({ path: 'test04.png' });
-
-            }, 16000);
-
-            setTimeout(function () {
-
-                page1.screenshot({ path: 'test03.png' });
-                page1.click('#aplicar');
-
-                page1.screenshot({ path: 'test04.png' });
-
-            }, 20000);
 
 
-            setTimeout(function () {
-                page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
-                page1.screenshot({ path: 'test1.png' });
+            data.then(t => {
 
-            }, 25000);
-            setTimeout(function () {
+                // console.log("1" + t.length);
+                var datas = [];
+                for (var i = 0; i < t.length; i++) {
+                    //console.log(t[i]);
+                    var agora = t[i].split('\n');
 
-                page1.evaluate(() => {
-                    document.querySelector("#lista-combustivel").value = "DIESEL";
-                })
-                page1.screenshot({ path: 'test2.png' });
-            }, 30000);
+                    //console.log(JSON.stringify(agora[7]));
+                    datas.push({
+                        combustivel: agora[0],
+                        preco: agora[1],
+                        status: agora[2],
+                        posto: agora[3],
+                        endereco: agora[4],
+                        contato: agora[6],
+                        cidade: "Feira de Santana"
 
-
-            setTimeout(function () {
-
-                page1.screenshot({ path: 'test3.png' });
-                page1.click('#sel-combustivel');
-
-                page1.screenshot({ path: 'test4.png' });
-
-            }, 35000);
+                    });
 
 
-            setTimeout(function () {
-                page1.click('#updateResults');
+                }
 
-            }, 42000);
-
-            setTimeout(function () {
-                page1.click('#updateResults');
-
-            }, 44000);
-            setTimeout(function () {
-                page1.click('#updateResults');
-                page1.click('body > div.ctrl-top > a');
-            }, 46000);
-
-            setTimeout(function () {
-
-                page1.screenshot({ path: 'test5.png' });
-                let data = page1.evaluate(() => {
-
-                    let array1 = [];
-
-                    for (var i = 2; i < 102; i++) {
-
-                        let p = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2").innerText;
-
-                        let contato = null;
-                        let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
-
-                        let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
-                        let status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+                const devtoListTrimmed = datas.filter(n => n != undefined)
+                fs.writeFile("dieselfsa.json",
+                    JSON.stringify(devtoListTrimmed, null, 4),
+                    (err) => console.log('File successfully written!'))
 
 
-                        let posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
-                        let endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
-                        //let contato = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(7)").innerText;
-                        var test = preco.split(" ");
-                        if (test[0] == "De") {
-                            preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
-                            status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+
+            });
+
+            //browser.close();
+
+            console.log("Diesel - Console.");
+            // browser.close();
+
+        }, 70000);
+
+    }
+    async test() {
+
+        var dataseet = [];
+        var fs = require('fs');
+        const browser = await puppeteer.launch({
+            headless: false,
+            args: ['--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--single-process']
+        });
+
+        const page1 = await browser.newPage();
+
+        await page1.setViewport({
+            width: 1920,
+            height: 1080
+        });
+        await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
+
+        await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
+
+        //await page1.waitFor(2000);
+        await page1.screenshot({ path: 'test01.png' });
+        await page1.waitForFunction(
+            'document.querySelector("#add-center").innerText.includes("centro do município")'
+          );
+        await page1.click('#add-center');
+        await page1.screenshot({ path: 'test02.png' });
 
 
-                            posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
-                            endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(6)").innerText;
-                        }
-                        var str = nome;
-                        var result1 = str.indexOf('1');
-                        var result2 = str.indexOf('5');
 
-                        var x = nome + "\n" + preco + "\n" + status.substr(1, status.length - 1) + "\n" + posto.substr(1, posto.length - 1) + "\n" + endereco.substr(1, endereco.length - 1) + "\n" + contato + "\n" + "null";
+        //await page1.waitFor(6000);
 
-                        array1.push(x);
+        await page1.screenshot({ path: 'test022.png' });
+        await page1.focus('#modal-regions > div > div > div.modal-body > input');
+        await page1.click('#modal-regions > div > div > div.modal-body > input');
+        await page1.waitForFunction(
+            'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
+          );
 
-                    }
+        await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-                    return array1;
+        
+
+        await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
+
+
+        
+        await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
+
+
+
+        
+        await page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
+        await page1.keyboard.press("Enter");
+
+
+        await page1.waitForFunction(
+            'document.querySelector("#sugerir-municipios").innerText.includes("FEIRA DE SANTANA")'
+        )
+          
+        
+        await page1.click('#sugerir-municipios > ul > li.set-mun');
+        await page1.screenshot({ path: 'test03.png' });
+
+        await page1.screenshot({ path: 'test04.png' });
+
+
+
+        
+
+        await page1.screenshot({ path: 'test03.png' });
+        await page1.click('#aplicar');
+
+        await page1.screenshot({ path: 'test04.png' });
+
+
+
+       
+
+        await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
+        await page1.screenshot({ path: 'test1.png' });
+
+
+       
+
+        await page1.evaluate(() => {
+            document.querySelector("#lista-combustivel").value = "DIESEL";
+        })
+        await page1.screenshot({ path: 'test2.png' });
+
+
+
+        await page1.waitForFunction(
+            'document.querySelector("#sel-combustivel").innerText.includes("PESQUISAR")'
+        )
+        
+        await page1.screenshot({ path: 'test3.png' });
+        await page1.click('#sel-combustivel');
+
+        await page1.screenshot({ path: 'test4.png' });
+
+       // await page1.waitFor(5000);
+
+        await page1.waitForFunction(
+            'document.querySelector("body").innerText.includes("25")'
+        )
+
+        await page1.click('#updateResults');
+
+        await page1.waitForFunction(
+            'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("50")'
+        )
+
+        
+
+        await page1.click('#updateResults');
+        
+        await page1.waitForFunction(
+            'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("75")'
+        )
+
+        await page1.click('#updateResults');
+        await page1.click('body > div.ctrl-top > a');
+
+
+      /*  await page1.waitForFunction(
+            'document.querySelector("body").innerText.includes("100")'
+        )*/
+
+       /* await page1.waitForFunction(
+            'document.querySelector("#nav-lista > div:nth-child(101) > div.flex-item2 > div:nth-child(5)").innerText.includes("POSTO")'
+        )*/
+
+        await page1.screenshot({ path: 'test5.png' });
+        let data = page1.evaluate(() => {
+
+            let array1 = [];
+
+            for (var i = 2; i < 102; i++) {
+
+                let p = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2").innerText;
+
+                let contato = null;
+                let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
+
+                let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
+                let status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+
+
+                let posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+                let endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                //let contato = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(7)").innerText;
+                var test = preco.split(" ");
+                if (test[0] == "De") {
+                    preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+                    status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+
+
+                    posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                    endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(6)").innerText;
+                }
+                var str = nome;
+                var result1 = str.indexOf('1');
+                var result2 = str.indexOf('5');
+
+                var x = nome + "\n" + preco + "\n" + status.substr(1, status.length - 1) + "\n" + posto.substr(1, posto.length - 1) + "\n" + endereco.substr(1, endereco.length - 1) + "\n" + contato + "\n" + "null";
+
+                array1.push(x);
+
+            }
+
+            return array1;
+        });
+
+
+
+
+        data.then(t => {
+
+            // console.log("1" + t.length);
+            var datas = [];
+            for (var i = 0; i < t.length; i++) {
+                //console.log(t[i]);
+                var agora = t[i].split('\n');
+
+                //console.log(JSON.stringify(agora[7]));
+                datas.push({
+                    combustivel: agora[0],
+                    preco: agora[1],
+                    status: agora[2],
+                    posto: agora[3],
+                    endereco: agora[4],
+                    contato: agora[6],
+                    cidade: "Feira de Santana"
+
                 });
 
 
+            }
+
+            const devtoListTrimmed = datas.filter(n => n != undefined)
+            fs.writeFile("dieselfsa.json",
+                JSON.stringify(devtoListTrimmed, null, 4),
+                (err) => console.log('File successfully written!'))
 
 
-                data.then(t => {
+               // browser.close();
+        });
 
-                    // console.log("1" + t.length);
-                    var datas = [];
-                    for (var i = 0; i < t.length; i++) {
-                        //console.log(t[i]);
-                        var agora = t[i].split('\n');
+        
 
-                        //console.log(JSON.stringify(agora[7]));
-                        datas.push({
-                            combustivel: agora[0],
-                            preco: agora[1],
-                            status: agora[2],
-                            posto: agora[3],
-                            endereco: agora[4],
-                            contato: agora[6],
-                            cidade: "Feira de Santana"
-
-                        });
+        console.log("Diesel - Console.");
+        // browser.close();
 
 
-                    }
 
-                    const devtoListTrimmed = datas.filter(n => n != undefined)
-                    fs.writeFile("dieselfsa.json",
-                        JSON.stringify(devtoListTrimmed, null, 4),
-                        (err) => console.log('File successfully written!'))
-
-                    
-                });
-
-                //browser.close();
-
-                console.log("Diesel - Console.");
-                // browser.close();
-
-            }, 70000);
-        } catch (error) {
-            console.log(error);
-            await browser.close();
-        } 
     }
     async etanol() {
 

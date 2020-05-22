@@ -666,7 +666,7 @@ class PostoController {
         // browser.close();
         return response.status(200).send("Diesel - Console.");
     } catch (err) {
-        return response.status(500).send({ error: `Erro ${err.message}` });
+        return response.status(500).send({ error: `Erro ${err.message} e ${err}`});
     }
 
 

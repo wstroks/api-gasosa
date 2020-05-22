@@ -247,8 +247,8 @@ class PostoController {
         var dataseet = [];
         var fs = require('fs');
         const browser = await puppeteer.launch({
-            headless: true,
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+            headless: false,
+            args: ['--no-sandbox']
         });
 
         const page1 = await browser.newPage();
@@ -428,6 +428,7 @@ class PostoController {
 
 
             console.log("Diesel - Console.");
+           // browser.close();
 
         }, 70000);
 

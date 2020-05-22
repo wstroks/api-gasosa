@@ -538,7 +538,7 @@ class PostoController {
             })
             await page1.screenshot({ path: 'test2.png' });
 
-
+            console.log("aqui pesquisar");
 
             await page1.waitForFunction(
                 'document.querySelector("#sel-combustivel").innerText.includes("PESQUISAR")'
@@ -550,19 +550,20 @@ class PostoController {
             await page1.screenshot({ path: 'test4.png' });
 
             // await page1.waitFor(5000);
+            console.log("aqui UP 1");
 
             await page1.waitForFunction(
                 'document.querySelector("body").innerText.includes("25")'
             )
 
             await page1.click('#updateResults');
-
+            console.log("aqui UP 2");
             await page1.waitForFunction(
                 'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("50")'
             )
 
 
-
+            console.log("aqui UP 3");
             await page1.click('#updateResults');
 
             await page1.waitForFunction(
@@ -581,9 +582,9 @@ class PostoController {
                  'document.querySelector("#nav-lista > div:nth-child(101) > div.flex-item2 > div:nth-child(5)").innerText.includes("POSTO")'
              )*/
              await page1.waitFor(5000)
-            
+            console.log("aqui1");
             await page1.screenshot({ path: 'test5.png' });
-            let data = page1.evaluate(() => {
+            let data =  await page1.evaluate(() => {
 
                 let array1 = [];
 

@@ -450,10 +450,7 @@ class PostoController {
         var fs = require('fs');
         const browser = await puppeteer.launch({
             headless: true,
-            args: ['--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--disable-dev-shm-usage',
-                '--single-process']
+            args: ['--no-sandbox']
         });
        
             const page1 = await browser.newPage();
@@ -534,7 +531,9 @@ class PostoController {
 
 
             await page1.waitFor(5000);
-
+            await page1.waitForFunction(
+                'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+            )
             await page1.evaluate(() => {
                 document.querySelector("#lista-combustivel").value = "DIESEL";
             })
@@ -671,7 +670,8 @@ class PostoController {
 
            // console.log();
        
-        // browser.close();
+        await page1.close();
+        //await browser.close();
         return response.status(200).send("Diesel - Console.");
         
     } catch (err) {

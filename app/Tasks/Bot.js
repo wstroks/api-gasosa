@@ -4,15 +4,15 @@ const Task = use('Task')
 
 class Bot extends Task {
   static get schedule() {
-    return '35 * * * *'
+    return '*/30 * * * *'
   }
   
   async handle() {
     try {
-      var url ="https://api-gasosa.herokuapp.com/postos/json";
+      var url ="https://api-gasosa.herokuapp.com/";
 
         // HTTP GET request to the dyno's url
-       // fetch(url).then(() => console.log(`URl Principal: ${url}.`));
+        fetch(url).then(() => console.log(`URl Principal: ${url}.`));
 
     }
     catch (err) { // catch fetch errors

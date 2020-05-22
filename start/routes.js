@@ -39,10 +39,11 @@ Route.group(() => {
   Route.get('arquivos','PostoController.jsonvisualizar');
   Route.put('update','PostoController.update');
   Route.get('','PostoController.index');
-  Route.get("gasolina", "PostoController.app");
+  Route.get("gasolina", "PostoController.gasolina");
   Route.get("etanol", "PostoController.etanol");
   Route.get("diesel", "PostoController.diesel");
-  Route.get("testdiesel", "PostoController.test");
+  //Route.get("testdiesel", "PostoController.test");
+  //Route.get("testdiesel1", "PostoController.test1");
   Route.get("gnv", "PostoController.gnv");
   Route.post(":id", "PostoController.edit");
   Route.get(":id", "PostoController.show");

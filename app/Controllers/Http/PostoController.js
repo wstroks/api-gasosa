@@ -40,132 +40,127 @@ class PostoController {
 
     async gnv({ response }) {
 
+        try {
+            var dataseet = [];
 
-        var dataseet = [];
+            var dataseet = [];
+            var fs = require('fs');
+            const browser = await puppeteer.launch({
+                headless: false,
+                args: ['--no-sandbox']
+            });
 
-        var fs = require('fs');
-        const browser = await puppeteer.launch({
-            headless: true,
-            args: ['--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--disable-dev-shm-usage',
-                '--single-process',
-                '–disable-dev-shm-use']
-        });
+            const page1 = await browser.newPage();
 
-        const page1 = await browser.newPage();
-
-        await page1.setViewport({
-            width: 1920,
-            height: 1080
-        });
-        await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
-
-        await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
-        setTimeout(function () {
-            page1.screenshot({ path: 'test01.png' });
-
-            page1.click('#add-center');
-            page1.screenshot({ path: 'test02.png' });
-
-        }, 6000);
-
-        setTimeout(function () {
-            page1.screenshot({ path: 'test022.png' });
-            page1.focus('#modal-regions > div > div > div.modal-body > input');
-            page1.click('#modal-regions > div > div > div.modal-body > input');
-            page1.waitForNavigation();
+            await page1.setViewport({
+                width: 1920,
+                height: 1080
+            });
+            await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
 
 
-            page1.$eval('input[name=municipio]', el => el.value = 'f');
+            await page1.waitFor(5000);
+            await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
+
+            await page1.waitFor(2000);
+            await page1.screenshot({ path: 'test01.png' });
+            await page1.waitForFunction(
+                'document.querySelector("#add-center").innerText.includes("centro do município")'
+            );
+            await page1.waitFor(4000);
+            await page1.click('#add-center');
+            await page1.screenshot({ path: 'test02.png' });
 
 
-        }, 12000);
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
-        }, 13000);
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
+            //await page1.waitFor(6000);
+            await page1.waitFor(2000);
+            await page1.screenshot({ path: 'test022.png' });
+            await page1.focus('#modal-regions > div > div > div.modal-body > input');
+            await page1.click('#modal-regions > div > div > div.modal-body > input');
+            await page1.waitForFunction(
+                'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
+            );
 
-        }, 14000);
-
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
-            page1.keyboard.press("Enter");
+            await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
 
-        }, 16000);
-        setTimeout(function () {
 
-            page1.click('#sugerir-municipios > ul > li.set-mun');
-            page1.screenshot({ path: 'test03.png' });
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
 
-            page1.screenshot({ path: 'test04.png' });
 
-        }, 18000);
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
-        setTimeout(function () {
-
-
-            page1.screenshot({ path: 'test03.png' });
-            page1.click('#aplicar');
-
-            page1.screenshot({ path: 'test04.png' });
-
-        }, 22000);
+            await page1.waitFor(2000);
 
 
-        setTimeout(function () {
-            page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
-            page1.screenshot({ path: 'test1.png' });
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
+            await page1.keyboard.press("Enter");
 
-        }, 27000);
-        setTimeout(function () {
 
-            page1.evaluate(() => {
+            await page1.waitForFunction(
+                'document.querySelector("#sugerir-municipios").innerText.includes("FEIRA DE SANTANA")'
+            )
+            console.log("aqui pesquisar 4");
+
+            await page1.click('#sugerir-municipios > ul > li.set-mun');
+            await page1.screenshot({ path: 'test03.png' });
+
+            await page1.screenshot({ path: 'test04.png' });
+
+
+            await page1.waitFor(2000);
+            console.log("aqui pesquisar 5");
+
+            await page1.screenshot({ path: 'test03.png' });
+            await page1.click('#aplicar');
+
+            await page1.screenshot({ path: 'test04.png' });
+
+            console.log("aqui pesquisar 2");
+            await page1.waitForFunction(
+                'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button").innerText.includes("local")'
+            )
+
+            console.log("aqui pesquisar 1");
+            await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
+            await page1.screenshot({ path: 'test1.png' });
+
+
+            await page1.waitFor(5000);
+            await page1.waitForFunction(
+                'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+            )
+            await page1.evaluate(() => {
                 document.querySelector("#lista-combustivel").value = "GNV";
             })
-            page1.screenshot({ path: 'test2.png' });
-        }, 33000);
+            await page1.screenshot({ path: 'test2.png' });
+
+            console.log("aqui pesquisar");
 
 
-        setTimeout(function () {
+            console.log("aqui UP 1222");
+            await page1.waitFor(5000);
+            await page1.waitForFunction(
+                'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+            )
+            // await page1.screenshot({ path: 'test3.png' });
+            await page1.waitFor(2000);
+            await page1.click('#sel-combustivel');
+
+            await page1.screenshot({ path: 'test4.png' });
+
+            // await page1.waitFor(5000);
+            console.log("aqui UP 1");
 
 
-            page1.screenshot({ path: 'test3.png' });
-            page1.click('#sel-combustivel');
+            await page1.waitFor(5000)
+            console.log("aqui1");
+            await page1.screenshot({ path: 'test5.png' });
+            var data = await page1.evaluate(() => {
 
 
-            page1.screenshot({ path: 'test4.png' });
-
-
-
-        }, 38000);
-
-
-        /*setTimeout(function () {
-
-
-
-        }, 42000);
-
-        setTimeout(function () {
-
-
-
-        }, 44000);*/
-        setTimeout(function () {
-
-            page1.click('body > div.ctrl-top > a');
-        }, 46000);
-
-        setTimeout(function () {
-
-
-            page1.screenshot({ path: 'test5.png' });
-            let data = page1.evaluate(() => {
 
                 let array1 = [];
 
@@ -203,21 +198,12 @@ class PostoController {
                 }
 
 
-                return array1;
-            });
-
-
-
-
-            data.then(t => {
-
-                // console.log("1" + t.length);
                 var datas = [];
-                for (var i = 0; i < t.length; i++) {
+                for (var i = 0; i < array1.length; i++) {
+                    //console.log(t[i]);
+                    var agora = array1[i].split('\n');
 
-                    var agora = t[i].split('\n');
-
-                    // console.log(JSON.stringify(agora[7]));
+                    //console.log(JSON.stringify(agora[7]));
                     datas.push({
                         combustivel: agora[0],
                         preco: agora[1],
@@ -229,26 +215,116 @@ class PostoController {
 
                     });
 
+
+
+
                 }
 
+                return datas;
 
-                const devtoListTrimmed = datas.filter(n => 1 != undefined)
-                fs.writeFile("gnvfsa.json",
-                    JSON.stringify(devtoListTrimmed, null, 4),
-                    (err) => console.log('File successfully written!'))
-
-
+                // return array1;
             });
 
+            for (var i = 0; i < Object.keys(data).length; i++) {
+                var dados = [];
+                var dadosCombustivel = [];
 
-            console.log("GNV - Console");
+                if (data[i].posto == null) {
+                    dados.push({
+                        'nome': "Não tem",
+                        'endereco': data[i].endereco,
+                        'contato': data[i].contato,
+                        'status': data[i].status,
+                        'cidade': "Feira de Santana"
 
-        }, 90000);
+
+                    });
+                } else {
+                    dados.push({
+                        'nome': data[i].posto,
+                        'endereco': data[i].endereco,
+                        'contato': data[i].contato,
+                        'status': data[i].status,
+                        'cidade': "Feira de Santana"
+
+
+                    });
+                }
+
+                var posto = await Posto.query().where('endereco', '=', data[i].endereco).first();
+
+
+                if (!posto) {
+                    var posto1 = await Posto.create(...dados);
+
+                    dadosCombustivel.push({
+                        'valor': data[i].preco,
+                        'tipo': data[i].combustivel,
+                        'posto_id': posto1.id
+
+                    });
+
+                    var combustivel = await Combustivel.create(...dadosCombustivel);
+                    var historico = await Historico.create(...dadosCombustivel);
+                } else {
+                    //console.log('1');
+                    var combustivel1 = await Combustivel.query().where('posto_id', posto.id).where('tipo', '=', data[i].combustivel).first();
+                    dadosCombustivel.push({
+                        'valor': data[i].preco,
+                        'tipo': data[i].combustivel,
+                        'posto_id': posto.id
+
+                    });
+                    if (combustivel1) {
+                        combustivel1.valor = data[i].preco;
+                        combustivel1.save();
+                        var historico = await Historico.create(...dadosCombustivel);
+                    } else {
+
+                        var combustivel = await Combustivel.create(...dadosCombustivel);
+                        var historico = await Historico.create(...dadosCombustivel);
+                    }
+
+                }
+
+            }
+            /* const devtoListTrimmed = datas.filter(n => n != undefined)
+                 fs.writeFile("dieselfsa.json",
+                     JSON.stringify(devtoListTrimmed, null, 4),
+                     (err) => console.log('File successfully written!'))*/
+
+
+
+
+            /*data.then(t => {
+
+                // console.log("1" + t.length);
+                
+
+
+                // browser.close();
+            });*/
+
+            //  await browser.close();
+
+            // console.log();
+
+            await page1.close();
+            await browser.close();
+            return response.status(200).send("GNV - Console.");
+
+        } catch (err) {
+            return response.status(500);
+        }
+
+
+
+
 
 
     }
 
-    async diesel() {
+    async dieselx() {
 
         var dataseet = [];
         var fs = require('fs');
@@ -444,15 +520,249 @@ class PostoController {
         }, 70000);
 
     }
-    async test({response}) {
-        try{
+
+    async test1({ response }) {
+
         var dataseet = [];
         var fs = require('fs');
         const browser = await puppeteer.launch({
-            headless: true,
+            headless: false,
             args: ['--no-sandbox']
         });
-       
+
+        const page1 = await browser.newPage();
+
+        await page1.setViewport({
+            width: 1920,
+            height: 1080
+        });
+        await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
+
+
+
+        await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
+
+        //await page1.waitFor(2000);
+        await page1.screenshot({ path: 'test01.png' });
+        await page1.waitForFunction(
+            'document.querySelector("#add-center").innerText.includes("centro do município")'
+        );
+        await page1.click('#add-center');
+        await page1.screenshot({ path: 'test02.png' });
+
+
+
+        //await page1.waitFor(6000);
+
+        await page1.screenshot({ path: 'test022.png' });
+        await page1.focus('#modal-regions > div > div > div.modal-body > input');
+        await page1.click('#modal-regions > div > div > div.modal-body > input');
+        await page1.waitForFunction(
+            'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
+        );
+
+        await page1.$eval('input[name=municipio]', el => el.value = 'f');
+
+
+
+        await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
+
+
+
+        await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
+
+
+
+
+        await page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
+        await page1.keyboard.press("Enter");
+
+
+        await page1.waitForFunction(
+            'document.querySelector("#sugerir-municipios").innerText.includes("FEIRA DE SANTANA")'
+        )
+        console.log("aqui pesquisar 4");
+
+        await page1.click('#sugerir-municipios > ul > li.set-mun');
+        await page1.screenshot({ path: 'test03.png' });
+
+        await page1.screenshot({ path: 'test04.png' });
+
+
+
+        console.log("aqui pesquisar 5");
+
+        await page1.screenshot({ path: 'test03.png' });
+        await page1.click('#aplicar');
+
+        await page1.screenshot({ path: 'test04.png' });
+
+        console.log("aqui pesquisar 2");
+        await page1.waitForFunction(
+            'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button").innerText.includes("local")'
+        )
+
+        console.log("aqui pesquisar 1");
+        await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
+        await page1.screenshot({ path: 'test1.png' });
+
+
+        await page1.waitFor(5000);
+        await page1.waitForFunction(
+            'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+        )
+        await page1.evaluate(() => {
+            document.querySelector("#lista-combustivel").value = "DIESEL";
+        })
+        await page1.screenshot({ path: 'test2.png' });
+
+        console.log("aqui pesquisar");
+
+
+        console.log("aqui UP 1222");
+        //await page1.waitFor(5000);
+        await page1.waitForFunction(
+            'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+        )
+        // await page1.screenshot({ path: 'test3.png' });
+        await page1.click('#sel-combustivel');
+
+        await page1.screenshot({ path: 'test4.png' });
+
+        // await page1.waitFor(5000);
+        console.log("aqui UP 1");
+
+        await page1.waitForFunction(
+            'document.querySelector("body").innerText.includes("25")'
+        )
+
+        await page1.click('#updateResults');
+        console.log("aqui UP 2");
+        await page1.waitForFunction(
+            'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("50")'
+        )
+
+
+        console.log("aqui UP 3");
+        await page1.click('#updateResults');
+
+        await page1.waitForFunction(
+            'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("75")'
+        )
+
+        await page1.click('#updateResults');
+        await page1.click('body > div.ctrl-top > a');
+
+
+        /*  await page1.waitForFunction(
+              'document.querySelector("body").innerText.includes("100")'
+          )*/
+
+        /* await page1.waitForFunction(
+             'document.querySelector("#nav-lista > div:nth-child(101) > div.flex-item2 > div:nth-child(5)").innerText.includes("POSTO")'
+         )*/
+        await page1.waitFor(5000)
+        console.log("aqui1");
+        await page1.screenshot({ path: 'test5.png' });
+        var datas = await page1.evaluate(() => {
+
+            let array1 = [];
+
+            for (var i = 2; i < 102; i++) {
+
+                // let p = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2").innerText;
+
+                // let contato = null;
+                let nome = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(1) > strong").innerText;
+
+                let preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(2)").innerText;
+                let status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+
+
+                let posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+                let endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                //let contato = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(7)").innerText;
+                var test = preco.split(" ");
+                if (test[0] == "De") {
+                    preco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(3)").innerText;
+                    status = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(4)").innerText;
+
+
+                    posto = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(5)").innerText;
+                    endereco = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2 > div:nth-child(6)").innerText;
+                }
+                var str = nome;
+                var result1 = str.indexOf('1');
+                var result2 = str.indexOf('5');
+
+                var x = nome + "\n" + preco + "\n" + status.substr(1, status.length - 1) + "\n" + posto.substr(1, posto.length - 1) + "\n" + endereco.substr(1, endereco.length - 1) + "\n" + "null" + "\n" + "null";
+
+                array1.push(x);
+
+            }
+
+            var datas = [];
+            for (var i = 0; i < array1.length; i++) {
+                //console.log(t[i]);
+                var agora = array1[i].split('\n');
+
+                //console.log(JSON.stringify(agora[7]));
+                datas.push({
+                    combustivel: agora[0],
+                    preco: agora[1],
+                    status: agora[2],
+                    posto: agora[3],
+                    endereco: agora[4],
+                    contato: agora[6],
+                    cidade: "Feira de Santana"
+
+                });
+
+
+            }
+
+            return datas;
+
+            // return array1;
+        });
+
+        const devtoListTrimmed = datas.filter(n => n != undefined)
+        fs.writeFile("dieselfsa.json",
+            JSON.stringify(devtoListTrimmed, null, 4),
+            (err) => console.log('File successfully written!'))
+
+
+
+
+        /*data.then(t => {
+
+            // console.log("1" + t.length);
+            
+
+
+            // browser.close();
+        });*/
+
+        //  await browser.close();
+
+        // console.log();
+
+        await page1.close();
+        //await browser.close();
+
+
+
+
+    }
+    async diesel({ response }) {
+        try {
+            var dataseet = [];
+            var fs = require('fs');
+            const browser = await puppeteer.launch({
+                headless: true,
+                args: ['--no-sandbox']
+            });
+
             const page1 = await browser.newPage();
 
             await page1.setViewport({
@@ -461,8 +771,11 @@ class PostoController {
             });
             await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
 
-            
 
+            await page1.waitForFunction(
+                'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button").innerText.includes("place")'
+            );
+            await page1.waitFor(4000);
             await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
 
             //await page1.waitFor(2000);
@@ -470,6 +783,7 @@ class PostoController {
             await page1.waitForFunction(
                 'document.querySelector("#add-center").innerText.includes("centro do município")'
             );
+            await page1.waitFor(4000);
             await page1.click('#add-center');
             await page1.screenshot({ path: 'test02.png' });
 
@@ -479,24 +793,25 @@ class PostoController {
 
             await page1.screenshot({ path: 'test022.png' });
             await page1.focus('#modal-regions > div > div > div.modal-body > input');
+            await page1.waitFor(4000);
             await page1.click('#modal-regions > div > div > div.modal-body > input');
             await page1.waitForFunction(
                 'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
             );
-
+            await page1.waitFor(2000);
             await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-
+            await page1.waitFor(2000);
 
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
 
-
+            await page1.waitFor(2000);
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
 
 
-
+            await page1.waitFor(2000);
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
             await page1.keyboard.press("Enter");
 
@@ -505,7 +820,7 @@ class PostoController {
                 'document.querySelector("#sugerir-municipios").innerText.includes("FEIRA DE SANTANA")'
             )
             console.log("aqui pesquisar 4");
-
+            await page1.waitFor(3000);
             await page1.click('#sugerir-municipios > ul > li.set-mun');
             await page1.screenshot({ path: 'test03.png' });
 
@@ -514,7 +829,7 @@ class PostoController {
 
 
             console.log("aqui pesquisar 5");
-
+            await page1.waitFor(3000);
             await page1.screenshot({ path: 'test03.png' });
             await page1.click('#aplicar');
 
@@ -526,6 +841,7 @@ class PostoController {
             )
 
             console.log("aqui pesquisar 1");
+            await page1.waitFor(3000);
             await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
             await page1.screenshot({ path: 'test1.png' });
 
@@ -541,13 +857,14 @@ class PostoController {
 
             console.log("aqui pesquisar");
 
-            
+
             console.log("aqui UP 1222");
             await page1.waitFor(5000);
             await page1.waitForFunction(
                 'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
             )
-           // await page1.screenshot({ path: 'test3.png' });
+            // await page1.screenshot({ path: 'test3.png' });
+            await page1.waitFor(2000);
             await page1.click('#sel-combustivel');
 
             await page1.screenshot({ path: 'test4.png' });
@@ -558,21 +875,21 @@ class PostoController {
             await page1.waitForFunction(
                 'document.querySelector("body").innerText.includes("25")'
             )
-
+            await page1.waitFor(10000);
             await page1.click('#updateResults');
             console.log("aqui UP 2");
             await page1.waitForFunction(
                 'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("50")'
             )
 
-
+            await page1.waitFor(10000);
             console.log("aqui UP 3");
             await page1.click('#updateResults');
 
             await page1.waitForFunction(
                 'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("75")'
             )
-
+            await page1.waitFor(10000);
             await page1.click('#updateResults');
             await page1.click('body > div.ctrl-top > a');
 
@@ -584,10 +901,10 @@ class PostoController {
             /* await page1.waitForFunction(
                  'document.querySelector("#nav-lista > div:nth-child(101) > div.flex-item2 > div:nth-child(5)").innerText.includes("POSTO")'
              )*/
-             await page1.waitFor(5000)
+            await page1.waitFor(5000)
             console.log("aqui1");
             await page1.screenshot({ path: 'test5.png' });
-           var datas= await page1.evaluate(() => {
+            var data = await page1.evaluate(() => {
 
                 let array1 = [];
 
@@ -642,20 +959,85 @@ class PostoController {
                     });
 
 
+
+
                 }
-                
+
                 return datas;
 
-               // return array1;
+                // return array1;
             });
 
-            const devtoListTrimmed = datas.filter(n => n != undefined)
-                fs.writeFile("dieselfsa.json",
-                    JSON.stringify(devtoListTrimmed, null, 4),
-                    (err) => console.log('File successfully written!'))
+            for (var i = 0; i < Object.keys(data).length; i++) {
+                var dados = [];
+                var dadosCombustivel = [];
+
+                if (data[i].posto == null) {
+                    dados.push({
+                        'nome': "Não tem",
+                        'endereco': data[i].endereco,
+                        'contato': data[i].contato,
+                        'status': data[i].status,
+                        'cidade': "Feira de Santana"
 
 
-            
+                    });
+                } else {
+                    dados.push({
+                        'nome': data[i].posto,
+                        'endereco': data[i].endereco,
+                        'contato': data[i].contato,
+                        'status': data[i].status,
+                        'cidade': "Feira de Santana"
+
+
+                    });
+                }
+
+                var posto = await Posto.query().where('endereco', '=', data[i].endereco).first();
+
+
+                if (!posto) {
+                    var posto1 = await Posto.create(...dados);
+
+                    dadosCombustivel.push({
+                        'valor': data[i].preco,
+                        'tipo': data[i].combustivel,
+                        'posto_id': posto1.id
+
+                    });
+
+                    var combustivel = await Combustivel.create(...dadosCombustivel);
+                    var historico = await Historico.create(...dadosCombustivel);
+                } else {
+                    //console.log('1');
+                    var combustivel1 = await Combustivel.query().where('posto_id', posto.id).where('tipo', '=', data[i].combustivel).first();
+                    dadosCombustivel.push({
+                        'valor': data[i].preco,
+                        'tipo': data[i].combustivel,
+                        'posto_id': posto.id
+
+                    });
+                    if (combustivel1) {
+                        combustivel1.valor = data[i].preco;
+                        combustivel1.save();
+                        var historico = await Historico.create(...dadosCombustivel);
+                    } else {
+
+                        var combustivel = await Combustivel.create(...dadosCombustivel);
+                        var historico = await Historico.create(...dadosCombustivel);
+                    }
+
+                }
+
+            }
+            /* const devtoListTrimmed = datas.filter(n => n != undefined)
+                 fs.writeFile("dieselfsa.json",
+                     JSON.stringify(devtoListTrimmed, null, 4),
+                     (err) => console.log('File successfully written!'))*/
+
+
+
 
             /*data.then(t => {
 
@@ -666,127 +1048,174 @@ class PostoController {
                 // browser.close();
             });*/
 
-          //  await browser.close();
+            //  await browser.close();
 
-           // console.log();
-       
-        await page1.close();
-        //await browser.close();
-        return response.status(200).send("Diesel - Console.");
-        
-    } catch (err) {
-        return response.status(404).send({ error: `Erro ${err.message} e ${err.messages}`});
+            // console.log();
+
+            await page1.close();
+            //await browser.close();
+            return response.status(200).send("Diesel - Console.");
+
+        } catch (err) {
+            return response.status(500);
+        }
+
+
+
     }
+    async etanol({ response }) {
+
+        try {
+            var dataseet = [];
+            var fs = require('fs');
+            const browser = await puppeteer.launch({
+                headless: true,
+                args: ['--no-sandbox']
+            });
+
+            const page1 = await browser.newPage();
+
+            await page1.setViewport({
+                width: 1920,
+                height: 1080
+            });
+            await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
+
+
+            await page1.waitForFunction(
+                'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button").innerText.includes("place")'
+            );
+            await page1.waitFor(4000);
+            await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
+
+            //await page1.waitFor(2000);
+            await page1.screenshot({ path: 'test01.png' });
+            await page1.waitForFunction(
+                'document.querySelector("#add-center").innerText.includes("centro do município")'
+            );
+            await page1.waitFor(4000);
+            await page1.click('#add-center');
+            await page1.screenshot({ path: 'test02.png' });
 
 
 
-    }
-    async etanol() {
+            //await page1.waitFor(6000);
 
-        var dataseet = [];
-        var adicionarData = 0;
-        var fs = require('fs');
-        const browser = await puppeteer.launch({
-            headless: true,
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
-        });
+            await page1.screenshot({ path: 'test022.png' });
+            await page1.focus('#modal-regions > div > div > div.modal-body > input');
+            await page1.waitFor(4000);
+            await page1.click('#modal-regions > div > div > div.modal-body > input');
+            await page1.waitForFunction(
+                'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
+            );
+            await page1.waitFor(2000);
+            await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-        const page1 = await browser.newPage();
+            await page1.waitFor(2000);
 
-        await page1.setViewport({
-            width: 1920,
-            height: 1080
-        });
-        await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
-
-        await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
-        setTimeout(function () {
-            page1.screenshot({ path: 'test01.png' });
-
-            page1.click('#add-center');
-            page1.screenshot({ path: 'test02.png' });
-
-        }, 6000);
-
-        setTimeout(function () {
-            page1.screenshot({ path: 'test022.png' });
-            page1.focus('#modal-regions > div > div > div.modal-body > input');
-            page1.click('#modal-regions > div > div > div.modal-body > input');
-            page1.waitForNavigation();
-
-            page1.$eval('input[name=municipio]', el => el.value = 'f');
-        }, 8000);
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
-
-        }, 11000);
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
-
-        }, 12000);
-
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
-            page1.keyboard.press("Enter");
-
-        }, 13000);
-        setTimeout(function () {
-
-            page1.click('#sugerir-municipios > ul > li.set-mun');
-            page1.screenshot({ path: 'test03.png' });
-            page1.screenshot({ path: 'test04.png' });
-
-        }, 16000);
-
-        setTimeout(function () {
-
-            page1.screenshot({ path: 'test03.png' });
-            page1.click('#aplicar');
-            page1.screenshot({ path: 'test04.png' });
-
-        }, 20000);
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
 
-        setTimeout(function () {
-            page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
-            page1.screenshot({ path: 'test1.png' });
+            await page1.waitFor(2000);
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
-        }, 25000);
-        setTimeout(function () {
-            page1.evaluate(() => {
+
+
+            await page1.waitFor(2000);
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
+            await page1.keyboard.press("Enter");
+
+
+            await page1.waitForFunction(
+                'document.querySelector("#sugerir-municipios").innerText.includes("FEIRA DE SANTANA")'
+            )
+            console.log("aqui pesquisar 4");
+            await page1.waitFor(3000);
+            await page1.click('#sugerir-municipios > ul > li.set-mun');
+            await page1.screenshot({ path: 'test03.png' });
+
+            await page1.screenshot({ path: 'test04.png' });
+
+
+
+            console.log("aqui pesquisar 5");
+            await page1.waitFor(3000);
+            await page1.screenshot({ path: 'test03.png' });
+            await page1.click('#aplicar');
+
+            await page1.screenshot({ path: 'test04.png' });
+
+            console.log("aqui pesquisar 2");
+            await page1.waitForFunction(
+                'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button").innerText.includes("local")'
+            )
+
+            console.log("aqui pesquisar 1");
+            await page1.waitFor(3000);
+            await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
+            await page1.screenshot({ path: 'test1.png' });
+
+
+            await page1.waitFor(5000);
+            await page1.waitForFunction(
+                'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+            )
+            await page1.evaluate(() => {
                 document.querySelector("#lista-combustivel").value = "ETANOL";
             })
-            page1.screenshot({ path: 'test2.png' });
-        }, 30000);
+            await page1.screenshot({ path: 'test2.png' });
+
+            console.log("aqui pesquisar");
 
 
-        setTimeout(function () {
+            console.log("aqui UP 1222");
+            await page1.waitFor(5000);
+            await page1.waitForFunction(
+                'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+            )
+            // await page1.screenshot({ path: 'test3.png' });
+            //await page1.waitFor(2000);
+            await page1.click('#sel-combustivel');
 
-            page1.screenshot({ path: 'test3.png' });
-            page1.click('#sel-combustivel');
-            page1.screenshot({ path: 'test4.png' });
+            await page1.screenshot({ path: 'test4.png' });
 
-        }, 35000);
+            // await page1.waitFor(5000);
+            console.log("aqui UP 1");
+
+            await page1.waitForFunction(
+                'document.querySelector("body").innerText.includes("25")'
+            )
+            await page1.waitFor(10000);
+            await page1.click('#updateResults');
+            console.log("aqui UP 2");
+            await page1.waitForFunction(
+                'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("50")'
+            )
+
+            await page1.waitFor(10000);
+            console.log("aqui UP 3");
+            await page1.click('#updateResults');
+
+            await page1.waitForFunction(
+                'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("75")'
+            )
+            await page1.waitFor(9000);
+            await page1.click('#updateResults');
+            await page1.click('body > div.ctrl-top > a');
 
 
-        setTimeout(function () {
-            page1.click('#updateResults');
+            /*  await page1.waitForFunction(
+                  'document.querySelector("body").innerText.includes("100")'
+              )*/
 
-        }, 42000);
+            /* await page1.waitForFunction(
+                 'document.querySelector("#nav-lista > div:nth-child(101) > div.flex-item2 > div:nth-child(5)").innerText.includes("POSTO")'
+             )*/
+            await page1.waitFor(5000)
+            console.log("aqui1");
+            await page1.screenshot({ path: 'test5.png' });
+            var data = await page1.evaluate(() => {
 
-        setTimeout(function () {
-            page1.click('#updateResults');
-
-        }, 44000);
-        setTimeout(function () {
-            page1.click('#updateResults');
-            page1.click('body > div.ctrl-top > a');
-        }, 46000);
-
-        setTimeout(function () {
-
-            page1.screenshot({ path: 'test5.png' });
-            let data = page1.evaluate(() => {
 
                 let array1 = [];
 
@@ -823,20 +1252,13 @@ class PostoController {
 
                 }
 
-                return array1;
-            });
 
-
-
-
-            data.then(t => {
-
-                // console.log("1" + t.length);
                 var datas = [];
-                for (var i = 0; i < t.length; i++) {
+                for (var i = 0; i < array1.length; i++) {
                     //console.log(t[i]);
-                    var agora = t[i].split('\n');
-                    // console.log(JSON.stringify(agora[7]));
+                    var agora = array1[i].split('\n');
+
+                    //console.log(JSON.stringify(agora[7]));
                     datas.push({
                         combustivel: agora[0],
                         preco: agora[1],
@@ -848,127 +1270,263 @@ class PostoController {
 
                     });
 
+
+
+
                 }
-                // var fs = require('fs');
-                const devtoListTrimmed = datas.filter(n => 1 != undefined)
-                fs.writeFile("etanolfsa.json",
-                    JSON.stringify(devtoListTrimmed, null, 4),
-                    (err) => console.log('File successfully written!'))
 
+                return datas;
 
+                // return array1;
             });
 
+            for (var i = 0; i < Object.keys(data).length; i++) {
+                var dados = [];
+                var dadosCombustivel = [];
+
+                if (data[i].posto == null) {
+                    dados.push({
+                        'nome': "Não tem",
+                        'endereco': data[i].endereco,
+                        'contato': data[i].contato,
+                        'status': data[i].status,
+                        'cidade': "Feira de Santana"
 
 
-            console.log("Etanol - Console.");
-            //browser.close();
+                    });
+                } else {
+                    dados.push({
+                        'nome': data[i].posto,
+                        'endereco': data[i].endereco,
+                        'contato': data[i].contato,
+                        'status': data[i].status,
+                        'cidade': "Feira de Santana"
 
-        }, 70000);
+
+                    });
+                }
+
+                var posto = await Posto.query().where('endereco', '=', data[i].endereco).first();
+
+
+                if (!posto) {
+                    var posto1 = await Posto.create(...dados);
+
+                    dadosCombustivel.push({
+                        'valor': data[i].preco,
+                        'tipo': data[i].combustivel,
+                        'posto_id': posto1.id
+
+                    });
+
+                    var combustivel = await Combustivel.create(...dadosCombustivel);
+                    var historico = await Historico.create(...dadosCombustivel);
+                } else {
+                    //console.log('1');
+                    var combustivel1 = await Combustivel.query().where('posto_id', posto.id).where('tipo', '=', data[i].combustivel).first();
+                    dadosCombustivel.push({
+                        'valor': data[i].preco,
+                        'tipo': data[i].combustivel,
+                        'posto_id': posto.id
+
+                    });
+                    if (combustivel1) {
+                        combustivel1.valor = data[i].preco;
+                        combustivel1.save();
+                        var historico = await Historico.create(...dadosCombustivel);
+                    } else {
+
+                        var combustivel = await Combustivel.create(...dadosCombustivel);
+                        var historico = await Historico.create(...dadosCombustivel);
+                    }
+
+                }
+
+            }
+            /* const devtoListTrimmed = datas.filter(n => n != undefined)
+                 fs.writeFile("dieselfsa.json",
+                     JSON.stringify(devtoListTrimmed, null, 4),
+                     (err) => console.log('File successfully written!'))*/
+
+
+
+
+            /*data.then(t => {
+
+                // console.log("1" + t.length);
+                
+
+
+                // browser.close();
+            });*/
+
+            //  await browser.close();
+
+            // console.log();
+
+            await page1.close();
+            await browser.close();
+            return response.status(200).send("Etanol - Console.");
+
+        } catch (err) {
+            return response.status(500);
+        }
 
 
 
 
     }
-    async app() {
-        var dataseet = [];
-        var fs = require('fs');
-        const browser = await puppeteer.launch({
-            headless: true,
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
-        });
+    async gasolina({ response }) {
+        try {
+            var dataseet = [];
+            var fs = require('fs');
+            const browser = await puppeteer.launch({
+                headless: true,
+                args: ['--no-sandbox']
+            });
 
-        const page1 = await browser.newPage();
+            const page1 = await browser.newPage();
 
-        await page1.setViewport({
-            width: 1920,
-            height: 1080
-        });
-        await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
-
-        await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
-        setTimeout(function () {
-            page1.screenshot({ path: 'test01.png' });
-
-            page1.click('#add-center');
-            page1.screenshot({ path: 'test02.png' });
-
-        }, 6000);
-
-        setTimeout(function () {
-            page1.screenshot({ path: 'test022.png' });
-            page1.focus('#modal-regions > div > div > div.modal-body > input');
-            page1.click('#modal-regions > div > div > div.modal-body > input');
-            page1.waitForNavigation();
-
-            page1.$eval('input[name=municipio]', el => el.value = 'f');
+            await page1.setViewport({
+                width: 1920,
+                height: 1080
+            });
+            await page1.goto('https://precodahora.ba.gov.br/produtos/', { waitUntil: "networkidle2" });
 
 
-        }, 8000);
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
+            await page1.waitForFunction(
+                'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button").innerText.includes("place")'
+            );
+            await page1.waitFor(4000);
+            await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.location-box > button');
 
-        }, 11000);
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
-
-        }, 12000);
-
-        setTimeout(function () {
-            page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
-            page1.keyboard.press("Enter");
-
-        }, 13000);
-        setTimeout(function () {
-
-            page1.click('#sugerir-municipios > ul > li.set-mun');
-            page1.screenshot({ path: 'test03.png' });
+            //await page1.waitFor(2000);
+            await page1.screenshot({ path: 'test01.png' });
+            await page1.waitForFunction(
+                'document.querySelector("#add-center").innerText.includes("centro do município")'
+            );
+            await page1.waitFor(4000);
+            await page1.click('#add-center');
+            await page1.screenshot({ path: 'test02.png' });
 
 
-            page1.screenshot({ path: 'test04.png' });
 
-        }, 16000);
+            //await page1.waitFor(6000);
 
-        setTimeout(function () {
+            await page1.screenshot({ path: 'test022.png' });
+            await page1.focus('#modal-regions > div > div > div.modal-body > input');
+            await page1.waitFor(4000);
+            await page1.click('#modal-regions > div > div > div.modal-body > input');
+            await page1.waitForFunction(
+                'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
+            );
+            await page1.waitFor(2000);
+            await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-            page1.screenshot({ path: 'test03.png' });
-            page1.click('#aplicar');
-            page1.screenshot({ path: 'test04.png' });
+            await page1.waitFor(2000);
 
-        }, 20000);
-
-
-        setTimeout(function () {
-            page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
-            page1.screenshot({ path: 'test1.png' });
-
-        }, 25000);
-        setTimeout(function () {
-            page1.screenshot({ path: 'test2.png' });
-        }, 30000);
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
 
-        setTimeout(function () {
-            page1.screenshot({ path: 'test3.png' });
-            page1.click('#sel-combustivel');
-            page1.screenshot({ path: 'test4.png' });
+            await page1.waitFor(2000);
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
-        }, 35000);
 
-        setTimeout(function () {
-            page1.click('#updateResults');
-        }, 42000);
 
-        setTimeout(function () {
-            page1.click('#updateResults');
-        }, 44000);
-        setTimeout(function () {
-            page1.click('#updateResults');
-            page1.click('body > div.ctrl-top > a');
-        }, 46000);
+            await page1.waitFor(2000);
+            await page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
+            await page1.keyboard.press("Enter");
 
-        setTimeout(function () {
-            page1.screenshot({ path: 'test5.png' });
-            let data = page1.evaluate(() => {
+
+            await page1.waitForFunction(
+                'document.querySelector("#sugerir-municipios").innerText.includes("FEIRA DE SANTANA")'
+            )
+            console.log("aqui pesquisar 4");
+            await page1.waitFor(3000);
+            await page1.click('#sugerir-municipios > ul > li.set-mun');
+            await page1.screenshot({ path: 'test03.png' });
+
+            await page1.screenshot({ path: 'test04.png' });
+
+
+
+            console.log("aqui pesquisar 5");
+            await page1.waitFor(3000);
+            await page1.screenshot({ path: 'test03.png' });
+            await page1.click('#aplicar');
+
+            await page1.screenshot({ path: 'test04.png' });
+
+            console.log("aqui pesquisar 2");
+            await page1.waitForFunction(
+                'document.querySelector("body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button").innerText.includes("local")'
+            )
+
+            console.log("aqui pesquisar 1");
+            await page1.waitFor(3000);
+            await page1.click('body > div.row-fluid.bg-white.mb-3 > div > div > div.gas-box > button');
+            await page1.screenshot({ path: 'test1.png' });
+
+
+            await page1.waitFor(5000);
+            await page1.waitForFunction(
+                'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+            )
+            await page1.evaluate(() => {
+                document.querySelector("#lista-combustivel").value = "GASOLINA";
+            })
+            await page1.screenshot({ path: 'test2.png' });
+
+            console.log("aqui pesquisar");
+
+
+            console.log("aqui UP 1222");
+            await page1.waitFor(10000);
+            await page1.waitForFunction(
+                'document.querySelector("#modal-combustiveis > div > div > div.modal-body").innerText.includes("Escolha o tipo de combustível")'
+            )
+            // await page1.screenshot({ path: 'test3.png' });
+            await page1.waitFor(2000);
+            await page1.click('#sel-combustivel');
+
+            await page1.screenshot({ path: 'test4.png' });
+
+            // await page1.waitFor(5000);
+            console.log("aqui UP 1");
+
+            await page1.waitForFunction(
+                'document.querySelector("body").innerText.includes("25")'
+            )
+            await page1.waitFor(10000);
+            await page1.click('#updateResults');
+            console.log("aqui UP 2");
+            await page1.waitForFunction(
+                'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("50")'
+            ) *
+
+                await page1.waitFor(10000);
+            console.log("aqui UP 3");
+            await page1.click('#updateResults');
+
+            await page1.waitForFunction(
+                'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("75")'
+            )
+            await page1.waitFor(10000);
+            await page1.click('#updateResults');
+           // await page1.click('body > div.ctrl-top > a');
+
+
+            /*  await page1.waitForFunction(
+                  'document.querySelector("body").innerText.includes("100")'
+              )*/
+
+            /* await page1.waitForFunction(
+                 'document.querySelector("#nav-lista > div:nth-child(101) > div.flex-item2 > div:nth-child(5)").innerText.includes("POSTO")'
+             )*/
+            await page1.waitFor(5000)
+            console.log("aqui1");
+            await page1.screenshot({ path: 'test5.png' });
+            var data = await page1.evaluate(() => {
 
                 let array1 = [];
                 for (var i = 2; i <= 101; i++) {
@@ -1013,16 +1571,13 @@ class PostoController {
 
                 }
 
-                return array1;
-            });
 
-
-            data.then(t => {
                 var datas = [];
-                for (var i = 0; i < t.length; i++) {
+                for (var i = 0; i < array1.length; i++) {
                     //console.log(t[i]);
-                    var agora = t[i].split('\n');
-                    // console.log(agora);
+                    var agora = array1[i].split('\n');
+
+                    //console.log(JSON.stringify(agora[7]));
                     datas.push({
                         combustivel: agora[0],
                         preco: agora[1],
@@ -1036,19 +1591,107 @@ class PostoController {
 
 
 
+
                 }
 
-                const devtoListTrimmed = datas.filter(n => n != undefined)
-                fs.writeFile("gfsa.json",
-                    JSON.stringify(devtoListTrimmed, null, 4),
-                    (err) => console.log('File successfully written!'))
+                return datas;
 
+                // return array1;
             });
 
+            for (var i = 0; i < Object.keys(data).length; i++) {
+                var dados = [];
+                var dadosCombustivel = [];
 
-            console.log("Gasolina - Console.");
+                if (data[i].posto == null) {
+                    dados.push({
+                        'nome': "Não tem",
+                        'endereco': data[i].endereco,
+                        'contato': data[i].contato,
+                        'status': data[i].status,
+                        'cidade': "Feira de Santana"
 
-        }, 70000);
+
+                    });
+                } else {
+                    dados.push({
+                        'nome': data[i].posto,
+                        'endereco': data[i].endereco,
+                        'contato': data[i].contato,
+                        'status': data[i].status,
+                        'cidade': "Feira de Santana"
+
+
+                    });
+                }
+
+                var posto = await Posto.query().where('endereco', '=', data[i].endereco).first();
+
+
+                if (!posto) {
+                    var posto1 = await Posto.create(...dados);
+
+                    dadosCombustivel.push({
+                        'valor': data[i].preco,
+                        'tipo': data[i].combustivel,
+                        'posto_id': posto1.id
+
+                    });
+
+                    var combustivel = await Combustivel.create(...dadosCombustivel);
+                    var historico = await Historico.create(...dadosCombustivel);
+                } else {
+                    //console.log('1');
+                    var combustivel1 = await Combustivel.query().where('posto_id', posto.id).where('tipo', '=', data[i].combustivel).first();
+                    dadosCombustivel.push({
+                        'valor': data[i].preco,
+                        'tipo': data[i].combustivel,
+                        'posto_id': posto.id
+
+                    });
+                    if (combustivel1) {
+                        combustivel1.valor = data[i].preco;
+                        combustivel1.save();
+                        var historico = await Historico.create(...dadosCombustivel);
+                    } else {
+
+                        var combustivel = await Combustivel.create(...dadosCombustivel);
+                        var historico = await Historico.create(...dadosCombustivel);
+                    }
+
+                }
+
+            }
+            /* const devtoListTrimmed = datas.filter(n => n != undefined)
+                 fs.writeFile("dieselfsa.json",
+                     JSON.stringify(devtoListTrimmed, null, 4),
+                     (err) => console.log('File successfully written!'))*/
+
+
+
+
+            /*data.then(t => {
+
+                // console.log("1" + t.length);
+                
+
+
+                // browser.close();
+            });*/
+
+            //  await browser.close();
+
+            // console.log();
+
+            await page1.close();
+            await browser.close();
+            return response.status(200).send("Gasolina- Console.");
+
+        } catch (err) {
+            return response.status(500);
+        }
+
+
     }
 
     /**

@@ -12,7 +12,7 @@ class Gnvfsa extends Task {
       var url ="https://api-gasosa.herokuapp.com/postos/gnv";
 
         // HTTP GET request to the dyno's url
-        fetch(url).then(() => console.log(`Gnv: ${url}.`));
+       // fetch(url).then(() => console.log(`Gnv: ${url}.`));
 
     }
     catch (err) { // catch fetch errors

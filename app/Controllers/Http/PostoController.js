@@ -96,11 +96,11 @@ class PostoController {
 
             await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-
+            await page1.waitFor(6000);
 
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
-
+            await page1.waitFor(6000);
 
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
@@ -810,15 +810,15 @@ class PostoController {
             await page1.waitForFunction(
                 'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
             );
-            await page1.waitFor(2000);
+            await page1.waitFor(10000);
             await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-            await page1.waitFor(2000);
+            await page1.waitFor(10000);
 
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
 
-            await page1.waitFor(2000);
+            await page1.waitFor(6000);
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
 
@@ -1120,20 +1120,20 @@ class PostoController {
             await page1.waitForFunction(
                 'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
             );
-            await page1.waitFor(2000);
+            await page1.waitFor(10000);
             await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-            await page1.waitFor(2000);
+            await page1.waitFor(10000);
 
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
 
-            await page1.waitFor(2000);
+            await page1.waitFor(4000);
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
 
 
-            await page1.waitFor(2000);
+            await page1.waitFor(5000);
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
             await page1.keyboard.press("Enter");
 
@@ -1432,20 +1432,20 @@ class PostoController {
             await page1.waitForFunction(
                 'document.querySelector("#modal-regions > div > div > div.modal-body").innerText.includes("Digite sua cidade ou selecione")'
             );
-            await page1.waitFor(2000);
+            await page1.waitFor(5000);
             await page1.$eval('input[name=municipio]', el => el.value = 'f');
 
-            await page1.waitFor(2000);
+            await page1.waitFor(10000);
 
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'eira ');
 
 
-            await page1.waitFor(2000);
+            await page1.waitFor(6000);
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'de ');
 
 
 
-            await page1.waitFor(2000);
+            await page1.waitFor(7000);
             await page1.$eval('input[name=municipio]', el => el.value = el.value + 'santana');
             await page1.keyboard.press("Enter");
 

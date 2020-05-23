@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 
 class Etanolfsa extends Task {
   static get schedule () {
-    return '0 * */7 * * *'
+    return '20 */12 * * *'
   }
 
   async handle () {

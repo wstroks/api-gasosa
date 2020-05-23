@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 
 class Gnvfsa extends Task {
   static get schedule () {
-    return '0 * */5 * * *'
+    return '1 */12 * * *'
   }
   async handle () {
     try {

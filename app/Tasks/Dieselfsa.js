@@ -4,7 +4,7 @@ const Task = use('Task')
 const fetch = require("node-fetch");
 class Dieselfsa extends Task {
   static get schedule () {
-    return '0 * */8 * * *'
+    return '30 */12 * * *'
   }
 
   async handle () {

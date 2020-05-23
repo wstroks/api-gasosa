@@ -4,15 +4,15 @@ const Task = use('Task')
 const fetch = require("node-fetch");
 class Dieselfsa extends Task {
   static get schedule () {
-    return '*/30 * * * *'
+    return '0 * */8 * * *'
   }
 
   async handle () {
     try {
-      var url ="https://api-gasosa.herokuapp.com/";
+      var url ="https://api-gasosa.herokuapp.com/postos/diesel";
 
         // HTTP GET request to the dyno's url
-       fetch(url).then(() => console.log(`URL: ${url}.`));
+       fetch(url).then(() => console.log(`Diesel: ${url}`));
 
     }
     catch (err) { // catch fetch errors

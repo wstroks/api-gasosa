@@ -5,14 +5,14 @@ const fetch = require("node-fetch");
 
 class Gnvfsa extends Task {
   static get schedule () {
-    return '19 17 * * *'
+    return '0 * */5 * * *'
   }
   async handle () {
     try {
       var url ="https://api-gasosa.herokuapp.com/postos/gnv";
 
         // HTTP GET request to the dyno's url
-       // fetch(url).then(() => console.log(`Gnv: ${url}.`));
+        fetch(url).then(() => console.log(`Gnv: ${url}.`));
 
     }
     catch (err) { // catch fetch errors

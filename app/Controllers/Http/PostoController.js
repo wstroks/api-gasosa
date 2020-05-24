@@ -5,6 +5,7 @@ const Combustivel = use('App/Models/Combustivel');
 const Historico = use('App/Models/Historico');
 const Database = use('Database');
 const puppeteer = require('puppeteer');
+const moment = use('moment')
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
@@ -288,6 +289,8 @@ class PostoController {
 
                     });
                     if (combustivel1) {
+                        var current_time = moment().format('DD-MM-YYYY HH:mm:ss');
+                        combustivel1.updated_at = current_time;
                         combustivel1.valor = data[i].preco;
                         combustivel1.save();
                         var historico = await Historico.create(...dadosCombustivel);
@@ -1031,6 +1034,8 @@ class PostoController {
 
                     });
                     if (combustivel1) {
+                        var current_time = moment().format('DD-MM-YYYY HH:mm:ss');
+                        combustivel1.updated_at = current_time;
                         combustivel1.valor = data[i].preco;
                         combustivel1.save();
                         var historico = await Historico.create(...dadosCombustivel);
@@ -1343,6 +1348,8 @@ class PostoController {
 
                     });
                     if (combustivel1) {
+                        var current_time = moment().format('DD-MM-YYYY HH:mm:ss');
+                        combustivel1.updated_at = current_time;
                         combustivel1.valor = data[i].preco;
                         combustivel1.save();
                         var historico = await Historico.create(...dadosCombustivel);
@@ -1514,7 +1521,7 @@ class PostoController {
             console.log("aqui UP 2");
             await page1.waitForFunction(
                 'document.querySelector("#nav-lista > div.list-info.mt-2.mb-2").innerText.includes("50")'
-            ) *
+            ) 
 
                 await page1.waitFor(10000);
             console.log("aqui UP 3");
@@ -1662,6 +1669,8 @@ class PostoController {
 
                     });
                     if (combustivel1) {
+                        var current_time = moment().format('DD-MM-YYYY HH:mm:ss');
+                        combustivel1.updated_at = current_time;
                         combustivel1.valor = data[i].preco;
                         combustivel1.save();
                         var historico = await Historico.create(...dadosCombustivel);
@@ -1997,8 +2006,13 @@ class PostoController {
                 var combustivel1 = await Combustivel.query().where('posto_id', posto.id).where('tipo', '=', data[i].combustivel).first();
 
                 if (combustivel1) {
+                    var current_time = moment().format('DD-MM-YYYY HH:mm:ss');
+                    combustivel1.posto_id = posto.id;
+                    combustivel1.tipo = data[i].combustivel;
                     combustivel1.valor = data[i].preco;
+                    combustivel1.updated_at = current_time;
                     combustivel1.save();
+                   // combustivel1.save();
                 } else {
                     dadosCombustivel.push({
                         'valor': data[i].preco,

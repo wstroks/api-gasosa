@@ -178,7 +178,7 @@ class PostoController {
                 let array1 = [];
 
                 var contadorArray = 5;
-                for (var i = 2; i <= 8; i++) {
+                for (var i = 2; i <= 9; i++) {
 
                     let p = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2").innerText;
 
@@ -1086,7 +1086,7 @@ class PostoController {
             var dataseet = [];
             var fs = require('fs');
             const browser = await puppeteer.launch({
-                headless: true,
+                headless: false,
                 args: ['--no-sandbox']
             });
 
@@ -1237,7 +1237,7 @@ class PostoController {
                 let array1 = [];
 
 
-                for (var i = 2; i < 96; i++) {
+                for (var i = 2; i <=93; i++) {
 
                     let p = document.querySelector("#nav-lista > div:nth-child(" + i + ") > div.flex-item2").innerText;
 

@@ -4,7 +4,7 @@ const Task = use('Task')
 
 class Dieselssa extends Task {
   static get schedule () {
-    return '0 8 5 * * *'
+    return '18 15 * / 2 * *'
   }
 
   async handle () {

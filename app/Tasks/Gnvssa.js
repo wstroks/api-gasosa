@@ -4,7 +4,7 @@ const Task = use('Task')
 
 class Gnvssa extends Task {
   static get schedule () {
-    return '0 45 5 * * *'
+    return '25 15 * / 2 * *'
   }
 
   async handle () {

@@ -1,7 +1,7 @@
 'use strict'
 
 const Task = use('Task')
-
+const fetch = require("node-fetch");
 class Etanolssa extends Task {
   static get schedule () {
     return '45 */12 * * *'

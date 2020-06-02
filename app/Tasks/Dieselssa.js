@@ -1,6 +1,7 @@
 'use strict'
 
 const Task = use('Task')
+const fetch = require("node-fetch");
 
 class Dieselssa extends Task {
   static get schedule () {

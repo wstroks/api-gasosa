@@ -67,9 +67,12 @@ class CombustivelController {
     }
   }
 
-  async gnv({ request, response, view, params }) {
+  async gnv({ request, response, view, params,query }) {
     try {
-      const page = params.page || 1
+      console.log(request.only([ 'page']))
+      //request.only([ 'page'])
+      let data= request.only([ 'page']);
+      const page = Number(data.page) || 1
       var combusteveis = await Combustivel.query().with('postos').where('tipo', '=', 'GNV').orderBy('valor', 'ASC').paginate(page, 25);
       const pagination = combusteveis.toJSON();
       pagination.offset = (pagination.page - 1) * pagination.perPage

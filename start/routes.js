@@ -37,7 +37,7 @@ Route.group(() => {
   Route.get('gaditivada', 'CombustivelController.gaditivada');
   Route.get('etanol', 'CombustivelController.etanol');
   Route.get('diesel', 'CombustivelController.diesel');
-  Route.get('gnv/:page?', 'CombustivelController.gnv');
+  Route.get('gnv:page?', 'CombustivelController.gnv');
 
 }).prefix('combustiveis');
 

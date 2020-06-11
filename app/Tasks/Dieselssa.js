@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 
 class Dieselssa extends Task {
   static get schedule () {
-    return '55 */12 * * *'
+    return '15 10 * * *'
   }
 
   async handle () {

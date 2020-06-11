@@ -30,11 +30,19 @@ Route.group(() => {
 }).prefix('comentarios');
 
 Route.group(() => {
+
   Route.get('', 'CombustivelController.index');
   Route.delete(':id', 'CombustivelController.destroy');
+  Route.get('gcomum', 'CombustivelController.gcomum');
+  Route.get('gaditivada', 'CombustivelController.gaditivada');
+  Route.get('etanol', 'CombustivelController.etanol');
+  Route.get('diesel', 'CombustivelController.diesel');
+  Route.get('gnv/:page?', 'CombustivelController.gnv');
+
 }).prefix('combustiveis');
 
 Route.group(() => {
+  
   Route.post('create', 'PostoController.create');
   Route.get('json', 'PostoController.jsonadd');
   Route.get('arquivos', 'PostoController.jsonvisualizar');

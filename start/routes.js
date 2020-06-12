@@ -33,11 +33,11 @@ Route.group(() => {
 
   Route.get('', 'CombustivelController.index');
   Route.delete(':id', 'CombustivelController.destroy');
-  Route.get('gcomum:page?', 'CombustivelController.gcomum');
-  Route.get('gaditivada:page?', 'CombustivelController.gaditivada');
-  Route.get('etanol:page?', 'CombustivelController.etanol');
-  Route.get('diesel:page?', 'CombustivelController.diesel');
-  Route.get('gnv:page?', 'CombustivelController.gnv');
+  Route.get('gcomum:page?:orderBy?', 'CombustivelController.gcomum');
+  Route.get('gaditivada:page?:orderBy?', 'CombustivelController.gaditivada');
+  Route.get('etanol:page?:orderBy?', 'CombustivelController.etanol');
+  Route.get('diesel:page?:orderBy?', 'CombustivelController.diesel');
+  Route.get('gnv:page?:orderBy?', 'CombustivelController.gnv');
 
 }).prefix('combustiveis');
 

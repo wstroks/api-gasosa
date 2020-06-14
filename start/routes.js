@@ -40,7 +40,12 @@ Route.group(() => {
   Route.get('gnv:page?:orderBy?', 'CombustivelController.gnv');
 
   //distancia 
-  Route.get('distancia:page?:orderBy?', 'CombustivelController.gnvdistancia');
+  Route.get('distancia/gnv:page?:orderBy?', 'CombustivelController.gnvdistancia');
+  Route.get('distancia/etanol:page?:orderBy?', 'CombustivelController.etanoldistancia');
+  Route.get('distancia/gcomum:page?:orderBy?', 'CombustivelController.gcomumdistancia');
+  Route.get('distancia/gaditivada:page?:orderBy?', 'CombustivelController.gadtivadadistancia');
+  Route.get('distancia/diesel:page?:orderBy?', 'CombustivelController.dieseldistancia');
+  
 
 }).prefix('combustiveis');
 

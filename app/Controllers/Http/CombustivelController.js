@@ -154,6 +154,156 @@ class CombustivelController {
   }
 
 
+  async etanoldistancia({ request, response, view, params, query }) {
+    try {
+      
+      let data = request.only(['page', 'orderBy', 'cidade']);
+      const page = Number(data.page) || 1
+      const combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
+        builder.where('cidade', "=", data.cidade)
+      }).where('tipo', '=', 'ETANOL').with('postos').orderBy(data.orderBy, 'ASC').fetch();
+    
+      var aux = [];
+
+      var distancias = combusteveis.toJSON();
+      distancias.map(t => {
+        aux.push({
+          "id": t.id,
+          "posto_id": t.posto_id,
+          "tipo": t.tipo,
+          "valor": t.valor,
+          "created_at": t.created_at,
+          "updated_at": t.updated_at,
+          "postos": t.postos,
+          "distancia": (parseFloat(geolib.getPreciseDistance({ latitude: -12.2323411, longitude: -38.9772404 }, { latitude: parseFloat(t.postos.latitude), longitude: parseFloat(t.postos.longitude) }, 1)) / 1000)
+        });
+      });
+
+      const sortDistancias = aux.sort((a, b) => a.distancia - b.distancia);
+      function pag(array, page_size, page_number) {
+
+        return array.slice((page_number - 1) * page_size, page_number * page_size);
+      }
+
+      return response.status(200).json({ total: sortDistancias.length, perPage: 25, page: page, lastPage: Math.ceil(sortDistancias.length / 25), data: pag(sortDistancias, 25, page) });
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
+  }
+
+
+  async gcomumdistancia({ request, response, view, params, query }) {
+    try {
+      
+      let data = request.only(['page', 'orderBy', 'cidade']);
+      const page = Number(data.page) || 1
+      const combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
+        builder.where('cidade', "=", data.cidade)
+      }).where('tipo', '=', 'GASOLINA COMUM').with('postos').orderBy(data.orderBy, 'ASC').fetch();
+    
+      var aux = [];
+
+      var distancias = combusteveis.toJSON();
+      distancias.map(t => {
+        aux.push({
+          "id": t.id,
+          "posto_id": t.posto_id,
+          "tipo": t.tipo,
+          "valor": t.valor,
+          "created_at": t.created_at,
+          "updated_at": t.updated_at,
+          "postos": t.postos,
+          "distancia": (parseFloat(geolib.getPreciseDistance({ latitude: -12.2323411, longitude: -38.9772404 }, { latitude: parseFloat(t.postos.latitude), longitude: parseFloat(t.postos.longitude) }, 1)) / 1000)
+        });
+      });
+
+      const sortDistancias = aux.sort((a, b) => a.distancia - b.distancia);
+      function pag(array, page_size, page_number) {
+
+        return array.slice((page_number - 1) * page_size, page_number * page_size);
+      }
+
+      return response.status(200).json({ total: sortDistancias.length, perPage: 25, page: page, lastPage: Math.ceil(sortDistancias.length / 25), data: pag(sortDistancias, 25, page) });
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
+  }
+
+  async gadtivadadistancia({ request, response, view, params, query }) {
+    try {
+      
+      let data = request.only(['page', 'orderBy', 'cidade']);
+      const page = Number(data.page) || 1
+      const combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
+        builder.where('cidade', "=", data.cidade)
+      }).where('tipo', '=', 'GASOLINA ADITIVADA').with('postos').orderBy(data.orderBy, 'ASC').fetch();
+    
+      var aux = [];
+
+      var distancias = combusteveis.toJSON();
+      distancias.map(t => {
+        aux.push({
+          "id": t.id,
+          "posto_id": t.posto_id,
+          "tipo": t.tipo,
+          "valor": t.valor,
+          "created_at": t.created_at,
+          "updated_at": t.updated_at,
+          "postos": t.postos,
+          "distancia": (parseFloat(geolib.getPreciseDistance({ latitude: -12.2323411, longitude: -38.9772404 }, { latitude: parseFloat(t.postos.latitude), longitude: parseFloat(t.postos.longitude) }, 1)) / 1000)
+        });
+      });
+
+      const sortDistancias = aux.sort((a, b) => a.distancia - b.distancia);
+      function pag(array, page_size, page_number) {
+
+        return array.slice((page_number - 1) * page_size, page_number * page_size);
+      }
+
+      return response.status(200).json({ total: sortDistancias.length, perPage: 25, page: page, lastPage: Math.ceil(sortDistancias.length / 25), data: pag(sortDistancias, 25, page) });
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
+  }
+
+
+  async dieseldistancia({ request, response, view, params, query }) {
+    try {
+      
+      let data = request.only(['page', 'orderBy', 'cidade']);
+      const page = Number(data.page) || 1
+      var combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
+        builder.where('cidade', "=", data.cidade)
+      }).with('postos').whereNotIn('tipo', ['ETANOL', 'GASOLINA ADITIVADA', "GASOLINA COMUM", "GNV"]).orderBy(data.orderBy, 'ASC').fetch();
+    
+      var aux = [];
+
+      var distancias = combusteveis.toJSON();
+      distancias.map(t => {
+        aux.push({
+          "id": t.id,
+          "posto_id": t.posto_id,
+          "tipo": t.tipo,
+          "valor": t.valor,
+          "created_at": t.created_at,
+          "updated_at": t.updated_at,
+          "postos": t.postos,
+          "distancia": (parseFloat(geolib.getPreciseDistance({ latitude: -12.2323411, longitude: -38.9772404 }, { latitude: parseFloat(t.postos.latitude), longitude: parseFloat(t.postos.longitude) }, 1)) / 1000)
+        });
+      });
+
+      const sortDistancias = aux.sort((a, b) => a.distancia - b.distancia);
+      function pag(array, page_size, page_number) {
+
+        return array.slice((page_number - 1) * page_size, page_number * page_size);
+      }
+
+      return response.status(200).json({ total: sortDistancias.length, perPage: 25, page: page, lastPage: Math.ceil(sortDistancias.length / 25), data: pag(sortDistancias, 25, page) });
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
+  }
+
   /**
    * Render a form to be used for creating a new combustivel.
    * GET combustivels/create

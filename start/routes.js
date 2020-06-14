@@ -39,6 +39,9 @@ Route.group(() => {
   Route.get('diesel:page?:orderBy?', 'CombustivelController.diesel');
   Route.get('gnv:page?:orderBy?', 'CombustivelController.gnv');
 
+  //distancia 
+  Route.get('distancia:page?:orderBy?', 'CombustivelController.gnvdistancia');
+
 }).prefix('combustiveis');
 
 Route.group(() => {

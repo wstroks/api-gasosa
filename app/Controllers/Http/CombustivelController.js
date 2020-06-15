@@ -109,7 +109,8 @@ class CombustivelController {
       }
       const page = Number(data.page) || 1
       var combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade).whereNotNull('nome');
+        builder.where('cidade', "=", data.cidade);
+        builder.whereNotNull('nome');
       }).with('postos').whereNotIn('tipo', ['ETANOL', 'GASOLINA ADITIVADA', "GASOLINA COMUM", "GNV"]).orderBy(data.orderBy, order).paginate(page, 25);
       const pagination = combusteveis.toJSON();
       pagination.offset = (pagination.page - 1) * pagination.perPage

@@ -20,7 +20,7 @@ Route.get('/', 'PostoController.starts')
 
 Route.group(() => {
   Route.get('', 'HistoricoController.index');
-  Route.get(':id', 'HistoricoController.show');
+  Route.get('/show/:id', 'HistoricoController.show');
   Route.get('grafico', 'HistoricoController.historico');
 
   //historico por tipos de combustiveis

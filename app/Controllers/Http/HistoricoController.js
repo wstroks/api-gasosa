@@ -137,12 +137,14 @@ class HistoricoController {
   async show({ params, request, response, view }) {
     try {
       var combusteveis = await Posto.query().with('historicos', (builder)=>{
-        builder.orderBy('updated_at', 'asc');
+        builder.orderBy('updated_at', "asc");
       }).where('id',params.id).first();
 
-      if(!combusteveis){
-        return response.status(200).json({ message: `Id não encontrado` });
-      }
+      if (!combusteveis) {
+        return response.status(404).send({ message: "ID de Posto não existe!" });
+    }
+
+      
       
       return response.status(200).json(combusteveis);
     } catch (err) {

@@ -23,7 +23,9 @@ class CombustivelController {
    */
   async index({ request, response, view }) {
     try {
-      var combustivel = await Combustivel.query().with('postos').orderBy("valor", "ASC").fetch();
+      var combustivel = await Combustivel.query().with('postos', (builder)=>{
+        builder.where('nome',"!=","null");
+      }).orderBy("valor", "ASC").fetch();
 
 
       return response.status(200).json(combustivel);
@@ -43,7 +45,8 @@ class CombustivelController {
       }
       const page = Number(data.page) || 1
       var combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade)
+        builder.where('cidade', "=", data.cidade);
+        builder.where('nome',"!=","null");
       }).with('postos').where('tipo', '=', 'GASOLINA COMUM').orderBy(data.orderBy, order).paginate(page, 25);
       const pagination = combusteveis.toJSON();
       pagination.offset = (pagination.page - 1) * pagination.perPage
@@ -65,7 +68,8 @@ class CombustivelController {
       }
       const page = Number(data.page) || 1
       var combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade)
+        builder.where('cidade', "=", data.cidade);
+        builder.where('nome',"!=","null");
       }).with('postos').where('tipo', '=', 'GASOLINA ADITIVADA').orderBy(data.orderBy, order).paginate(page, 25);
       const pagination = combusteveis.toJSON();
       pagination.offset = (pagination.page - 1) * pagination.perPage
@@ -87,7 +91,8 @@ class CombustivelController {
       }
       const page = Number(data.page) || 1
       var combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade)
+        builder.where('cidade', "=", data.cidade);
+        builder.where('nome',"!=","null");
       }).with('postos').where('tipo', '=', 'ETANOL').orderBy(data.orderBy, order).paginate(page, 25);
       const pagination = combusteveis.toJSON();
       pagination.offset = (pagination.page - 1) * pagination.perPage
@@ -155,7 +160,8 @@ class CombustivelController {
       let data = request.only(['page', 'orderBy', 'cidade']);
       const page = Number(data.page) || 1
       const combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade)
+        builder.where('cidade', "=", data.cidade);
+        builder.where('nome',"!=","null");
       }).where('tipo', '=', 'GNV').with('postos').orderBy(data.orderBy, 'ASC').fetch();
     
       var aux = [];
@@ -193,7 +199,8 @@ class CombustivelController {
       let data = request.only(['page', 'orderBy', 'cidade']);
       const page = Number(data.page) || 1
       const combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade)
+        builder.where('cidade', "=", data.cidade);
+        builder.where('nome',"!=","null");
       }).where('tipo', '=', 'ETANOL').with('postos').orderBy(data.orderBy, 'ASC').fetch();
     
       var aux = [];
@@ -231,7 +238,8 @@ class CombustivelController {
       let data = request.only(['page', 'orderBy', 'cidade']);
       const page = Number(data.page) || 1
       const combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade)
+        builder.where('cidade', "=", data.cidade);
+        builder.where('nome',"!=","null");
       }).where('tipo', '=', 'GASOLINA COMUM').with('postos').orderBy(data.orderBy, 'ASC').fetch();
     
       var aux = [];
@@ -268,7 +276,8 @@ class CombustivelController {
       let data = request.only(['page', 'orderBy', 'cidade']);
       const page = Number(data.page) || 1
       const combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade)
+        builder.where('cidade', "=", data.cidade);
+        builder.where('nome',"!=","null");
       }).where('tipo', '=', 'GASOLINA ADITIVADA').with('postos').orderBy(data.orderBy, 'ASC').fetch();
     
       var aux = [];
@@ -306,7 +315,8 @@ class CombustivelController {
       let data = request.only(['page', 'orderBy', 'cidade']);
       const page = Number(data.page) || 1
       var combusteveis = await Combustivel.query().whereHas('postos', (builder) => {
-        builder.where('cidade', "=", data.cidade)
+        builder.where('cidade', "=", data.cidade);
+        builder.where('nome',"!=","null");
       }).with('postos').whereNotIn('tipo', ['ETANOL', 'GASOLINA ADITIVADA', "GASOLINA COMUM", "GNV"]).orderBy(data.orderBy, 'ASC').fetch();
     
       var aux = [];

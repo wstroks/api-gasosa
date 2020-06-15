@@ -32,7 +32,7 @@ class PostoController {
      */
     async index({ request, params, response, view }) {
         try {
-            var posto = await Posto.query().with('combustiveis', (builder) => { builder.orderBy("valor", "ASC") }).fetch();
+            var posto = await Posto.query().with('combustiveis', (builder) => { builder.orderBy("valor", "ASC") }).where('nome',"!=","null").fetch();
             return response.status(200).json(posto);
         } catch (err) {
             return response.status(500).send({ error: `Erro ${err.message}` });

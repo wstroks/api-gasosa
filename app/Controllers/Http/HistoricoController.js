@@ -21,7 +21,7 @@ class HistoricoController {
    */
   async index({ request, response, view }) {
     try {
-      var posto = await Posto.query().with('historicos', (builder) => { builder.orderBy("created_at", "asc")}).fetch();
+      var posto = await Posto.query().with('historicos', (builder) => { builder.orderBy("created_at", "asc") }).fetch();
       return response.status(200).json(posto);
     } catch (err) {
       return response.status(500).send({ error: `Erro ${err.message}` });
@@ -30,36 +30,101 @@ class HistoricoController {
 
   async historico({ request, response, view }) {
     try {
-      var historico = await Historico.query().with('postos_historico', (builder) => { builder.orderBy("created_at", "asc")}).fetch();
+      var historico = await Historico.query().with('postos_historico', (builder) => { builder.orderBy("created_at", "asc") }).fetch();
       return response.status(200).json(historico);
     } catch (err) {
       return response.status(500).send({ error: `Erro ${err.message}` });
     }
   }
 
-  /**
-   * Render a form to be used for creating a new historico.
-   * GET historicos/create
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
-  async create({ request, response, view }) {
+
+  async gcomum({ request, response, view }) {
+    try {
+      let data = request.only(['cidade']);
+
+      var combusteveis = await Posto.query().whereHas('historicos', (builder) => {
+        builder.where('tipo', '=', 'GASOLINA COMUM');
+        builder.orderBy('updated_at', "asc");
+      }).with('historicos', (builder) => {
+        builder.where('tipo', '=', 'GASOLINA COMUM');
+      }).where('cidade', "=", data.cidade).where('nome', "!=", "null").fetch();
+
+      return response.status(200).json(combusteveis);
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
   }
 
-  /**
-   * Create/save a new historico.
-   * POST historicos
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   */
-  async store({ request, response }) {
+  async gaditivada({ request, response, view }) {
+    try {
+      let data = request.only(['cidade']);
+
+      var combusteveis = await Posto.query().whereHas('historicos', (builder) => {
+        builder.where('tipo', '=', 'GASOLINA ADITIVADA');
+        builder.orderBy('updated_at', "asc");
+      }).with('historicos', (builder) => {
+        builder.where('tipo', '=', 'GASOLINA ADITIVADA');
+      }).where('cidade', "=", data.cidade).where('nome', "!=", "null").fetch();
+
+      return response.status(200).json(combusteveis);
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
   }
 
+
+  async gnv({ request, response, view }) {
+    try {
+      let data = request.only(['cidade']);
+
+      var combusteveis = await Posto.query().whereHas('historicos', (builder) => {
+        builder.where('tipo', '=', 'GNV');
+        builder.orderBy('updated_at', "asc");
+      }).with('historicos', (builder) => {
+        builder.where('tipo', '=', 'GNV');
+      }).where('cidade', "=", data.cidade).where('nome', "!=", "null").fetch();
+
+      return response.status(200).json(combusteveis);
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
+  }
+
+  async etanol({ request, response, view }) {
+    try {
+      let data = request.only(['cidade']);
+
+      var combusteveis = await Posto.query().whereHas('historicos', (builder) => {
+        builder.where('tipo', '=', 'ETANOL');
+        builder.orderBy('updated_at', "asc");
+      }).with('historicos', (builder) => {
+        builder.where('tipo', '=', 'ETANOL');
+      }).where('cidade', "=", data.cidade).where('nome', "!=", "null").fetch();
+
+      return response.status(200).json(combusteveis);
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
+  }
+
+  async diesel({ request, response, view }) {
+    try {
+      let data = request.only(['cidade']);
+
+      var combusteveis = await Posto.query().whereHas('historicos', (builder) => {
+        builder.whereNotIn('tipo', ['ETANOL', 'GASOLINA ADITIVADA', "GASOLINA COMUM", "GNV"]);
+        builder.orderBy('updated_at', "asc");
+      }).with('historicos', (builder) => {
+        builder.whereNotIn('tipo', ['ETANOL', 'GASOLINA ADITIVADA', "GASOLINA COMUM", "GNV"]);
+      }).where('cidade', "=", data.cidade).where('nome', "!=", "null").fetch();
+
+      return response.status(200).json(combusteveis);
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
+  }
+
+  
   /**
    * Display a single historico.
    * GET historicos/:id
@@ -70,6 +135,19 @@ class HistoricoController {
    * @param {View} ctx.view
    */
   async show({ params, request, response, view }) {
+    try {
+      var combusteveis = await Posto.query().with('historicos', (builder)=>{
+        builder.orderBy('updated_at', 'asc');
+      }).where('id',params.id).first();
+
+      if(!combusteveis){
+        return response.status(200).json({ message: `Id não encontrado` });
+      }
+      
+      return response.status(200).json(combusteveis);
+    } catch (err) {
+      return response.status(500).send({ error: `Erro ${err.message}` });
+    }
   }
 
   /**
@@ -82,6 +160,8 @@ class HistoricoController {
    * @param {View} ctx.view
    */
   async edit({ params, request, response, view }) {
+
+  
   }
 
   /**

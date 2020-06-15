@@ -20,7 +20,17 @@ Route.get('/', 'PostoController.starts')
 
 Route.group(() => {
   Route.get('', 'HistoricoController.index');
+  Route.get(':id', 'HistoricoController.show');
   Route.get('grafico', 'HistoricoController.historico');
+
+  //historico por tipos de combustiveis
+  Route.get('gcomum:cidade?', 'HistoricoController.gcomum');
+  Route.get('gaditivada:cidade?', 'HistoricoController.gaditivada');
+  Route.get('gnv:cidade?', 'HistoricoController.gnv');
+  Route.get('etanol:cidade?', 'HistoricoController.etanol');
+  Route.get('diesel:cidade?', 'HistoricoController.diesel');
+ 
+
 }).prefix('historicos');
 
 Route.group(() => {
@@ -45,6 +55,10 @@ Route.group(() => {
   Route.get('distancia/gcomum:page?:orderBy?', 'CombustivelController.gcomumdistancia');
   Route.get('distancia/gaditivada:page?:orderBy?', 'CombustivelController.gadtivadadistancia');
   Route.get('distancia/diesel:page?:orderBy?', 'CombustivelController.dieseldistancia');
+
+  //Crud
+  Route.get(':id', 'CombustivelController.show');
+  Route.post(':id', 'CombustivelController.edit');
   
 
 }).prefix('combustiveis');

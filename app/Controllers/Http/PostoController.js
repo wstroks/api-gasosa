@@ -6631,6 +6631,7 @@ class PostoController {
      * @param {Response} ctx.response
      */
     async destroy({ params, request, response }) {
+        
     }
 
   

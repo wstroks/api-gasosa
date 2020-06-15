@@ -347,17 +347,7 @@ class CombustivelController {
     }
   }
 
-  /**
-   * Render a form to be used for creating a new combustivel.
-   * GET combustivels/create
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
-  async create({ request, response, view }) {
-  }
+  
 
   /**
    * Create/save a new combustivel.
@@ -380,6 +370,17 @@ class CombustivelController {
    * @param {View} ctx.view
    */
   async show({ params, request, response, view }) {
+    try{
+      const combustivel = await Combustivel.query().where('id',params.id).first();
+
+      if(!combustivel){
+        return response.status(500).send({message: `Id de combustível não existe!`});
+      }
+
+      return response.status(200).json(combustivel);
+    }catch(err){
+      return response.status(500).send({error: `Error ${err.message}`})
+    }
   }
 
   /**
@@ -392,19 +393,25 @@ class CombustivelController {
    * @param {View} ctx.view
    */
   async edit({ params, request, response, view }) {
+    try{
+      const data= request.only(['valor']);
+      const combustivel = await Combustivel.query().where('id',params.id).first();
+
+      if(!combustivel){
+        return response.status(500).send({message: `Id de combustível não existe!`});
+      }
+      
+      combustivel.valor= data.valor;
+      combustivel.save();
+
+      return response.status(200).json({message: "Alteração realizada com sucesso!", data:combustivel});
+    }catch(err){
+      return response.status(500).send({error: `Error ${err.message}`})
+    }
+
   }
 
-  /**
-   * Update combustivel details.
-   * PUT or PATCH combustivels/:id
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   */
-  async update({ params, request, response }) {
-  }
-
+  
   /**
    * Delete a combustivel with id.
    * DELETE combustivels/:id

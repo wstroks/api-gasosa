@@ -23,9 +23,7 @@ class CombustivelController {
    */
   async index({ request, response, view }) {
     try {
-      var combustivel = await Combustivel.query().with('postos', (builder)=>{
-        builder.where('nome',"!=","null");
-      }).orderBy("valor", "ASC").fetch();
+      var combustivel = await Combustivel.query().with('postos').orderBy("valor", "ASC").fetch();
 
 
       return response.status(200).json(combustivel);

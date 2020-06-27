@@ -57,8 +57,8 @@ Route.group(() => {
   Route.get('distancia/diesel:page?:orderBy?', 'CombustivelController.dieseldistancia');
 
   //Crud
-  Route.get(':id', 'CombustivelController.show');
-  Route.post(':id', 'CombustivelController.edit');
+  Route.get('/busca/:id', 'CombustivelController.show');
+  Route.post('/busca/:id', 'CombustivelController.edit');
   
 
 }).prefix('combustiveis');

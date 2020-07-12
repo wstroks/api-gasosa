@@ -1,28 +1,53 @@
-# Adonis API application
+<br>
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+<h1 align='center'>
+      <img alt="Logo Gasosa" title="#logo" src="../web/git/logo.png" width="100px" />
+</h1>
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+<br>
 
-## Setup
+<h1 align="center">
+    <img align="center" alt="Home Gasosa" title="#home" src="../imgs/api.png" width="100%" />
+</h1>
 
-Use the adonis command to install the blueprint
+<h2 title='#projeto'>
+    Projeto
+</h2>
 
-```bash
-adonis new yardstick --api-only
-```
+Back-end para o Gasosa, um aplicativo para preços de combustíveis. Foi criado um Bot responsável por colher informações de determinadas cidades em horários programados.
 
-or manually clone the repo and then run `npm install`.
+<h2 title='#tecnologias'>
+    Tecnologias
+</h2>
 
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### Migrations
+- AdonisJS
 
-Run the following command to run startup migrations.
+<h2 title='#bibliotecas'>
+    Bibliotecas
+</h2>
 
-```js
-adonis migration:run
-```
+Foram utilizadas as seguintes bibliotecas:
+
+- puppeteer
+- axios
+
+<h2 title='#bibliotecas'>
+   Documentação 
+</h2>
+
+- Detalhes para [Api](https://documenter.getpostman.com/view/1402289/SzzheyS6?version=latest)
+
+<h2 title='#bibliotecas'>
+   Banco de dados
+</h2>
+
+<h1 align="center">
+    <img align="center" alt="Home Gasosa" title="#home" src="../imgs/banco_de_dados.png" width="75%" />
+</h1>
+
+- Histórico: é salvo todas as informações sobre os postos deixando um histórico detalhado dos preços.
+- Combustíveis: é atualizado o valor do combustível para ser visualizado. Exemplo último preço da gasolina comum em determinado posto.
+- Posto: informações referentes aos postos adicionados na aplicação.
+- Comentário: caso os usuários desejam fazer alguma sugestão, etc.

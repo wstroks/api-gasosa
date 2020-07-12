@@ -1,13 +1,13 @@
 <br>
 
 <h1 align='center'>
-      <img alt="Logo Gasosa" title="#logo" src="../web/git/logo.png" width="100px" />
+      <img alt="Logo Gasosa" title="#logo" src="https://github.com/wstroks/startupGasosa/blob/master/imgs/logo.png" width="100px" />
 </h1>
 
 <br>
 
 <h1 align="center">
-    <img align="center" alt="Home Gasosa" title="#home" src="../imgs/api.png" width="100%" />
+    <img align="center" alt="Home Gasosa" title="#home" src="https://github.com/wstroks/startupGasosa/blob/master/imgs/api.png" width="100%" />
 </h1>
 
 <h2 title='#projeto'>
@@ -44,7 +44,7 @@ Foram utilizadas as seguintes bibliotecas:
 </h2>
 
 <h1 align="center">
-    <img align="center" alt="Home Gasosa" title="#home" src="../imgs/banco_de_dados.png" width="75%" />
+    <img align="center" alt="Home Gasosa" title="#home" src="https://github.com/wstroks/startupGasosa/blob/master/imgs/banco_de_dados.png" width="75%" />
 </h1>
 
 - Histórico: é salvo todas as informações sobre os postos deixando um histórico detalhado dos preços.
